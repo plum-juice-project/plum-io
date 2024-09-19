@@ -115,6 +115,7 @@ ul.home-bullet-list li:before {
     width: 100%;
     display: flex;
     max-width: 1440px;
+
     align-items: flex-end;
     justify-content: space-between;
     flex-direction: row;
@@ -300,9 +301,9 @@ ul.home-bullet-list li:before {
 
 .home-content12 {
     gap: var(--dl-space-space-unit);
-    width: 100%;
+    width: auto;
     display: flex;
-    max-width: 460px;
+    max-width: 480px;
     align-items: flex-start;
     flex-direction: column;
 }
@@ -320,22 +321,6 @@ ul.home-bullet-list li:before {
     font-size: 18px;
     max-width: 400px;
     line-height: 27px;
-}
-
-.home-learn3 {
-    gap: var(--dl-space-space-unit);
-    color: #000000;
-    display: flex;
-    padding: 0px;
-    box-shadow: none;
-    align-items: center;
-    padding-top: 0px;
-    border-width: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    flex-direction: row;
-    padding-bottom: 0px;
-    background-color: transparent;
 }
 
 .home-text18 {

@@ -1,47 +1,45 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  ssr: false,
-  modules: ['@nuxt/content', '@nuxtjs/google-fonts', '@nuxtjs/tailwindcss', '@nuxt/ui', '@nuxt/icon', '@nuxt/image'],
-  routeRules: {
-    '/': { prerender: true }
+
+  // Disable SSR for static hosting on GitHub Pages
+  ssr: true,
+
+  nitro: {
+    preset: 'github-pages', // Preset for GitHub Pages deployment
   },
 
+  routeRules: {
+    // Optional: define rules for prerendering specific routes
+    '/*': { prerender: true },
+  },
+
+  modules: ['@nuxt/content', '@nuxtjs/google-fonts', '@nuxt/ui', '@nuxt/icon', '@nuxt/image'],
 
   googleFonts: {
     families: {
-      // Import specific Google Fonts
-      Inter: [400, 600, 700], // Regular, Semi-bold, Bold
+      Inter: [400, 600, 700],
     },
-    display: 'swap', // Improves page performance by rendering text immediately
+    display: 'swap',
   },
 
   css: [
     "~/assets/css/style.css",
     "~/assets/css/home.css"
   ],
-  // Defaults options
-  tailwindcss: {
-    cssPath: false,
-    configPath: 'tailwind.config',
-    exposeConfig: {
-      level: 2
-    },
-    config: {},
-    viewer: true,
-  },
 
   app: {
     head: {
-      title: 'My Nuxt App',
+      title: 'Plum Juice',
       meta: [
-        { name: 'description', content: 'My Nuxt.js app' }
+        { name: 'description', content: 'Plum Juice - a static website' }
       ],
-      // link: [
-      //   {
-      //     rel: "stylesheet",
-      //     href: "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap",
-      //   },]
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ]
     },
+    baseURL: '/', // Set the base URL to your GitHub repository name
   },
+
+  compatibilityDate: '2024-09-19',
 })

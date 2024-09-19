@@ -62,7 +62,7 @@
       </div>
     </div>
   </section>
-  <Divider color="white" nlines="3" vspace="50" />
+  <Divider color="white" vspace="50" />
   <section class="home-collection">
     <div class="home-content14">
       <div class="home-heading11">
@@ -75,13 +75,13 @@
     </div>
     <div class="home-main4">
       <!-- BLOG PREVIEW -->
-      <ArticlePreview v-for="article in articles" :key="article.id" :article="article" />
+      <ArticlePreview v-for="article in articles" :key="article.title" :article="article" />
 
       <!-- if the articles are not enough, fill with funny place holders -->
-      <ArticlePreview v-for="index in MAX_ARTICLES - articles.length" :key="'placeholder-' + index" />
+      <!-- <ArticlePreview v-for="index in MAX_ARTICLES - articles." :key="'placeholder-' + index" /> -->
     </div>
   </section>
-  <Divider color="white" nlines="3" vspace="50" />
+  <Divider color="white" vspace="50" />
   <section class="home-roadmap">
     <div class="home-heading14">
       <h2 class="home-header21">Roadmap</h2>
@@ -97,55 +97,41 @@
 <script>
 import ArticlePreview from '@/components/ArticlePreview.vue'
 import Roadmap from '@/components/Roadmap.vue'
+import Divider from '~/components/Divider.vue';
+
+
+
 export default {
   name: 'Home',
-  props: {},
   components: {
     ArticlePreview,
-    Roadmap
-  },
-  data() {
-    return {
-      rawhppm: ' ',
-      rawr664: ' ',
-      rawberf: ' ',
-      rawdfft: ' ',
-      rawjwcj: ' ',
-      rawlzjn: ' ',
-      rawg70o: ' ',
-      rawd4s3: ' ',
-      MAX_ARTICLES: 8,
-      articles: [
-        {
-          id: 1,
-          title: 'Article 1',
-          description: 'Description 1',
-          image: '/Characters/character-1.svg',
-        },
-        {
-          id: 2,
-          title: 'Article 2',
-          description: 'Description 2',
-          image: '/Characters/character-2.svg',
-        },
-        {
-          id: 3,
-          title: 'Article 3',
-          description: 'Description 3',
-          image: '/Characters/character-3.svg',
-        },
-        {
-          id: 4,
-          title: 'Article 4',
-          description: 'Description 4',
-          image: '/Characters/character-4.svg',
-        },
-      ],
-    }
+    Roadmap,
+    Divider
   },
   head: {
     title: 'Plum Juice',
   },
+
+  setup() {
+    console.log('Home setup');
+
+    const { data: articles } = useAsyncData('articles', async () => {
+      try {
+        const _posts = await queryContent().find();
+        console.log(_posts);
+        return _posts;
+      } catch (error) {
+        console.error(error);
+        return [];
+      }
+    });
+
+    return {
+      articles,
+      MAX_ARTICLES: 4,
+    };
+  },
+
 }
 
 </script>

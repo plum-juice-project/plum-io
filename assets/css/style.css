@@ -226,7 +226,6 @@
 .unavaible {
   color: var(--dl-color-gray-500);
   cursor: not-allowed;
-  display: inline-block;
   text-decoration: line-through;
 }
 

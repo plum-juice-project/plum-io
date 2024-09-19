@@ -1,5 +1,4 @@
 <template>
-    <VueNextTimeline :items="items" />
 </template>
 
 <script>

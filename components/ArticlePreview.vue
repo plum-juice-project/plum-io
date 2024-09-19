@@ -8,7 +8,7 @@ export default {
         return {
           title: 'Coming Soon',
           description: 'We need writers to write articles :p',
-          image: '/Characters/character-1.svg',
+          image: '',
         }
       }
     },
@@ -22,27 +22,21 @@ export default {
 
 <template>
 
-  <div v-if="!extended" class="home-card13">
+  <div v-if="!extended" class="home-card13"
+    :onclick="() => { navigateTo(article.title.replace(' ', '_').toLowerCase()) }">
     <div class="home-image16">
-      <!-- <img
-              alt="image"
-              src="/Characters/character-1.svg"
-              class="home-image17"
-            /> -->
+      <!-- <img v-if="article.image" alt="image" src="/Characters/character-1.svg" class="home-image17" /> -->
     </div>
     <div class="home-content15">
-      <span class="home-caption12">{{ article.title }}</span>
-      <h3 class="home-title1">{{ article.description }}</h3>
+      <span class="home-title">{{ article.title }}</span>
+      <h3 class="home-caption">{{ article.description }}</h3>
     </div>
   </div>
 
   <div v-else class="blog-card">
     <div class="blog-image">
-      <!-- <img
-              alt="image"
-              src="/Characters/character-1.svg"
-              class="home-image17"
-            /> -->
+      <img v-if="article.image" alt="image" :src=article.image class="home-image17" />
+      <Icon v-else name="bx:image" size="7em" style="color: rgba(0,0,0,0.3)" />
     </div>
     <div class="blog-content">
       <h2 class="blog-title">{{ article.title }}</h2>
@@ -53,8 +47,6 @@ export default {
 </template>
 
 <style>
-
-
 .blog-card {
   margin-top: 1em;
 
@@ -70,12 +62,18 @@ export default {
 
   border-radius: var(--dl-radius-radius-oneunit);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  color: black;
 }
 
 .blog-image {
   border-radius: 0.5em;
   overflow: hidden;
   background-color: var(--plum-purple-800);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   width: 20%;
   height: 100%;
@@ -131,11 +129,8 @@ export default {
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
-  /* Limita a 3 righe */
   line-height: 1.5;
-  /* Imposta l'altezza della linea */
   max-height: calc(1.5 * 3em);
-  /* Calcola l'altezza massima in base al numero di righe */
 }
 
 .home-card13 {
@@ -144,6 +139,8 @@ export default {
   align-items: flex-start;
   flex-direction: column;
   background-color: #ffffff;
+  cursor: pointer;
+  color: black;
 }
 
 .home-content15 {
@@ -165,6 +162,16 @@ export default {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
+}
+
+.home-caption {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  line-height: 1.5;
+  max-height: calc(1.5 * 2em);
 }
 
 .home-image16 {

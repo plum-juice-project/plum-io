@@ -16,17 +16,39 @@
     </section>
     <section>
         <div class="blog-sort-container">
-            <span class="blog-sort-label"> sorted by: {{ sorting }}</span>
-            <Icon class="blog-sort-icon" name="ep:arrow-down-bold" size="1em" style="color: black" />
+            <div class="blog-sort-label-container">
+                <span class="blog-sort-label"> sorted by: {{ sorting }}</span>
+                <Icon class="blog-sort-icon" name="ep:arrow-down-bold" size="1em" style="color: black" />
+            </div>
+        </div>
+        <div v-if="showMenu" class="blog-sort-menu">
+            <ul>
+                <li><a href="#">Opzione 1</a></li>
+                <li><a href="#">Opzione 2</a></li>
+                <li><a href="#">Opzione 3</a></li>
+            </ul>
         </div>
         <div class="blog-list">
-            <!-- BLOG PREVIEW -->
+            <div class="blog-list-empty" v-if="articles.length == 0">
+                <span>
+                    Loading...
+                </span>
+            </div>
+
             <ArticlePreview v-for="article in articles" :key="article.id" :article="article" :extended="true" />
         </div>
 
-        <div class="blog-list-loadmore-container" v-if="isDataAvaible">
-            <Button @click="loadMoreArticles" class="blog-list-loadmore">Load More</Button>
+        <div v-if="isDataAvaible" class="blog-list-loadmore-container">
+            <Button @click="loadMoreArticles" class="styled-link">
+                Load More
+            </Button>
         </div>
+        <div v-else class="blog-list-loadmore-container styled-link unavaible">
+            <span>
+                You have reached the end 🤯
+            </span>
+        </div>
+
     </section>
 </template>
 
@@ -42,35 +64,19 @@ export default {
             sorting: 'date',
             limit: 10,
             offset: 0,
-            isDataAvaible: true,
         }
     },
-    methods:
-    {
-        async countArticles() {
-            const count = await queryContent().count();
-            return count;
-        },
-        async fetchArticles() {
-            this.articles = await queryContent().skip(this.offset).limit(this.limit).sort({ date: -1 }).find();
-            if (await this.countArticles() <= this.articles.length) {
-                this.isDataAvaible = false;
-            }
-        },
+    setup() {
+        const { data: articles } = useAsyncData('articles', async () => {
+            const _posts = await queryContent().sort({ data: -1 }).find();
+            return _posts;
+        });
 
-        async loadMoreArticles() {
-            this.offset += this.limit;
-            this.articles = this.articles.concat(await queryContent().skip(this.offset).limit(this.limit).sort({ date: -1 }).find());
-            if (await this.countArticles() <= this.articles.length) {
-                this.isDataAvaible = false;
-            }
-        }
+        return {
+            articles,
+            MAX_ARTICLES: 4,
+        };
     },
-
-    mounted() {
-        this.fetchArticles()
-    }
-
 }
 </script>
 
@@ -86,6 +92,8 @@ export default {
     flex-direction: column;
     padding-bottom: 160px;
 }
+
+
 
 .blog-header-content {
     display: flex;
@@ -128,6 +136,29 @@ export default {
     padding-bottom: 10em;
 }
 
+.blog-list-empty {
+    margin-top: 1em;
+    width: 70vw;
+    height: 22vh;
+
+    padding: var(--dl-space-space-oneandhalfunits);
+
+    background-color: var(--plum-purple-900);
+
+    border-radius: var(--dl-radius-radius-oneunit);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+    color: var(--plum-purple-400);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: xx-large;
+    font-weight: 600;
+    font-style: italic;
+}
+
 .blog-paragraph {
     color: rgb(255, 255, 255);
     font-size: 40px;
@@ -139,7 +170,7 @@ export default {
     display: flex;
     justify-content: flex-end;
 
-    padding-right: 5em;
+    padding: 1em;
 
     margin: auto;
     width: auto;
@@ -148,28 +179,32 @@ export default {
     background-color: var(--yellow-card);
 }
 
+.blog-sort-label-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-right: 1em;
+}
+
 .blog-sort-label {
-    color: var(--dl-color-color-black);
+    color: black;
     font-size: 1em;
     font-weight: 600;
-
-    padding: 1em;
     font-style: italic;
+    cursor: pointer;
 }
 
 .blog-sort-icon {
-    cursor: pointer;
+    padding-left: 2em;
 }
 
 .blog-list-loadmore-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 2em;
 
-    background-color: var(--yellow-card);
-
-    margin: auto;
+    margin-bottom: 3em;
 }
 
 .blog-list-loadmore {

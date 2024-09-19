@@ -13,7 +13,6 @@
     "@nuxt/image": "^1.8.0",
     "@nuxt/ui": "^2.18.4",
     "@nuxtjs/google-fonts": "^3.2.0",
-    "nuxt": "^3.13.0",
-    "vue-next-timeline": "^0.2.1"
+    "nuxt": "^3.13.0"
   }
 }
