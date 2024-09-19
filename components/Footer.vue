@@ -24,8 +24,11 @@
                 <div class="home-list2">
                     <h3 class="home-heading21">Site</h3>
                     <div class="home-items1">
-                        <button class="home-link12 button-clean button">About</button>
-                        <button class="home-link14 button-clean button">Roadmap</button>
+                        <router-link class="home-link12 button-clean button" to="/about">About</router-link>
+                        <router-link class="home-link12 button-clean button" to="/blog">Blog</router-link>
+                        <router-link class="home-link12 button-clean button unavaible"
+                            to="#roadmap">Roadmap</router-link>
+                        <router-link class="home-link12 button-clean button" to="#home">Home</router-link>
                     </div>
                 </div>
                 <div class="home-list3">

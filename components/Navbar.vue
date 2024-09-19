@@ -1,16 +1,15 @@
 <template>
-  <header class="home-header10">
     <header data-thq="thq-navbar" class="home-navbar">
-      <span class="home-logo1">Plum Juice</span>
-      <div data-thq="thq-navbar-nav" data-role="Nav" class="home-desktop-menu">
-        <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="home-nav1">
-          <router-link to="/" class="nav-link" active-class="nav-link-is-active">Home</router-link>
-          <router-link to='/team' class="nav-link unavaible">Team</router-link>
-          <router-link to="/blog" class="nav-link" active-class="nav-link-is-active">Blog</router-link>
-          <router-link to="/about" class="nav-link" active-class="nav-link-is-active">About</router-link>
-        </nav>
-      </div>
-    </header>
+    <!-- <span class="home-logo1">Plum Juice</span> -->
+    <img src="assets/text-plum-light.png" alt="logo" class="text-logo1" />
+    <div data-thq="thq-navbar-nav" data-role="Nav" class="home-desktop-menu">
+      <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="home-nav1">
+        <router-link to="/" class="nav-link" active-class="nav-link-is-active">Home</router-link>
+        <router-link to='/team' class="nav-link unavaible">Team</router-link>
+        <router-link to="/blog" class="nav-link" active-class="nav-link-is-active">Blog</router-link>
+        <router-link to="/about" class="nav-link" active-class="nav-link-is-active">About</router-link>
+      </nav>
+    </div>
   </header>
 </template>
 
@@ -21,6 +20,7 @@ export default {
 </script>
 
 <style>
+
 .home-navbar {
   width: 100%;
   display: flex;

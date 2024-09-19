@@ -74,7 +74,6 @@ export default {
 
         return {
             articles,
-            MAX_ARTICLES: 4,
         };
     },
 }
@@ -91,6 +90,8 @@ export default {
     padding-right: var(--dl-space-space-fiveunits);
     flex-direction: column;
     padding-bottom: 160px;
+
+    margin-top: 5em;
 }
 
 

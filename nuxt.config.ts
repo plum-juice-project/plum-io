@@ -9,12 +9,26 @@ export default defineNuxtConfig({
     preset: 'github-pages', // Preset for GitHub Pages deployment
   },
 
+  router: {
+    options: {
+      scrollBehaviorType: 'smooth',
+    }
+  },
+
+
   routeRules: {
     // Optional: define rules for prerendering specific routes
     '/*': { prerender: true },
   },
 
-  modules: ['@nuxt/content', '@nuxtjs/google-fonts', '@nuxt/ui', '@nuxt/icon', '@nuxt/image'],
+  modules: [
+    '@nuxt/content',
+    '@nuxtjs/google-fonts',
+    '@nuxt/ui',
+    '@nuxt/icon',
+    '@nuxt/image',
+    '@nuxtjs/tailwindcss',
+  ],
 
   googleFonts: {
     families: {

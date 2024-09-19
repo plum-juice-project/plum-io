@@ -122,13 +122,17 @@ ul.home-bullet-list li:before {
 }
 
 .home-description11 {
-    gap: var(--dl-space-space-fiveunits);
     width: 100%;
+    height: 100%;
+    margin: auto;
+
     display: flex;
-    max-width: 900px;
-    align-items: flex-start;
+
+    gap: var(--dl-space-space-fiveunits);
+
     padding-left: var(--dl-space-space-fiveunits);
     padding-right: var(--dl-space-space-fiveunits);
+    align-items: flex-start;
     flex-direction: column;
     flex: 1;
 }
@@ -145,12 +149,15 @@ ul.home-bullet-list li:before {
     color: #ffffff;
     font-size: 40px;
     line-height: 60px;
+
 }
 
 .home-paragraph2 {
     color: rgb(255, 255, 255);
     font-size: 40px;
     line-height: 60px;
+
+    font-style: italic;
 }
 
 .home-cards {
@@ -164,6 +171,28 @@ ul.home-bullet-list li:before {
     padding-right: var(--dl-space-space-fiveunits);
     flex-direction: column;
     padding-bottom: 120px;
+}
+
+.home-comings {
+    height: 100%;
+    width: 100%;
+    margin-left: 5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-comings-text {
+    font-style: italic;
+    font-weight: 600;
+    font-size: xx-large;
+
+    justify-content: center;
+    text-align: center;
+
+    color: var(--background-1000);
 }
 
 .home-row1 {
@@ -302,6 +331,7 @@ ul.home-bullet-list li:before {
 .home-content12 {
     gap: var(--dl-space-space-unit);
     width: auto;
+    height: auto;
     display: flex;
     max-width: 480px;
     align-items: flex-start;
@@ -445,7 +475,7 @@ ul.home-bullet-list li:before {
     padding-left: var(--dl-space-space-fiveunits);
     padding-right: var(--dl-space-space-fiveunits);
     flex-direction: column;
-    padding-bottom: 160px;
+    padding-bottom: 60px;
 }
 
 .home-content14 {
@@ -468,7 +498,7 @@ ul.home-bullet-list li:before {
     gap: var(--dl-space-space-twounits);
     width: 100%;
     display: flex;
-    max-width: 640px;
+
     align-items: flex-start;
     flex-direction: column;
 }
@@ -476,15 +506,14 @@ ul.home-bullet-list li:before {
 .home-header15 {
     color: rgb(255, 255, 255);
     font-size: 72px;
-    font-style: normal;
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .home-header16 {
     color: rgb(255, 255, 255);
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 32px;
+    font-style: italic;
 }
 
 .home-main4 {

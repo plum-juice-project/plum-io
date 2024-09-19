@@ -1,5 +1,5 @@
 <template>
-  <section class="home-hero">
+  <section class="home-hero" id="home">
     <div class="home-heading10">
       <h1 class="home-header11">It's not just a raspberrypi cluster</h1>
       <p class="home-caption10">
@@ -36,6 +36,9 @@
                   Developing a flexible topology, adaptable to different needs and contexts.
                 </li>
                 <li>
+                  Implementing distributed and parallel algorithms for scientific computing and deep learning.
+                </li>
+                <li>
                   Analyzing the network performance and hardware resources of the nodes.
                 </li>
                 <li>
@@ -49,15 +52,15 @@
           </div>
         </div>
         <div class="home-description11">
-          <p class="home-paragraph1">
-            We are a team of digital aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat.
-          </p>
-          <p class="home-paragraph2">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum. Nemo enim ipsam
-            voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-          </p>
+          <span class="home-paragraph1">
+            We are a team of computer science students passionate about building and optimizing fast, distributed, and
+            juicy architectures.
+          </span>
+          <span class="home-paragraph2">
+            <p><strong>PlumJuice</strong> is a small Raspberry Pi <strong>SLURM</strong> cluster created to experiment
+              with different topologies, sharpen our parallel programming skills, and gain hands-on experience in
+              setting up and maintaining a supercomputer.</p>
+          </span>
         </div>
       </div>
     </div>
@@ -67,22 +70,27 @@
     <div class="home-content14">
       <div class="home-heading11">
         <h2 class="home-header15">Blog</h2>
-        <p class="home-header16">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore.
-        </p>
+        <span class="home-header16">
+          Discover our work and how we maintain the cluster.
+        </span>
       </div>
     </div>
     <div class="home-main4">
       <!-- BLOG PREVIEW -->
       <ArticlePreview v-for="article in articles" :key="article.title" :article="article" />
 
-      <!-- if the articles are not enough, fill with funny place holders -->
-      <!-- <ArticlePreview v-for="index in MAX_ARTICLES - articles." :key="'placeholder-' + index" /> -->
+      <!-- PLACEHOLDER -->
+      <ArticlePreview v-for="index in MAX_ARTICLES - articles.length" :key="'placeholder-' + index" />
+
+      <!-- <div v-if="articles.length < MAX_ARTICLES" class="home-comings">
+        <span class="home-comings-text">
+          More articles soon...
+        </span>
+      </div> -->
     </div>
   </section>
   <Divider color="white" vspace="50" />
-  <section class="home-roadmap">
+  <section id="roadmap" class=" home-roadmap">
     <div class="home-heading14">
       <h2 class="home-header21">Roadmap</h2>
       <p class="home-header22">
@@ -113,12 +121,9 @@ export default {
   },
 
   setup() {
-    console.log('Home setup');
-
     const { data: articles } = useAsyncData('articles', async () => {
       try {
-        const _posts = await queryContent().find();
-        console.log(_posts);
+        const _posts = await queryContent().sort({ date: -1 }).find();
         return _posts;
       } catch (error) {
         console.error(error);

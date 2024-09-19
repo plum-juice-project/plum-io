@@ -157,10 +157,9 @@ export default {
   font-weight: 600;
 }
 
-.home-title1 {
+.home-title {
   font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 24px;
 }
 
