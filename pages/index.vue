@@ -15,12 +15,7 @@
     <div class="home-content10">
       <div class="home-container4">
         <div class="home-card11">
-          <div class="home-avatar3">
-            <!-- <img
-              alt="image"
-              src="/Avatars/default-avatar.svg"
-              class="home-avatar4"
-            /> -->
+          <div class="home-bubble">
           </div>
           <div class="home-main2">
             <div class="home-content12">

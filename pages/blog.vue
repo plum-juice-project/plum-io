@@ -68,7 +68,7 @@ export default {
     },
     setup() {
         const { data: articles } = useAsyncData('articles', async () => {
-            const _posts = await queryContent().sort({ data: -1 }).find();
+            const _posts = await queryContent().sort({ date: -1 }).find();
             return _posts;
         });
 
