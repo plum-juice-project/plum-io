@@ -4,27 +4,23 @@
             <div class="home-branding">
                 <div class="home-heading20">
                     <h2 class="home-logo3">Plum Juice</h2>
-                    <p class="home-caption27">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore.
-                    </p>
                 </div>
             </div>
             <div class="footer-links">
-                <div class="home-list2">
-                    <h3 class="home-heading21">Site</h3>
-                    <div class="home-items1">
+                <div class="footer-list1">
+                    <h3 class="footer-heading">Site</h3>
+                    <div class="footer-items1">
                         <router-link class="footer-link " to="/about">About</router-link>
                         <router-link class="footer-link " to="/blog">Blog</router-link>
                         <router-link class="footer-link  unavaible" to="#roadmap">Roadmap</router-link>
                         <router-link class="footer-link " to="#home">Home</router-link>
                     </div>
                 </div>
-                <div class="home-list3">
-                    <h3 class="home-heading22">Project</h3>
-                    <div class="home-items2">
-                        <button class="footer-link">Team</button>
-                        <button class="footer-link">Licenses</button>
+                <div class="footer-list2">
+                    <h3 class="footer-heading">Project</h3>
+                    <div class="footer-items2">
+                        <router-link class="footer-link unavaible" to="/team">Team</router-link>
+                        <router-link class="footer-link  unavaible" to="#home">Licenses</router-link>
                     </div>
                 </div>
             </div>
@@ -42,12 +38,6 @@
     justify-content: space-between;
 }
 
-.home-caption27 {
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    line-height: 27px;
-}
-
 .home-branding {
     gap: var(--space-threeunits);
     display: flex;
@@ -56,14 +46,14 @@
     flex-direction: column;
 }
 
-.home-items1 {
+.footer-items1 {
     gap: var(--space-oneandhalfunits);
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
 
-.home-items2 {
+.footer-items2 {
     gap: var(--space-oneandhalfunits);
     display: flex;
     align-items: flex-start;
@@ -77,14 +67,7 @@
     flex-direction: column;
 }
 
-.home-heading21 {
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-}
-
-.home-heading22 {
+.footer-heading {
     color: rgb(255, 255, 255);
     font-size: 24px;
     font-style: normal;
@@ -112,36 +95,29 @@
     font-weight: 600;
 }
 
-.home-caption27 {
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    line-height: 27px;
-}
-
 .footer-links {
-    gap: 120px;
+    gap: var(--space-sixunits);
     display: flex;
     align-items: flex-start;
     flex-direction: row;
-
     color: #fff;
 }
 
-.home-list2 {
+.footer-list1 {
     gap: var(--space-threeunits);
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
 
-.home-list3 {
+.footer-list2 {
     gap: var(--space-threeunits);
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
 
-.home-items2 {
+.footer-items2 {
     gap: var(--space-oneandhalfunits);
     display: flex;
     align-items: flex-start;
@@ -155,36 +131,62 @@
     line-height: 27px;
 }
 
-@media(max-width: 767px) {
+.home-copyright {
+    font-size: 0.8em;
+}
+
+@media (max-width: 767px) {
     .home-footer {
-        gap: var(--space-oneandhalfunits);
         padding-top: var(--space-fourunits);
-        padding-left: var(--space-oneandhalfunits);
-        padding-right: var(--space-oneandhalfunits);
+        padding-left: var(--space-twounits);
+        padding-right: var(--space-twounits);
+        flex-direction: column;
+        align-items: center;
     }
 
-    .home-heading20 {
-        gap: var(--space-unit);
+    .home-main6 {
+        gap: var(--space-threeunits);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .home-branding {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
     }
 
     .home-logo3 {
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 24px;
+        margin: auto;
+
     }
 
-    .home-caption27 {
-        width: 80%;
-        font-size: 12px;
-        line-height: 18px;
+    .home-heading20 {
+        gap: var(--space-oneunit);
     }
 
-    .home-list2 {
-        gap: var(--space-oneandhalfunits);
+    .footer-items1,
+    .footer-items2 {
+        gap: var(--space-halfunit);
     }
 
-    .home-list3 {
-        gap: var(--space-oneandhalfunits);
+    .footer-link {
+        font-size: 16px;
     }
 
+    .footer-links {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .footer-list1,
+    .footer-list2 {
+        gap: var(--space-two-units);
+        align-items: left;
+    }
 }
 </style>

@@ -97,7 +97,7 @@ ul.home-bullet-list li:before {
 }
 
 .home-content12 {
-    gap: var(--space-unit);
+    gap: var(--space-oneunit);
     height: auto;
     display: flex;
     max-width: 480px;
@@ -319,7 +319,7 @@ ul.home-bullet-list li:before {
     }
 
     .home-heading10 {
-        gap: var(--space-unit);
+        gap: var(--space-oneunit);
     }
 
     .home-header11 {
@@ -383,7 +383,7 @@ ul.home-bullet-list li:before {
     }
 
     .home-heading11 {
-        gap: var(--space-unit);
+        gap: var(--space-oneunit);
     }
 
     .home-header15 {
@@ -408,7 +408,7 @@ ul.home-bullet-list li:before {
     }
 
     .home-heading14 {
-        gap: var(--space-unit);
+        gap: var(--space-oneunit);
     }
 
 }

@@ -53,7 +53,7 @@
   --space-threeunits: 48px;
   --space-twounits: 32px;
   --space-oneandhalfunits: 24px;
-  --space-unit: 16px;
+  --space-oneunit: 16px;
   --space-halfunit: 8px;
 }
 
@@ -77,13 +77,13 @@
   font-style: normal;
   transition: 0.3s;
   font-weight: 500;
-  padding-top: var(--space-unit);
+  padding-top: var(--space-oneunit);
   border-color: var(--color-gray-black);
   border-width: 1px;
   padding-left: var(--space-oneandhalfunits);
   border-radius: 0px;
   padding-right: var(--space-oneandhalfunits);
-  padding-bottom: var(--space-unit);
+  padding-bottom: var(--space-oneunit);
   background-color: rgb(255, 207, 119);
 }
 
@@ -181,13 +181,13 @@
   font-style: normal;
   transition: 0.3s;
   font-weight: 500;
-  padding-top: var(--space-unit);
+  padding-top: var(--space-oneunit);
   border-color: var(--color-gray-black);
   border-width: 1px;
   padding-left: var(--space-oneandhalfunits);
   border-radius: 0px;
   padding-right: var(--space-oneandhalfunits);
-  padding-bottom: var(--space-unit);
+  padding-bottom: var(--space-oneunit);
   background-color: var(--plum-purple-600);
 
   text-decoration: none;

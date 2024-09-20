@@ -52,7 +52,7 @@ export default {
 
 @media(max-width: 479px) {
   .home-navbar {
-    padding: var(--space-unit);
+    padding: var(--space-oneunit);
     align-items: center;
     justify-content: center;
   }

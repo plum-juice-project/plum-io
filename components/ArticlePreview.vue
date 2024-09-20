@@ -21,29 +21,28 @@ export default {
 </script>
 
 <template>
+  <router-link :to="article.title.replace(' ', '_').toLowerCase()">
+    <div v-if="!extended" class="home-card13">
+      <div class="home-image16">
+        <!-- <img v-if="article.image" alt="image" src="/Characters/character-1.svg" class="home-image17" /> -->
+      </div>
+      <div class="home-content15">
+        <span class="home-title">{{ article.title }}</span>
+        <h3 class="home-caption">{{ article.description }}</h3>
+      </div>
+    </div>
 
-  <div v-if="!extended" class="home-card13"
-    :onclick="() => { navigateTo(article.title.replace(' ', '_').toLowerCase()) }">
-    <div class="home-image16">
-      <!-- <img v-if="article.image" alt="image" src="/Characters/character-1.svg" class="home-image17" /> -->
+    <div v-else class="blog-card">
+      <div class="blog-image">
+        <img v-if="article.image" alt="image" :src=article.image />
+        <Icon v-else name="bx:image" size="7em" style="color: rgba(0,0,0,0.3)" />
+      </div>
+      <div class="blog-content">
+        <h2 class="blog-title">{{ article.title }}</h2>
+        <span class="blog-caption">{{ article.description }}</span>
+      </div>
     </div>
-    <div class="home-content15">
-      <span class="home-title">{{ article.title }}</span>
-      <h3 class="home-caption">{{ article.description }}</h3>
-    </div>
-  </div>
-
-  <div v-else class="blog-card">
-    <div class="blog-image">
-      <img v-if="article.image" alt="image" :src=article.image />
-      <Icon v-else name="bx:image" size="7em" style="color: rgba(0,0,0,0.3)" />
-    </div>
-    <div class="blog-content">
-      <h2 class="blog-title">{{ article.title }}</h2>
-      <span class="blog-caption">{{ article.description }}</span>
-    </div>
-    <router-link class="blog-readmore" :to="article.title.replace(' ', '_').toLowerCase()"> Read more </router-link>
-  </div>
+  </router-link>
 </template>
 
 <style>
@@ -131,6 +130,24 @@ export default {
   -webkit-line-clamp: 3;
   line-height: 1.5;
   max-height: calc(1.5 * 3em);
+}
+
+@media (max-width: 767px) {
+  .blog-card {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .blog-image {
+    width: 100%;
+    height: 50%;
+  }
+
+  .blog-content {
+    width: 100%;
+    height: 50%;
+  }
 }
 
 .home-card13 {

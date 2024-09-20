@@ -2,7 +2,7 @@
     <section class="blog-header">
         <div class="blog-header-content">
             <div class="blog-heading11">
-                <h2 class="home-header15">Blog</h2>
+                <h2 class="blog-header-title">Blog</h2>
                 <p class="blog-paragraph">
                     Yes, we have a blog. It's a place where we share our thoughts, ideas, and experiences.
                 </p>
@@ -21,13 +21,13 @@
                 <Icon class="blog-sort-icon" name="ep:arrow-down-bold" size="1em" style="color: black" />
             </div>
         </div>
-        <div v-if="showMenu" class="blog-sort-menu">
+        <!-- <div v-if="showMenu" class="blog-sort-menu">
             <ul>
                 <li><a href="#">Opzione 1</a></li>
                 <li><a href="#">Opzione 2</a></li>
                 <li><a href="#">Opzione 3</a></li>
             </ul>
-        </div>
+        </div> -->
         <div class="blog-list">
             <div class="blog-list-empty" v-if="articles.length == 0">
                 <span>
@@ -37,13 +37,13 @@
 
             <ArticlePreview v-for="article in articles" :key="article.id" :article="article" :extended="true" />
         </div>
-
+        <!-- 
         <div v-if="isDataAvaible" class="blog-list-loadmore-container">
             <Button @click="loadMoreArticles" class="styled-link">
                 Load More
             </Button>
-        </div>
-        <div v-else class="blog-list-loadmore-container styled-link unavaible">
+        </div> -->
+        <div class="blog-list-loadmore-container styled-link unavaible">
             <span>
                 You have reached the end 🤯
             </span>
@@ -82,7 +82,7 @@ export default {
 .blog-header {
     gap: var(--space-fiveunits);
     width: 100%;
-    display: flex;
+    display: grid;
     max-width: 1440px;
     align-items: flex-start;
     padding-left: var(--space-fiveunits);
@@ -93,13 +93,18 @@ export default {
     margin-top: 5em;
 }
 
-
-
 .blog-header-content {
-    display: flex;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: var(--space-sixunits);
+}
+
+.blog-header-title {
+    color: rgb(255, 255, 255);
+    font-size: 4.5em;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 
 .blog-heading2 {
@@ -161,9 +166,8 @@ export default {
 
 .blog-paragraph {
     color: rgb(255, 255, 255);
-    font-size: 40px;
+    font-size: 2.5em;
     line-height: 60px;
-    margin-right: 3em;
 }
 
 .blog-sort-container {
@@ -209,5 +213,33 @@ export default {
 
 .blog-list-loadmore {
     text-decoration: none;
+}
+
+@media(max-width: 767px) {
+    .blog-header {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .blog-heading11 {
+        text-align: center;
+    }
+
+    .blog-heading2 {
+        display: none;
+    }
+
+    .blog-header-content {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-paragraph {
+        margin-top: 1em;
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+
 }
 </style>
