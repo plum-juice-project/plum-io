@@ -60,7 +60,6 @@ export default {
     },
     data() {
         return {
-            articles: [],
             sorting: 'date',
             limit: 10,
             offset: 0,

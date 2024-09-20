@@ -35,7 +35,7 @@ export default {
 
   <div v-else class="blog-card">
     <div class="blog-image">
-      <img v-if="article.image" alt="image" :src=article.image class="home-image17" />
+      <img v-if="article.image" alt="image" :src=article.image />
       <Icon v-else name="bx:image" size="7em" style="color: rgba(0,0,0,0.3)" />
     </div>
     <div class="blog-content">
