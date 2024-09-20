@@ -124,11 +124,6 @@
   display: list-item;
 }
 
-.teleport-show {
-  display: flex !important;
-  transform: translateX(0%) !important;
-}
-
 .social {
   width: 20px;
   display: flex;
@@ -200,27 +195,18 @@
 
 .nav-link {
   display: inline-block;
-  /* Makes links inline and allows margin */
   padding: 10px 20px;
-  /* Adds some padding for better touch target */
   color: rgb(255, 255, 255);
-  /* Sets a color for the text */
   text-decoration: none;
-  /* Removes underline */
   font-weight: bold;
-  /* Makes the text bold */
   transition: background-color 0.3s, color 0.3s;
-  /* Adds a smooth transition for hover effect */
   border-radius: 5px;
 }
 
 .nav-link-is-active {
   background-color: #ECE5F9;
-  /* Changes background color on hover */
   color: #2D215C;
-  /* Changes text color on hover */
   border-radius: 5px;
-  /* Adds a slight border radius */
 }
 
 .nav-link:hover {

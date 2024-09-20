@@ -31,10 +31,12 @@ export default {
 <style>
 .home-container1 {
   width: 100%;
-  display: flex;
   min-height: 100vh;
+  display: flex;
   align-items: center;
   flex-direction: column;
   background-color: #27272D;
+
+  overflow-x: hidden;
 }
 </style>
