@@ -1,20 +1,18 @@
-
-
 .home-hero {
-    gap: var(--dl-space-space-fiveunits);
+    gap: var(--space-fiveunits);
     width: 100%;
     display: flex;
     max-width: 1440px;
     align-items: center;
-    padding-top: var(--dl-space-space-fourunits);
-    padding-left: var(--dl-space-space-fiveunits);
-    padding-right: var(--dl-space-space-fiveunits);
+    padding-top: var(--space-fourunits);
+    padding-left: var(--space-fiveunits);
+    padding-right: var(--space-fiveunits);
     flex-direction: column;
-    padding-bottom: var(--dl-space-space-sixunits);
+    padding-bottom: var(--space-sixunits);
 }
 
 .home-heading10 {
-    gap: var(--dl-space-space-twounits);
+    gap: var(--space-twounits);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -41,7 +39,7 @@
 }
 
 .home-buttons {
-    gap: var(--dl-space-space-threeunits);
+    gap: var(--space-threeunits);
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -57,7 +55,7 @@ ul.home-bullet-list li {
     position: relative;
     padding-left: 25px;
     margin-bottom: 10px;
-    font-size: var(--dl-size-size-xsmall);
+    font-size: var(--size-xsmall);
     line-height: 1.6;
 
 }
@@ -67,7 +65,7 @@ ul.home-bullet-list li:before {
     position: absolute;
     left: 0;
     top: 0;
-    color: var(--dl-radius-radius-round);
+    color: var(--radius-round);
 }
 
 ul.home-bullet-list li:before {
@@ -82,8 +80,8 @@ ul.home-bullet-list li:before {
     align-items: center;
     flex-direction: column;
     color: black;
-    padding-bottom: var(--dl-space-space-twounits);
-    font-size: var(--dl-size-size-xsmall);
+    padding-bottom: var(--space-twounits);
+    font-size: var(--size-xsmall);
 }
 
 .home-divider-image {
@@ -97,7 +95,7 @@ ul.home-bullet-list li:before {
     display: flex;
     overflow: hidden;
     align-items: center;
-    border-radius: var(--dl-radius-radius-round);
+    border-radius: var(--radius-round);
     flex-direction: column;
     justify-content: center;
     background-color: #EC7495;
@@ -120,17 +118,17 @@ ul.home-bullet-list li:before {
 
     display: flex;
 
-    gap: var(--dl-space-space-fiveunits);
+    gap: var(--space-fiveunits);
 
-    padding-left: var(--dl-space-space-fiveunits);
-    padding-right: var(--dl-space-space-fiveunits);
+    padding-left: var(--space-fiveunits);
+    padding-right: var(--space-fiveunits);
     align-items: flex-start;
     flex-direction: column;
     flex: 1;
 }
 
 .home-content10 {
-    gap: var(--dl-space-space-threeunits);
+    gap: var(--space-threeunits);
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -177,20 +175,20 @@ ul.home-bullet-list li:before {
 
 
 .home-card11 {
-    gap: var(--dl-space-space-twounits);
+    gap: var(--space-twounits);
     display: flex;
     align-items: flex-start;
-    padding-top: var(--dl-space-space-sixunits);
-    padding-left: var(--dl-space-space-fourunits);
-    padding-right: var(--dl-space-space-fiveunits);
+    padding-top: var(--space-sixunits);
+    padding-left: var(--space-fourunits);
+    padding-right: var(--space-fiveunits);
     flex-direction: column;
-    padding-bottom: var(--dl-space-space-fourunits);
+    padding-bottom: var(--space-fourunits);
     background-color: var(--plum-purple-900);
 }
 
 
 .home-main2 {
-    gap: var(--dl-space-space-threeunits);
+    gap: var(--space-threeunits);
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -198,7 +196,7 @@ ul.home-bullet-list li:before {
 }
 
 .home-content12 {
-    gap: var(--dl-space-space-unit);
+    gap: var(--space-unit);
     width: auto;
     height: auto;
     display: flex;
@@ -213,20 +211,21 @@ ul.home-bullet-list li:before {
     font-style: normal;
     font-weight: 500;
 }
+
 .home-collection {
-    gap: var(--dl-space-space-fiveunits);
+    gap: var(--space-fiveunits);
     width: 100%;
     display: flex;
     max-width: 1440px;
     align-items: flex-start;
-    padding-left: var(--dl-space-space-fiveunits);
-    padding-right: var(--dl-space-space-fiveunits);
+    padding-left: var(--space-fiveunits);
+    padding-right: var(--space-fiveunits);
     flex-direction: column;
     padding-bottom: 60px;
 }
 
 .home-content14 {
-    gap: var(--dl-space-space-threeunits);
+    gap: var(--space-threeunits);
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -235,7 +234,7 @@ ul.home-bullet-list li:before {
 
 
 .home-heading11 {
-    gap: var(--dl-space-space-twounits);
+    gap: var(--space-twounits);
     width: 100%;
     display: flex;
 
@@ -257,7 +256,7 @@ ul.home-bullet-list li:before {
 }
 
 .home-main4 {
-    gap: var(--dl-space-space-twounits);
+    gap: var(--space-twounits);
     width: 100%;
     display: grid;
     align-items: flex-start;
@@ -266,19 +265,19 @@ ul.home-bullet-list li:before {
 }
 
 .home-roadmap {
-    gap: var(--dl-space-space-fiveunits);
+    gap: var(--space-fiveunits);
     width: 100%;
     display: flex;
     max-width: 1440px;
     align-items: center;
-    padding-left: var(--dl-space-space-fiveunits);
-    padding-right: var(--dl-space-space-fiveunits);
+    padding-left: var(--space-fiveunits);
+    padding-right: var(--space-fiveunits);
     flex-direction: column;
     padding-bottom: 120px;
 }
 
 .home-heading14 {
-    gap: var(--dl-space-space-twounits);
+    gap: var(--space-twounits);
     width: 100%;
     display: flex;
     max-width: 640px;
@@ -320,14 +319,14 @@ ul.home-bullet-list li:before {
 
 @media(max-width: 767px) {
     .home-hero {
-        padding-top: var(--dl-space-space-threeunits);
-        padding-left: var(--dl-space-space-oneandhalfunits);
-        padding-right: var(--dl-space-space-oneandhalfunits);
-        padding-bottom: var(--dl-space-space-twounits);
+        padding-top: var(--space-threeunits);
+        padding-left: var(--space-oneandhalfunits);
+        padding-right: var(--space-oneandhalfunits);
+        padding-bottom: var(--space-twounits);
     }
 
     .home-heading10 {
-        gap: var(--dl-space-space-unit);
+        gap: var(--space-unit);
     }
 
     .home-header11 {
@@ -342,18 +341,18 @@ ul.home-bullet-list li:before {
     }
 
     .home-description10 {
-        gap: var(--dl-space-space-threeunits);
+        gap: var(--space-threeunits);
         padding-bottom: 0px;
     }
 
     .home-description11 {
-        gap: var(--dl-space-space-threeunits);
-        padding-left: var(--dl-space-space-oneandhalfunits);
-        padding-right: var(--dl-space-space-oneandhalfunits);
+        gap: var(--space-threeunits);
+        padding-left: var(--space-oneandhalfunits);
+        padding-right: var(--space-oneandhalfunits);
     }
 
     .home-content10 {
-        gap: var(--dl-space-space-unit);
+        gap: var(--space-unit);
     }
 
     .home-paragraph1 {
@@ -367,15 +366,15 @@ ul.home-bullet-list li:before {
     }
 
     .home-card11 {
-        gap: var(--dl-space-space-oneandhalfunits);
-        padding-top: var(--dl-space-space-threeunits);
-        padding-left: var(--dl-space-space-oneandhalfunits);
-        padding-right: var(--dl-space-space-oneandhalfunits);
-        padding-bottom: var(--dl-space-space-threeunits);
+        gap: var(--space-oneandhalfunits);
+        padding-top: var(--space-threeunits);
+        padding-left: var(--space-oneandhalfunits);
+        padding-right: var(--space-oneandhalfunits);
+        padding-bottom: var(--space-threeunits);
     }
 
     .home-main2 {
-        gap: var(--dl-space-space-oneandhalfunits);
+        gap: var(--space-oneandhalfunits);
     }
 
     .home-header13 {
@@ -385,17 +384,17 @@ ul.home-bullet-list li:before {
 
 
     .home-collection {
-        gap: var(--dl-space-space-fourunits);
-        padding-left: var(--dl-space-space-oneandhalfunits);
-        padding-right: var(--dl-space-space-oneandhalfunits);
+        gap: var(--space-fourunits);
+        padding-left: var(--space-oneandhalfunits);
+        padding-right: var(--space-oneandhalfunits);
     }
 
     .home-content14 {
-        gap: var(--dl-space-space-oneandhalfunits);
+        gap: var(--space-oneandhalfunits);
     }
 
     .home-heading11 {
-        gap: var(--dl-space-space-unit);
+        gap: var(--space-unit);
     }
 
     .home-header15 {
@@ -409,7 +408,7 @@ ul.home-bullet-list li:before {
     }
 
     .home-heading14 {
-        gap: var(--dl-space-space-unit);
+        gap: var(--space-unit);
     }
 
 }

@@ -53,14 +53,14 @@ export default {
   width: 70vw;
   height: 22vh;
 
-  padding: var(--dl-space-space-oneandhalfunits);
+  padding: var(--space-oneandhalfunits);
 
   display: flex;
   align-items: flex-start;
   flex-direction: row;
   background-color: var(--plum-purple-900);
 
-  border-radius: var(--dl-radius-radius-oneunit);
+  border-radius: var(--radius-oneunit);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
   color: black;
@@ -92,9 +92,9 @@ export default {
   text-decoration: none;
   color: var(--plum-purple-100);
   background-color: var(--plum-purple-900);
-  padding: var(--dl-space-space-halfunit) var(--dl-space-space-oneunit);
+  padding: var(--space-halfunit) var(--space-oneunit);
 
-  border-radius: var(--dl-radius-radius-oneunit);
+  border-radius: var(--radius-oneunit);
 
   margin-top: auto;
   padding: 1em;
@@ -115,10 +115,10 @@ export default {
 }
 
 .blog-content {
-  gap: var(--dl-space-space-halfunit);
+  gap: var(--space-halfunit);
   width: 100%;
   display: flex;
-  padding: var(--dl-space-space-oneandhalfunits);
+  padding: var(--space-oneandhalfunits);
   align-items: flex-start;
   flex-direction: column;
 }
@@ -144,10 +144,10 @@ export default {
 }
 
 .home-content15 {
-  gap: var(--dl-space-space-halfunit);
+  gap: var(--space-halfunit);
   width: 100%;
   display: flex;
-  padding: var(--dl-space-space-oneandhalfunits);
+  padding: var(--space-oneandhalfunits);
   align-items: flex-start;
   flex-direction: column;
 }

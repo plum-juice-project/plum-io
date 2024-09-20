@@ -1,5 +1,5 @@
 <template>
-    <header data-thq="thq-navbar" class="home-navbar">
+  <header data-thq="thq-navbar" class="home-navbar">
     <!-- <span class="home-logo1">Plum Juice</span> -->
     <img src="assets/text-plum-light.png" alt="logo" class="text-logo1" />
     <div data-thq="thq-navbar-nav" data-role="Nav" class="home-desktop-menu">
@@ -20,17 +20,16 @@ export default {
 </script>
 
 <style>
-
 .home-navbar {
   width: 100%;
   display: flex;
   position: relative;
   max-width: 1440px;
   align-items: center;
-  padding-top: var(--dl-space-space-threeunits);
-  padding-left: var(--dl-space-space-fiveunits);
-  padding-right: var(--dl-space-space-fiveunits);
-  padding-bottom: var(--dl-space-space-threeunits);
+  padding-top: var(--space-threeunits);
+  padding-left: var(--space-fiveunits);
+  padding-right: var(--space-fiveunits);
+  padding-bottom: var(--space-threeunits);
   justify-content: space-between;
 }
 
@@ -43,7 +42,7 @@ export default {
 
 @media(max-width: 479px) {
   .home-navbar {
-    padding: var(--dl-space-space-unit);
+    padding: var(--space-unit);
   }
 
   .home-mobile-menu {
@@ -53,8 +52,8 @@ export default {
 
 @media(max-width: 767px) {
   .home-navbar {
-    padding-left: var(--dl-space-space-twounits);
-    padding-right: var(--dl-space-space-twounits);
+    padding-left: var(--space-twounits);
+    padding-right: var(--space-twounits);
   }
 }
 
@@ -65,7 +64,7 @@ export default {
 
   .home-button6 {
     display: flex;
-    padding: var(--dl-space-space-unit);
+    padding: var(--space-unit);
     flex-direction: row;
   }
 }
@@ -98,7 +97,7 @@ export default {
 }
 
 .home-btn-group {
-  gap: var(--dl-space-space-fourunits);
+  gap: var(--space-fourunits);
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -106,7 +105,7 @@ export default {
 }
 
 .home-socials1 {
-  gap: var(--dl-space-space-unit);
+  gap: var(--space-unit);
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -145,7 +144,7 @@ export default {
   width: 100%;
   display: flex;
   align-items: center;
-  margin-bottom: var(--dl-space-space-threeunits);
+  margin-bottom: var(--space-threeunits);
   justify-content: space-between;
 }
 
@@ -170,36 +169,36 @@ export default {
 }
 
 .home-text10 {
-  margin-bottom: var(--dl-space-space-unit);
+  margin-bottom: var(--space-unit);
 }
 
 .home-text11 {
-  margin-bottom: var(--dl-space-space-unit);
+  margin-bottom: var(--space-unit);
 }
 
 .home-text12 {
-  margin-bottom: var(--dl-space-space-unit);
+  margin-bottom: var(--space-unit);
 }
 
 .home-text13 {
-  margin-bottom: var(--dl-space-space-unit);
+  margin-bottom: var(--space-unit);
 }
 
 .home-text14 {
-  margin-bottom: var(--dl-space-space-unit);
+  margin-bottom: var(--space-unit);
 }
 
 .home-container3 {
   flex: 0 0 auto;
   width: auto;
   display: flex;
-  margin-top: var(--dl-space-space-unit);
+  margin-top: var(--space-unit);
   align-items: center;
   flex-direction: row;
 }
 
 .home-login {
-  margin-right: var(--dl-space-space-twounits);
+  margin-right: var(--space-twounits);
 }
 
 .home-icon-group {
@@ -207,20 +206,20 @@ export default {
 }
 
 .home-icon14 {
-  width: var(--dl-size-size-xsmall);
-  height: var(--dl-size-size-xsmall);
-  margin-right: var(--dl-space-space-twounits);
+  width: var(--size-xsmall);
+  height: var(--size-xsmall);
+  margin-right: var(--space-twounits);
 }
 
 .home-icon16 {
-  width: var(--dl-size-size-xsmall);
-  height: var(--dl-size-size-xsmall);
-  margin-right: var(--dl-space-space-twounits);
+  width: var(--size-xsmall);
+  height: var(--size-xsmall);
+  margin-right: var(--space-twounits);
 }
 
 .home-icon18 {
-  width: var(--dl-size-size-xsmall);
-  height: var(--dl-size-size-xsmall);
+  width: var(--size-xsmall);
+  height: var(--size-xsmall);
 }
 
 
@@ -229,7 +228,7 @@ export default {
 }
 
 .home-nav1 {
-  gap: var(--dl-space-space-twounits);
+  gap: var(--space-twounits);
   flex: 0 0 auto;
   color: #ffffff;
   display: flex;

@@ -49,7 +49,7 @@
 }
 
 .home-branding {
-    gap: var(--dl-space-space-threeunits);
+    gap: var(--space-threeunits);
     display: flex;
     max-width: 600px;
     align-items: flex-start;
@@ -57,21 +57,21 @@
 }
 
 .home-items1 {
-    gap: var(--dl-space-space-oneandhalfunits);
+    gap: var(--space-oneandhalfunits);
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
 
 .home-items2 {
-    gap: var(--dl-space-space-oneandhalfunits);
+    gap: var(--space-oneandhalfunits);
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
 
 .home-heading20 {
-    gap: var(--dl-space-space-threeunits);
+    gap: var(--space-threeunits);
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -92,17 +92,17 @@
 }
 
 .home-footer {
-    gap: var(--dl-space-space-threeunits);
+    gap: var(--space-threeunits);
     width: 100%;
     display: flex;
     position: relative;
     max-width: 1440px;
     align-items: flex-start;
     padding-top: 120px;
-    padding-left: var(--dl-space-space-fiveunits);
-    padding-right: var(--dl-space-space-fiveunits);
+    padding-left: var(--space-fiveunits);
+    padding-right: var(--space-fiveunits);
     flex-direction: column;
-    padding-bottom: var(--dl-space-space-threeunits);
+    padding-bottom: var(--space-threeunits);
 }
 
 .home-logo3 {
@@ -128,21 +128,21 @@
 }
 
 .home-list2 {
-    gap: var(--dl-space-space-threeunits);
+    gap: var(--space-threeunits);
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
 
 .home-list3 {
-    gap: var(--dl-space-space-threeunits);
+    gap: var(--space-threeunits);
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
 
 .home-items2 {
-    gap: var(--dl-space-space-oneandhalfunits);
+    gap: var(--space-oneandhalfunits);
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -157,14 +157,14 @@
 
 @media(max-width: 767px) {
     .home-footer {
-        gap: var(--dl-space-space-oneandhalfunits);
-        padding-top: var(--dl-space-space-fourunits);
-        padding-left: var(--dl-space-space-oneandhalfunits);
-        padding-right: var(--dl-space-space-oneandhalfunits);
+        gap: var(--space-oneandhalfunits);
+        padding-top: var(--space-fourunits);
+        padding-left: var(--space-oneandhalfunits);
+        padding-right: var(--space-oneandhalfunits);
     }
 
     .home-heading20 {
-        gap: var(--dl-space-space-unit);
+        gap: var(--space-unit);
     }
 
     .home-logo3 {
@@ -179,11 +179,11 @@
     }
 
     .home-list2 {
-        gap: var(--dl-space-space-oneandhalfunits);
+        gap: var(--space-oneandhalfunits);
     }
 
     .home-list3 {
-        gap: var(--dl-space-space-oneandhalfunits);
+        gap: var(--space-oneandhalfunits);
     }
 
 }

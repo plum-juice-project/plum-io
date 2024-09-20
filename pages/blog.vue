@@ -80,13 +80,13 @@ export default {
 
 <style>
 .blog-header {
-    gap: var(--dl-space-space-fiveunits);
+    gap: var(--space-fiveunits);
     width: 100%;
     display: flex;
     max-width: 1440px;
     align-items: flex-start;
-    padding-left: var(--dl-space-space-fiveunits);
-    padding-right: var(--dl-space-space-fiveunits);
+    padding-left: var(--space-fiveunits);
+    padding-right: var(--space-fiveunits);
     flex-direction: column;
     padding-bottom: 160px;
 
@@ -141,11 +141,11 @@ export default {
     width: 70vw;
     height: 22vh;
 
-    padding: var(--dl-space-space-oneandhalfunits);
+    padding: var(--space-oneandhalfunits);
 
     background-color: var(--plum-purple-900);
 
-    border-radius: var(--dl-radius-radius-oneunit);
+    border-radius: var(--radius-oneunit);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
     color: var(--plum-purple-400);
