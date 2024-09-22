@@ -29,7 +29,7 @@
             </ul>
         </div> -->
         <div class="blog-list">
-            <div class="blog-list-empty" v-if="!articles.length">
+            <div class="blog-list-empty" v-if="true">
                 <span>
                     Loading...
                 </span>
@@ -63,15 +63,11 @@ export default {
             sorting: 'date',
             limit: 10,
             offset: 0,
+            articles: [],
         }
     },
-    setup() {
-        const { data: articles } = useAsyncData('blog', async () => {
-            const _posts = await queryContent('blog').sort({ date: -1 }).find();
-            return _posts;
-        });
-
-
+    async asyncData({ $content }) {
+        const articles = await $content('blog').fetch()
         return {
             articles,
         };

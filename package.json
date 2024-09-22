@@ -5,7 +5,9 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "generate:prod": "BASE_URL=/plum-io/ nuxt build --preset github_pages",
+    "preview": "nuxt preview",
+    "deploy": "gh-pages --dotfiles -d .output/public"
   },
   "dependencies": {
     "@nuxt/content": "^2.13.2",
@@ -13,5 +15,8 @@
     "@nuxt/image": "^1.8.0",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "nuxt": "^3.13.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }

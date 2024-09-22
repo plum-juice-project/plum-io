@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  // Disable SSR for static hosting on GitHub Pages
+
   ssr: true,
 
   nitro: {
@@ -37,7 +37,7 @@ export default defineNuxtConfig({
     highlight: {
       theme: 'github-dark',
 
-      preload: ['c', 'bash', 'python']
+      //preload: ['c', 'bash', 'python']
     },
     markdown: {
       // https://github.com/rehypejs/rehype-external-links
@@ -68,7 +68,7 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ]
     },
-    baseURL: '/', // Set the base URL to your GitHub repository name    
+    baseURL: process.env.BASE_URL || '/',
   },
 
   compatibilityDate: '2024-09-19',
