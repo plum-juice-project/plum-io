@@ -69,7 +69,14 @@
       <ArticlePreview v-for="article in articles" :key="article.title" :article="article" />
 
       <!-- PLACEHOLDER -->
-      <ArticlePreview v-for="index in MAX_ARTICLES - articles.length" :key="'placeholder-' + index" />
+      <div v-for="index in MAX_ARTICLES - articles.length" :key="'placeholder-' + index">
+        <div class="home-card13">
+          <div class="home-content15">
+            <span class="home-title">Coming Soon...</span>
+            <h3 class="home-caption">We need writers to write articles :p</h3>
+          </div>
+        </div>
+      </div>
 
       <!-- <div v-if="articles.length < MAX_ARTICLES" class="home-comings">
         <span class="home-comings-text">
@@ -108,9 +115,9 @@ export default {
   },
 
   setup() {
-    const { data: articles } = useAsyncData('articles', async () => {
+    const { data: articles } = useAsyncData('blog', async () => {
       try {
-        const _posts = await queryContent().sort({ date: -1 }).find();
+        const _posts = await queryContent('blog').sort({ date: -1 }).find();
         return _posts;
       } catch (error) {
         console.error(error);

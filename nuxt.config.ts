@@ -1,12 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-
   // Disable SSR for static hosting on GitHub Pages
   ssr: true,
 
   nitro: {
     preset: 'github-pages', // Preset for GitHub Pages deployment
+    debug: true,
+    prerender: {
+      crawlLinks: true,
+      concurrency: 1,
+    },
   },
 
   router: {
@@ -15,26 +19,38 @@ export default defineNuxtConfig({
     }
   },
 
-
   routeRules: {
-    // Optional: define rules for prerendering specific routes
-    '/*': { prerender: true },
+    '/': { prerender: true },
+    '/team': { prerender: true },
+    '/about': { prerender: true },
+    '/blog': { prerender: true },
   },
 
   modules: [
     '@nuxt/content',
-    '@nuxtjs/google-fonts',
-    '@nuxt/ui',
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxtjs/tailwindcss',
   ],
 
-  googleFonts: {
-    families: {
-      Inter: [400, 600, 700],
+  content: {
+    highlight: {
+      theme: 'github-dark',
+
+      preload: ['c', 'bash', 'python']
     },
-    display: 'swap',
+    markdown: {
+      // https://github.com/rehypejs/rehype-external-links
+      rehypePlugins: [
+        [
+          'rehype-external-links',
+          {
+            target: '_blank',
+            rel: 'noopener noreferer'
+          }
+        ]
+      ]
+    }
   },
 
   css: [
@@ -52,7 +68,7 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ]
     },
-    baseURL: '/', // Set the base URL to your GitHub repository name
+    baseURL: '/', // Set the base URL to your GitHub repository name    
   },
 
   compatibilityDate: '2024-09-19',

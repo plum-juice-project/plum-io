@@ -3,10 +3,10 @@
     <!-- <span class="home-logo1">Plum Juice</span> -->
     <img src="assets/text-plum-light.png" alt="logo" class="text-logo1" />
     <nav data-thq="navbar-nav-links" data-role="Nav" class="home-nav1">
-      <router-link to="/" class="nav-link" active-class="nav-link-is-active">Home</router-link>
-      <router-link to='/team' class="nav-link unavaible">Team</router-link>
-      <router-link to="/blog" class="nav-link" active-class="nav-link-is-active">Blog</router-link>
-      <router-link to="/about" class="nav-link" active-class="nav-link-is-active">About</router-link>
+      <NuxtLink to="/" class="nav-link" active-class="nav-link-is-active">Home</NuxtLink>
+      <NuxtLink to='/team' class="nav-link unavaible">Team</NuxtLink>
+      <NuxtLink to="/blog" class="nav-link" active-class="nav-link-is-active">Blog</NuxtLink>
+      <NuxtLink to="/about" class="nav-link" active-class="nav-link-is-active">About</NuxtLink>
     </nav>
   </header>
 </template>

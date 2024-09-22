@@ -10,17 +10,17 @@
                 <div class="footer-list1">
                     <h3 class="footer-heading">Site</h3>
                     <div class="footer-items1">
-                        <router-link class="footer-link " to="/about">About</router-link>
-                        <router-link class="footer-link " to="/blog">Blog</router-link>
-                        <router-link class="footer-link  unavaible" to="#roadmap">Roadmap</router-link>
-                        <router-link class="footer-link " to="#home">Home</router-link>
+                        <NuxtLink class="footer-link " to="/about">About</NuxtLink>
+                        <NuxtLink class="footer-link " to="/blog">Blog</NuxtLink>
+                        <NuxtLink class="footer-link  unavaible" to="#roadmap">Roadmap</NuxtLink>
+                        <NuxtLink class="footer-link " to="#home">Home</NuxtLink>
                     </div>
                 </div>
                 <div class="footer-list2">
                     <h3 class="footer-heading">Project</h3>
                     <div class="footer-items2">
-                        <router-link class="footer-link unavaible" to="/team">Team</router-link>
-                        <router-link class="footer-link  unavaible" to="#home">Licenses</router-link>
+                        <NuxtLink class="footer-link unavaible" to="/team">Team</NuxtLink>
+                        <NuxtLink class="footer-link  unavaible" to="#home">Licenses</NuxtLink>
                     </div>
                 </div>
             </div>

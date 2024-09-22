@@ -1,11 +1,13 @@
-[_] improve responsiveness of the website, some resolutions seem to have some issues., I think the problem is in css
+[_] add 404 and 500 error pages, I think need a component to allow ContentDoc to render the error pages
+
+[_] little improvements on the responsive design
 
 [_] build team section
 
 [_] build contact section
 
-[x] build footer
-
 [_] build custom scrollbar 
 
-[_] improve blog preview on mobile, I think the worst but the fastest way is add a button to read more after 3 articles
+[x] build footer
+
+[x] improve responsiveness of the website, some resolutions seem to have some issues., I think the problem is in css

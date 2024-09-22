@@ -1,10 +1,10 @@
 <template>
     <div class="credits-container">
-        <div v-if="authors.length() == 1" class="credist-long-card">
+        <div v-if="authors.length == 1" class="credist-long-card">
 
         </div>
         <div v-else class="credits-short-card">
-            
+
         </div>
     </div>
 </template>

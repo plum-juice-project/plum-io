@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-  <router-link :to="article.title.replace(' ', '_').toLowerCase()">
+  <NuxtLink :to="'/blog/' + article.title.replace(' ', '_').toLowerCase()">
     <div v-if="!extended" class="home-card13">
       <div class="home-image16">
         <!-- <img v-if="article.image" alt="image" src="/Characters/character-1.svg" class="home-image17" /> -->
@@ -42,7 +42,7 @@ export default {
         <span class="blog-caption">{{ article.description }}</span>
       </div>
     </div>
-  </router-link>
+  </NuxtLink>
 </template>
 
 <style>
@@ -156,7 +156,6 @@ export default {
   align-items: flex-start;
   flex-direction: column;
   background-color: #ffffff;
-  cursor: pointer;
   color: black;
 }
 
