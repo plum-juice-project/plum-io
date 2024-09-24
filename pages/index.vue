@@ -68,7 +68,7 @@
       <!-- BLOG PREVIEW -->
       <ArticlePreview v-for="article in articles" :key="article.slug" :article="article" />
 
-      <!-- PLACEHOLDER
+      <!-- PLACEHOLDER -->
       <div v-for="index in MAX_ARTICLES - articles.length" :key="'placeholder-' + index">
         <div class="home-card13">
           <div class="home-content15">
@@ -76,7 +76,7 @@
             <h3 class="home-caption">We need writers to write articles :p</h3>
           </div>
         </div>
-      </div> -->
+      </div>
 
       <!-- <div v-if="articles.length < MAX_ARTICLES" class="home-comings">
         <span class="home-comings-text">
@@ -113,6 +113,15 @@ export default {
   head: {
     title: 'Plum Juice',
   },
+
+  data() {
+    return {
+      MAX_ARTICLES: 4,
+      articles: []
+    };
+  },
+
+
 
   setup() {
     const { data: articles } = useAsyncData('blog', async () => {

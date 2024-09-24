@@ -10,7 +10,7 @@
                 <div class="footer-list1">
                     <h3 class="footer-heading">Site</h3>
                     <div class="footer-items1">
-                        <NuxtLink class="footer-link " to="/about">About</NuxtLink>
+                        <NuxtLink class="footer-link " to="/contacts">Contacts</NuxtLink>
                         <NuxtLink class="footer-link " to="/blog">Blog</NuxtLink>
                         <NuxtLink class="footer-link  unavaible" to="#roadmap">Roadmap</NuxtLink>
                         <NuxtLink class="footer-link " to="#home">Home</NuxtLink>
@@ -133,6 +133,7 @@
 
 .home-copyright {
     font-size: 0.8em;
+    color: #fff;
 }
 
 @media (max-width: 767px) {

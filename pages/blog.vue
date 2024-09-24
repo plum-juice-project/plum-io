@@ -9,7 +9,7 @@
             </div>
             <div class="blog-heading2">
                 <div class="blog-content2">
-                    <img src="assets/double-plum.png" alt="">
+                    <NuxtImg src="/double-plum.png" alt="" />
                 </div>
             </div>
         </div>
@@ -29,7 +29,7 @@
             </ul>
         </div> -->
         <div class="blog-list">
-            <div class="blog-list-empty" v-if="true">
+            <div class="blog-list-empty" v-if="!articles.length">
                 <span>
                     Loading...
                 </span>
@@ -66,12 +66,23 @@ export default {
             articles: [],
         }
     },
-    async asyncData({ $content }) {
-        const articles = await $content('blog').fetch()
+
+    setup() {
+        const { data: articles } = useAsyncData('blog', async () => {
+            try {
+                const _posts = await queryContent('blog').sort({ date: -1 }).find();
+                return _posts;
+            } catch (error) {
+                console.error(error);
+                return [];
+            }
+        });
+
         return {
             articles,
-        };
+        }
     },
+
 }
 </script>
 
