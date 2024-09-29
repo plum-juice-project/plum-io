@@ -18,11 +18,11 @@
                     <Icon name="ic:baseline-email" class="unavaible" />
                 </span>
                 <a href="https://github.com/plum-juice-project" target="_blank" rel="noopener noreferrer">
-                    <Icon name="mage:github" />
+                    <Icon name="pajamas:github" />
                 </a>
-                <span href="https://www.instagram.com/plumjuiceteam/" class="unavaible">
-                    <Icon name="hugeicons:instagram" />
-                </span>
+                <a href="https://www.instagram.com/plumjuiceteam/" target="_blank" rel="noopener noreferrer">
+                    <Icon name="radix-icons:instagram-logo" />
+                </a>
             </div>
         </div>
         <Divider color="white" vspace="30" />
@@ -38,7 +38,10 @@
 <script>
 import Form from '@/components/Form.vue'
 export default {
-    name: 'contacts'
+    name: 'contacts',
+    components: {
+        Form
+    }
 }
 </script>
 
@@ -122,9 +125,9 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: var(--space-twounits);
+    gap: var(--space-threeunits);
 
-    font-size: 7em;
+    font-size: 5em;
 }
 
 .contacts-content-header {

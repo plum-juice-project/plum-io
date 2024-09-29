@@ -132,18 +132,6 @@ ul.home-bullet-list li:before {
     font-size: var(--size-xsmall);
 }
 
-.home-bubble {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    overflow: hidden;
-    align-items: center;
-    border-radius: var(--radius-round);
-    flex-direction: column;
-    justify-content: center;
-    background-color: #EC7495;
-}
-
 .home-paragraph1 {
     color: #ffffff;
     font-size: 40px;

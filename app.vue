@@ -5,9 +5,9 @@ import Divider from './components/Divider.vue';
 export default {
   head() {
     return {
-      title: 'My Nuxt.js Site',
+      title: 'Plum Juice',
       meta: [
-        { hid: 'description', name: 'description', content: 'My awesome Nuxt.js project' }
+        { hid: 'description', name: 'Plum Juice', content: 'My awesome Nuxt.js project' }
       ]
     }
   },
@@ -36,7 +36,21 @@ export default {
   align-items: center;
   flex-direction: column;
   background-color: #27272D;
+}
 
-  overflow-x: hidden;
+img {
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+a {
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+::selection {
+  background: var(--green-selection);
 }
 </style>

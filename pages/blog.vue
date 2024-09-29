@@ -29,7 +29,7 @@
             </ul>
         </div> -->
         <div class="blog-list">
-            <div class="blog-list-empty" v-if="!articles.length">
+            <div class="blog-list-empty" v-if="articles && !articles.length">
                 <span>
                     Loading...
                 </span>

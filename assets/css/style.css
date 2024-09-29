@@ -21,6 +21,7 @@
   --plum-purple-1100: #ECE5F9;
   --yellow-card: #FFCF77;
   --pink-card: #FFA8A8;
+  --green-selection: #6FCF97;
   --background-100: #27272D;
   --background-200: #35353B;
   --background-300: #3F3F45;
@@ -242,6 +243,12 @@
 .accordion:hover {
   color: white;
   border-color: white;
+}
+
+.noselect {
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .Heading {

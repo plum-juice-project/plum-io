@@ -1,9 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
   ssr: true,
+  components: true,
 
+  // if think this is not used, since we don't use github actions
   nitro: {
     preset: 'github-pages', // Preset for GitHub Pages deployment
     debug: true,
@@ -22,7 +25,7 @@ export default defineNuxtConfig({
   routeRules: {
     '/': { prerender: true },
     '/team': { prerender: true },
-    '/about': { prerender: true },
+    '/contacts': { prerender: true },
     '/blog': { prerender: true },
   },
 
@@ -31,13 +34,17 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxtjs/tailwindcss',
+    '@nuxt/content-theme-docs',
   ],
 
   content: {
     highlight: {
-      theme: 'github-dark',
+      theme: {
+        default: "one-dark-pro",
+        dark: "one-dark-pro",
+      },
 
-      //preload: ['c', 'bash', 'python']
+      preload: ['c', 'bash', 'python']
     },
     markdown: {
       // https://github.com/rehypejs/rehype-external-links
@@ -57,7 +64,6 @@ export default defineNuxtConfig({
     "~/assets/css/style.css",
     "~/assets/css/home.css"
   ],
-
   app: {
     head: {
       title: 'Plum Juice',
