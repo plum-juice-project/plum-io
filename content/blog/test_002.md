@@ -62,5 +62,5 @@ Nunc imperdiet pulvinar nisl non rutrum. Curabitur at erat justo. Nunc dictum co
 
 Sed mattis quis erat id dapibus. Suspendisse felis purus, molestie porttitor magna vitae, feugiat pretium lorem. Nam sit amet justo neque. Phasellus luctus diam id viverra tempus. Quisque sagittis finibus risus, viverra facilisis justo scelerisque id. Quisque magna felis, cursus non viverra vitae, hendrerit eget metus. Suspendisse porttitor consectetur enim quis porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sit amet orci a nulla auctor tristique. Quisque sollicitudin, odio quis dictum malesuada, nunc ex convallis odio, bibendum interdum est tortor ac nibh. Maecenas tincidunt feugiat euismod. Proin nec erat sed neque ultricies porta eu non erat. Duis lorem ex, iaculis vitae vehicula nec, venenatis id neque. Sed vulputate neque a orci interdum, vitae condimentum est ultricies. Aliquam id malesuada felis.
 
-::credits{:authors= '[{"name": "Miyamoto Musashi", "github_nickname": "CiZ01"}]'}
+::credits{:authors= '[{"name": "Miyamoto Musashi", "github_nickname": "CiZ01"}, {"name": "Kojiro Sasaki", "github_nickname": "plum-juice"}, {"name": "Soho Takuan", "github_nickname": "torvalds"}, {"name":"Yoshioka Seijuro", "github_nickname":"microsoft"}]' }
 ::

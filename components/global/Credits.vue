@@ -1,22 +1,16 @@
 <template>
     <div class="credits-container">
-        <div v-if="authors.length == 1" class="credist-long-card">
-            <NuxtImg class="credits-long-card-propic" :src="`https://github.com/${authors[0].github_nickname}.png`"
+        <div v-for="(author, i) in authors" :key="i" class="credits-card">
+            <NuxtImg class="credits-card-propic" :src="`https://github.com/${author.github_nickname}.png`"
                 alt="Author Profile Picture" />
-            <div claSS="credits-long-card-content">
-                <span class="credits-long-card-name">{{ authors[0].name }}</span>
+            <div class="credits-card-content">
+                <span class="credits-card-name">{{ author.name }}</span>
                 <div class="flex">
-                    <NuxtImg class="credits-long-card-gh-logo" src="/github-mark.svg" />
-                    <a :href="`https://github.com/${authors[0].github_nickname}`" class="credits-long-card-nickname">{{
-                        authors[0].github_nickname }}</a>
+                    <NuxtImg class="credits-card-gh-logo" src="/github-mark.svg" />
+                    <a :href="`https://github.com/${author.github_nickname}`" class="credits-card-nickname">
+                        {{ author.github_nickname }}
+                    </a>
                 </div>
-            </div>
-        </div>
-        <div v-else class="credits-short-card">
-            <div v-for="(author, i) in authors" :key="i" class="credits-short-card">
-                <img :src="author.propic" alt="Author Profile Picture" />
-                <h3>{{ author.name }}</h3>
-                <p>{{ author.github_nickname }}</p>
             </div>
         </div>
     </div>
@@ -28,19 +22,19 @@ export default {
     props: {
         authors: {
             type: Array,
-            Required: true,
+            required: true,
             /* author object should be like:
-                {
-                    name: 'Author Name',
-                    github_nickname: '...',
-                }
-            */
+                      {
+                          name: 'Author Name',
+                          github_nickname: '...',
+                      }
+                  */
         },
         date: {
             type: String,
-            Required: true
+            required: true
         }
-    },
+    }
 }
 </script>
 
@@ -48,60 +42,54 @@ export default {
 .credits-container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* Ridotto min-width per gestire più autori */
+    grid-gap: 1rem;
+    /* Aggiunta distanza tra le card */
+    align-items: start;
     padding: 1rem;
     background-color: var(--yellow-card);
-
     margin-bottom: 2em;
-
     color: #000;
 }
 
-.credist-long-card {
+.credits-card {
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: start;
     align-items: center;
     padding: 1rem;
     background-color: var(--yellow-card);
     border-radius: var(--radius-round);
 }
 
-.credits-long-card-content {
+.credits-card-content {
     display: flex;
-    width: auto;
     flex-direction: column;
     justify-content: left;
-    padding: 1rem;
+    padding-left: 1rem;
 }
 
-.credits-long-card-name {
+.credits-card-name {
     font-size: 1.5rem;
     font-style: italic;
     font-weight: 600;
-    width: auto;
 }
 
-.credits-long-card-gh-logo {
+.credits-card-gh-logo {
     width: 1.5rem;
     height: 1.5rem;
     margin-right: 0.5rem;
 }
 
-.credist-long-card-nickname {
+.credits-card-nickname {
     font-size: 1rem;
     font-weight: normal;
-    width: auto;
 }
 
-.credits-long-card-propic {
-    width: auto;
-    height: auto;
-    max-width: 100px;
-    max-height: 100px;
+.credits-card-propic {
+    width: 100px;
+    height: 100px;
     border-radius: var(--radius-round);
     object-fit: cover;
 }
