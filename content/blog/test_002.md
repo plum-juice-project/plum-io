@@ -11,15 +11,49 @@ date: 2022-12-01
 ## Praesent volutpat 
 
 ```python
-def test():
-    print("Hello World")
+from multiprocessing import Process, cpu_count
+import time
+
+def count(num):
+    while num > 0:
+        num -= 1
+        time.sleep(0.5)
+        
+def spawn(num_pro):
+    processes = [Process(target = count, args=(1000,)) for i in range(num_pro)]
+    for p in processes:
+        p.start()
+        print(f"Started Process: {p.pid}")
+    for p in processes:
+        p.join()
+        print(f"Process {p.pid} has finished!")
+        
+def main():
+    processors = cpu_count()
+    print("Number of Processors: ",processors)
+    processes = processors * 300
+    print(f"Creating {processes} Processes")
+
+    """
+        Danger!! (an infinite loop)
+    while True:
+        spawn(processes)    
+    """
+    spawn(processes)
+
+if __name__ == "__main__":
+    main()
 ```
 
 et sem in accumsan. Praesent pellentesque elit non est vulputate pellentesque. Mauris laoreet orci imperdiet, volutpat ligula et, lobortis nisi. Mauris eget tellus dui. Sed a viverra turpis, ut feugiat est. Pellentesque varius, nulla ac dapibus fringilla, sapien diam volutpat ex, ac iaculis neque justo quis ipsum. Nullam nec volutpat ligula. Donec nisi tortor, blandit et rhoncus bibendum, tempor at tortor. Etiam dapibus ullamcorper elementum. Ut efficitur vel lectus a molestie.
 
 ## Ut sed lobortis dui,
 
- non mattis neque. Aliquam vel nisi sodales, interdum lectus vitae, faucibus est. Nam in ullamcorper diam. Aenean sit amet posuere enim. Suspendisse viverra sapien quis urna aliquam rhoncus. Ut tincidunt lobortis nulla, in lobortis orci porttitor sit amet. 
+
+ non mattis neque. Aliquam vel nisi sodales, interdum lectus vitae, faucibus est. Nam in ullamcorper diam. Aenean sit amet posuere enim. Suspendisse viverra 
+ 
+![img](https://cataas.com/cat )
+ sapien quis urna aliquam rhoncus. Ut tincidunt lobortis nulla, in lobortis orci porttitor sit amet. 
  ## capitolo 2
  Sed sit amet leo sit amet nibh condimentum fermentum eget suscipit tortor. Nulla tempor purus a quam eleifend consectetur. Duis consequat non risus non aliquam. Donec varius arcu id sem convallis, in cursus sem aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ### asd

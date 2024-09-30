@@ -41,7 +41,6 @@ export default defineNuxtConfig({
     highlight: {
       theme: {
         default: "one-dark-pro",
-        dark: "one-dark-pro",
       },
 
       preload: ['c', 'bash', 'python']

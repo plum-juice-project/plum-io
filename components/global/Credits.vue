@@ -48,7 +48,7 @@ export default {
 .credits-container {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     gap: 1rem;
     justify-content: center;
     align-items: center;
@@ -100,6 +100,8 @@ export default {
 .credits-long-card-propic {
     width: auto;
     height: auto;
+    max-width: 100px;
+    max-height: 100px;
     border-radius: var(--radius-round);
     object-fit: cover;
 }
