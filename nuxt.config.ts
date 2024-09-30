@@ -35,6 +35,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/tailwindcss',
     '@nuxt/content-theme-docs',
+    '@nuxtjs/color-mode',
   ],
 
   content: {
@@ -71,6 +72,9 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ],
+      script: [
+        { src: 'script/copyCode.js', type: 'text/javascript', defer: true }
       ]
     },
     baseURL: process.env.BASE_URL || '/',

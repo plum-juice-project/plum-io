@@ -9,24 +9,53 @@ export default {
                 message: '',
             },
             submitted: false,
+            errmsg: ''
         };
     },
+    methods: {
+        async handleSubmit() {
+            const data = {
+                name: this.form.name,
+                email: this.form.email,
+                message: this.form.message
+            };
+
+            try {
+                const response = await fetch("https://fabform.io/f/PMM4PBu", {
+                    method: "POST",
+                    headers: {
+                        Accept: "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                const result = await response.json();
+                this.submitted = result.success ? true : false;
+
+            } catch (error) {
+                console.error("Error submitting form:", error);
+                this.errmsg = "Error submitting form. Please try again later. 😥";
+            }
+        }
+    }
+
 }
 </script>
 
 <template>
-    <form @submit.prevent="handleSubmit" class="form-container">
+    <form v-if="!submitted" @submit.prevent="handleSubmit" method="POST" class="form-container">
         <div class="form-group">
             <label for="name" class="form-label">Name:</label>
-            <input v-model="form.name" type="text" id="name" class="form-input" placeholder="Enter your name"
-                required />
+            <input name="name" v-model="form.name" type="text" id="name" class="form-input"
+                placeholder="Enter your name" required />
         </div>
 
         <!-- Email Field -->
         <div class="form-group">
             <label for="email" class="form-label">Email:</label>
-            <input v-model="form.email" type="email" id="email" class="form-input" placeholder="Enter your email"
-                required />
+            <input name="email" v-model="form.email" type="email" id="email" class="form-input"
+                placeholder="Enter your email" required />
         </div>
 
         <!-- Message Field -->
@@ -37,13 +66,25 @@ export default {
         </div>
 
         <!-- Submit Button -->
-        <button type="submit" class="form-button unavaible">
+        <button type="submit" class="form-button">
             Submit
         </button>
 
-        <!-- Success Message -->
-        <p v-if="submitted" class="form-success">Thank you for your message!</p>
     </form>
+
+    <!-- Success Message -->
+    <div v-else class="form-submit-message-container">
+        <div v-if="errmsg" class="form-submit-message-error">
+            <span>
+                {{ errmsg }}
+            </span>
+        </div>
+        <div v-else class="form-submit-message-success">
+            <span>
+                Your message has been sent successfully. Thank you! 😊
+            </span>
+        </div>
+    </div>
 </template>
 
 <style>
@@ -114,5 +155,24 @@ export default {
     .form-container {
         width: 100%;
     }
+}
+
+.form-submit-message-container div {
+    color: #fff;
+    padding: 1em;
+    border-radius: var(--radius-radius4);
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+
+    margin-bottom: 2em;
+}
+
+.form-submit-message-error {
+    background-color: var(--red-card);
+}
+
+.form-submit-message-success {
+    background-color: var(--plum-purple-500);
 }
 </style>

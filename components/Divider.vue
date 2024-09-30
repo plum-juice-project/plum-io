@@ -24,7 +24,7 @@ export default {
 
 <template>
     <div class="divider">
-        <div v-for="n in nlines" :key="n" class="line" :style="{
+        <div v-for="n in nlines" :key="n" class="divider-line" :style="{
             'background-color': color, 'margin-top': vspace + 'px', 'margin-bottom': vspace + 'px'
         }"></div>
     </div>
@@ -39,7 +39,7 @@ export default {
     width: 70%;
 }
 
-.line {
+.divider-line {
     width: 100%;
     height: 1px;
     opacity: 30%;

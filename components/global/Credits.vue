@@ -1,8 +1,7 @@
 <template>
     <div class="credits-container">
         <div v-for="(author, i) in authors" :key="i" class="credits-card">
-            <NuxtImg class="credits-card-propic" :src="`https://github.com/${author.github_nickname}.png`"
-                alt="Author Profile Picture" />
+            <NuxtImg class="credits-card-propic" :src="`https://github.com/${author.github_nickname}.png`" />
             <div class="credits-card-content">
                 <span class="credits-card-name">{{ author.name }}</span>
                 <div class="flex">
@@ -60,7 +59,12 @@ export default {
     align-items: center;
     padding: 1rem;
     background-color: var(--yellow-card);
-    border-radius: var(--radius-round);
+    cursor: pointer;
+}
+
+.credits-card:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
 }
 
 .credits-card-content {
@@ -92,5 +96,6 @@ export default {
     height: 100px;
     border-radius: var(--radius-round);
     object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 </style>
