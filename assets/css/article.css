@@ -11,12 +11,14 @@
     top: 10em;
     max-height: 80vh;
     overflow-y: auto;
+
 }
 
 .doc-toc {
+    border-left: 3px solid var(--plum-purple-500);
     position: relative;
     list-style-type: none;
-    width: 100%;
+    width: 15em;
     color: #fff;
     text-align: left;
     background-color: var(--background-200);
@@ -25,10 +27,30 @@
 }
 
 .doc-toc li {
+    list-style: none;
     margin: 5px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
 }
 
-.doc-toc a {
+.doc-toc ol {
+    padding-left: 20px;
+    margin-top: 5px;
+    font-weight: 400;
+
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+}
+
+.doc-toc li {
     text-decoration: none;
     font-weight: 500;
     text-decoration: underline;
@@ -38,6 +60,13 @@
     color: var(--plum-purple-500);
 }
 
+.doc-toc a.active {
+    color: var(--plum-purple-500);
+    font-weight: bold;
+    padding-left: 5px;
+    border-left: 3px solid var(--plum-purple-500);
+}
+
 .doc-toc a.active::before {
     content: '';
     position: absolute;
@@ -45,6 +74,7 @@
     top: 0;
     height: 100%;
     width: 3px;
+    background-color: var(--plum-purple-500);
 }
 
 
