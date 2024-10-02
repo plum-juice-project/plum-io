@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   ssr: true,
   components: true,
 
-  // if think this is not used, since we don't use github actions
+  // I  think this is not used, since we don't use github actions
   nitro: {
     preset: 'github-pages', // Preset for GitHub Pages deployment
     debug: true,
@@ -73,9 +73,6 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ],
-      script: [
-        { src: 'script/copyCode.js', type: 'text/javascript', defer: true }
-      ]
     },
     baseURL: process.env.BASE_URL || '/',
   },

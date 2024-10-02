@@ -44,10 +44,16 @@ export default {
         entries.forEach((entry) => {
           const tocLink = document.querySelector(`a[href="#${entry.target.id}"]`);
           if (entry.isIntersecting) {
-            tocLink.classList.add('active');
+			try {
+				tocLink.classList.add('active');
+			} catch (error) {
+			}
           } else {
-            tocLink.classList.remove('active');
-          }
+			  try {
+				tocLink.classList.remove('active');
+			  } catch (error) {
+			  }
+          } // find a different way to do this
         });
       },
       {

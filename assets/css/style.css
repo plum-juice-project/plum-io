@@ -61,6 +61,10 @@
   --space-halfunit: 8px;
 }
 
+body {
+  background-color: var(--background-100);
+}
+
 .text-logo1 {
   width: 250px;
   height: 250px;

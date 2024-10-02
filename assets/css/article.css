@@ -1,8 +1,10 @@
 .doc-container {
     display: flex;
     justify-content: space-around;
-    max-width: 1200px;
+    max-width: 70vw;
+	overflow-x: hidden;
     margin: 0 auto;
+	background-color: var(--background-100);
 }
 
 .doc-toc-container {
@@ -16,7 +18,6 @@
 
 .doc-toc {
     border-left: 3px solid var(--plum-purple-500);
-    position: relative;
     list-style-type: none;
     width: 15em;
     color: #fff;
@@ -150,3 +151,27 @@
     line-height: 1.5;
     margin-bottom: 20px;
 }
+
+@media (max-width: 768px) {
+	.doc-container {
+		flex-direction: column;
+	}
+
+	.doc-content {
+		width: 100%;
+	}
+
+	.doc-toc-container {
+		width: auto;
+		margin: auto;
+		position: relative;
+		top: 0;
+	}
+
+	.doc-toc {
+		width: auto;
+		height: auto;
+		font-size: 0.8em;
+	}
+	}
+
