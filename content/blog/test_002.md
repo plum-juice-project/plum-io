@@ -1,7 +1,7 @@
 ---
 title: Test 002
 author: Peppe 
-date: 2022-12-01
+date: 19 Ottobre 2024
 ---
 
 # Lorem ipsum dolor sit amet
@@ -70,5 +70,5 @@ Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sit amet o
 ## capitolo 3 
 Sed vulputate neque a orci interdum, vitae condimentum est ultricies. Aliquam id malesuada felis.
 
-::credits{:authors= '[{"name": "Miyamoto Musashi", "github_nickname": "CiZ01"}, {"name": "Kojiro Sasaki", "github_nickname": "plum-juice"}, {"name": "Soho Takuan", "github_nickname": "torvalds"}, {"name":"Yoshioka Seijuro", "github_nickname":"microsoft"}]' }
+::credits{:authors= '[{"name": "Miyamoto Musashi", "github_nickname": "CiZ01"}, {"name": "Kojiro Sasaki", "github_nickname": "plum-juice"}, {"name": "Soho Takuan", "github_nickname": "torvalds"}, {"name":"Yoshioka Seijuro", "github_nickname":"microsoft"}]'}
 ::

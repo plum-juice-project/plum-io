@@ -14,14 +14,11 @@
         <div class="contatcs-content-socials">
             <h1 class="contacts-content-socials-title">Our socials</h1>
             <div class="contacs-content-socials-list">
-                <span href="">
-                    <Icon name="ic:baseline-email" class="unavaible" />
-                </span>
                 <a href="https://github.com/plum-juice-project" target="_blank" rel="noopener noreferrer">
-                    <Icon name="pajamas:github" />
+                    <Icon name="mdi:github" />
                 </a>
                 <a href="https://www.instagram.com/plumjuiceteam/" target="_blank" rel="noopener noreferrer">
-                    <Icon name="radix-icons:instagram-logo" />
+                    <Icon name="mdi:instagram" />
                 </a>
             </div>
         </div>
@@ -127,7 +124,8 @@ export default {
     flex-direction: row;
     gap: var(--space-threeunits);
 
-    font-size: 5em;
+    font-size: 7em;
+    color: #fff;
 }
 
 .contacts-content-header {

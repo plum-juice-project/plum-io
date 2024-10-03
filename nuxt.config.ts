@@ -60,6 +60,12 @@ export default defineNuxtConfig({
     }
   },
 
+  icon: {
+    serverBundle: {
+      collections: ['mdi'] // <!--- this
+    }
+  },
+
   css: [
     "~/assets/css/style.css",
     "~/assets/css/home.css"

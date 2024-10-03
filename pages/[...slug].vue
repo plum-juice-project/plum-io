@@ -17,6 +17,11 @@
 
           <!-- Article Content -->
           <div class="doc-content">
+            <div class="doc-content-date">
+              <Icon name="mdi:receipt-text-edit" style="opacity: 0.7; margin-right: 0.6em;" />
+              <span>{{ doc.date.split("T")[0] }}</span>
+            </div>
+            <Divider color="white" width="100%" />
             <ContentRenderer :value="doc" />
           </div>
         </div>
@@ -38,21 +43,21 @@ export default {
   components: {
     DocNotFound,
   },
-  mounted() {
+  afterMount() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           const tocLink = document.querySelector(`a[href="#${entry.target.id}"]`);
           if (entry.isIntersecting) {
-			try {
-				tocLink.classList.add('active');
-			} catch (error) {
-			}
+            try {
+              tocLink.classList.add('active');
+            } catch (error) {
+            }
           } else {
-			  try {
-				tocLink.classList.remove('active');
-			  } catch (error) {
-			  }
+            try {
+              tocLink.classList.remove('active');
+            } catch (error) {
+            }
           } // find a different way to do this
         });
       },

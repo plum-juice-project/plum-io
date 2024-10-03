@@ -14,10 +14,10 @@ export default {
             type: String,
             default: '0'
         },
-        hspace: {
+        width: {
             type: String,
-            default: '0'
-        },
+            default: '70%'
+        }
     },
 }
 </script>
@@ -25,7 +25,7 @@ export default {
 <template>
     <div class="divider">
         <div v-for="n in nlines" :key="n" class="divider-line" :style="{
-            'background-color': color, 'margin-top': vspace + 'px', 'margin-bottom': vspace + 'px'
+            'background-color': color, 'margin-top': vspace + 'px', 'margin-bottom': vspace + 'px', 'width': width
         }"></div>
     </div>
 </template>
@@ -36,7 +36,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 100%;
 }
 
 .divider-line {

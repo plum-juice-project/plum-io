@@ -4,8 +4,8 @@
             <NuxtImg class="credits-card-propic" :src="`https://github.com/${author.github_nickname}.png`" />
             <div class="credits-card-content">
                 <span class="credits-card-name">{{ author.name }}</span>
-                <div class="flex">
-                    <NuxtImg class="credits-card-gh-logo" src="/github-mark.svg" />
+                <div>
+                    <Icon name="mdi:github" size="16" />
                     <a :href="`https://github.com/${author.github_nickname}`" class="credits-card-nickname">
                         {{ author.github_nickname }}
                     </a>
@@ -29,10 +29,6 @@ export default {
                       }
                   */
         },
-        date: {
-            type: String,
-            required: true
-        }
     }
 }
 </script>
@@ -81,8 +77,6 @@ export default {
 }
 
 .credits-card-gh-logo {
-    width: 1.5rem;
-    height: 1.5rem;
     margin-right: 0.5rem;
 }
 
@@ -97,5 +91,24 @@ export default {
     border-radius: var(--radius-round);
     object-fit: cover;
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .credits-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .credits-card-propic {
+        width: 80px;
+        height: 80px;
+    }
+
+    .credits-card-name {
+        font-size: 1.2rem;
+    }
+
+    .credits-card-nickname {
+        font-size: 0.8rem;
+    }
 }
 </style>
