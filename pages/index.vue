@@ -15,13 +15,13 @@
       <div class="home-card11">
         <span class="home-bubble" />
         <div class="home-content12">
-          <h2 class="home-header13">What we aim?</h2>
+          <h2 class="home-header13">What are our aims?</h2>
           <span class="home-description10">The goal of our project is to build a versatile and scalable infrastructure
             that can be used for
             various types of studies and analyses.</span>
           <ul class="home-bullet-list">
             <li>
-              Explore the world of High Performance Computing
+              Explore the world of High Performance Computing.
             </li>
             <li>
               Developing a flexible topology, adaptable to different needs and contexts.
