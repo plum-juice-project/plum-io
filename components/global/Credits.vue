@@ -5,7 +5,7 @@
             <div class="credits-card-content">
                 <span class="credits-card-name">{{ author.name }}</span>
                 <div>
-                    <Icon name="mdi:github" size="16" />
+                    <Icon name="icons:mdi-github" size="16" />
                     <a :href="`https://github.com/${author.github_nickname}`" class="credits-card-nickname">
                         {{ author.github_nickname }}
                     </a>

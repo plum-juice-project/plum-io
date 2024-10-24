@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-  <NuxtLink :to="'/blog/' + article.title.replace(' ', '_').toLowerCase()">
+  <NuxtLink class="h-auto" :to="'/blog/' + article.title.replace(' ', '_').toLowerCase()">
     <div v-if="!extended" class="home-card13">
       <div class="home-image16">
         <!-- <img v-if="article.image" alt="image" src="/Characters/character-1.svg" class="home-image17" /> -->
@@ -35,7 +35,7 @@ export default {
     <div v-else class="blog-card">
       <div class="blog-image">
         <img v-if="article.image" alt="image" :src=article.image />
-        <Icon v-else name="bx:image" size="7em" style="color: rgba(0,0,0,0.3)" />
+        <Icon v-else name="icons:bx-image" size="7em" style="color: rgba(0,0,0,0.3)" />
       </div>
       <div class="blog-content">
         <h2 class="blog-title">{{ article.title }}</h2>
@@ -47,16 +47,18 @@ export default {
 
 <style>
 .blog-card {
-  margin-top: 1em;
+  margin: 1em auto;
 
-  width: 70vw;
-  height: 22vh;
+  width: 60%;
+  min-height: 14em;
+  height: auto;
 
-  padding: var(--space-oneandhalfunits);
+  padding: var(--space-twounits);
 
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 20% 80%;
+
+  gap: var(--space-oneunit);
   background-color: var(--plum-purple-900);
 
   border-radius: var(--radius-oneunit);
@@ -74,36 +76,16 @@ export default {
   justify-content: center;
   align-items: center;
 
-  width: 20%;
+  width: 100%;
   height: 100%;
 }
 
 .blog-image img {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.blog-readmore {
-  text-decoration: none;
-  color: var(--plum-purple-100);
-  background-color: var(--plum-purple-900);
-  padding: var(--space-halfunit) var(--space-oneunit);
-
-  border-radius: var(--radius-oneunit);
-
-  margin-top: auto;
-  padding: 1em;
-
-  white-space: nowrap;
-  font-weight: 600;
-}
-
-.blog-readmore:hover {
-  background-color: var(--plum-purple-800);
 }
 
 .blog-title {
@@ -117,7 +99,6 @@ export default {
   gap: var(--space-halfunit);
   width: 100%;
   display: flex;
-  padding: var(--space-oneandhalfunits);
   align-items: flex-start;
   flex-direction: column;
 }
@@ -135,18 +116,7 @@ export default {
 @media (max-width: 767px) {
   .blog-card {
     width: 100%;
-    height: 100%;
-    flex-direction: column;
-  }
-
-  .blog-image {
-    width: 100%;
-    height: 50%;
-  }
-
-  .blog-content {
-    width: 100%;
-    height: 50%;
+    grid-template-columns: 1fr;
   }
 }
 

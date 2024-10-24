@@ -15,10 +15,10 @@
             <h1 class="contacts-content-socials-title">Our socials</h1>
             <div class="contacs-content-socials-list">
                 <a href="https://github.com/plum-juice-project" target="_blank" rel="noopener noreferrer">
-                    <Icon name="mdi:github" />
+                    <Icon name="icons:mdi-github" />
                 </a>
                 <a href="https://www.instagram.com/plumjuiceteam/" target="_blank" rel="noopener noreferrer">
-                    <Icon name="mdi:instagram" />
+                    <Icon name="icons:mdi-instagram" />
                 </a>
             </div>
         </div>

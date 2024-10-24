@@ -61,9 +61,12 @@ export default defineNuxtConfig({
   },
 
   icon: {
-    serverBundle: {
-      collections: ['mdi'] // <!--- this
-    }
+    customCollections: [
+      {
+        prefix: 'icons',
+        dir: './public/icons',
+      },
+    ],
   },
 
   css: [

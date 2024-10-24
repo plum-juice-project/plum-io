@@ -1,18 +1,16 @@
 .doc-container {
     display: flex;
     justify-content: space-around;
-    max-width: 70vw;
-    overflow-x: hidden;
+    max-width: 70%;
     margin: 0 auto;
     background-color: var(--background-100);
 }
 
 .doc-toc-container {
-    margin-top: 5em;
     position: sticky;
-    top: 10em;
-    max-height: 80vh;
-    overflow-y: auto;
+    margin-top: 5em;
+    top: 5em;
+    height: fit-content;
 }
 
 .doc-toc {
@@ -69,7 +67,6 @@
 
 .doc-toc a.active::before {
     content: '';
-    position: absolute;
     left: 0;
     top: 0;
     height: 100%;

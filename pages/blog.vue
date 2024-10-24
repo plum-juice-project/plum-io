@@ -43,7 +43,7 @@
                 Load More
             </Button>
         </div> -->
-        <div class="blog-list-loadmore-container styled-link unavaible">
+        <div class="blog-sort-container blog-list-loadmore-container styled-link unavaible">
             <span>
                 You have reached the end 🤯
             </span>
@@ -185,7 +185,7 @@ export default {
     padding: 1em;
 
     margin: auto;
-    width: auto;
+    width: 60%;
     height: auto;
 
     background-color: var(--yellow-card);
@@ -212,11 +212,11 @@ export default {
 }
 
 .blog-list-loadmore-container {
-    display: flex;
+    background-color: var(--plum-purple-500);
+    text-align: center;
     justify-content: center;
-    align-items: center;
 
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 .blog-list-loadmore {
@@ -224,6 +224,10 @@ export default {
 }
 
 @media(max-width: 767px) {
+    .blog-sort-container {
+        width: 100%;
+    }
+
     .blog-header {
         justify-content: center;
         align-items: center;

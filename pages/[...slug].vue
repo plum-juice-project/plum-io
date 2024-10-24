@@ -18,10 +18,10 @@
           <!-- Article Content -->
           <div class="doc-content">
             <div class="doc-content-date">
-              <Icon name="mdi:receipt-text-edit" style="opacity: 0.7; margin-right: 0.6em;" />
+              <Icon name="icons:mdi-receipt-text-edit" style="opacity: 0.7; margin-right: 0.6em;" />
               <span>{{ doc.date.split("T")[0] }}</span>
             </div>
-            <Divider color="white" width="100%" />
+            <Divider color="white" width="100%" vspace="40" />
             <ContentRenderer :value="doc" />
           </div>
         </div>

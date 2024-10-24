@@ -1,7 +1,9 @@
 <template>
   <header data-thq="navbar" class="home-navbar">
     <!-- <span class="home-logo1">Plum Juice</span> -->
-    <NuxtImg src="/text-plum-light.png" alt="logo" class="text-logo1" />
+    <RouterLink to="/" class="home-logo1">
+      <NuxtImg src="/text-plum-light.png" alt="logo" class="text-logo1" />
+    </RouterLink>
     <nav data-thq="navbar-nav-links" data-role="Nav" class="home-nav1">
       <NuxtLink to="/" class="nav-link" active-class="nav-link-is-active">Home</NuxtLink>
       <NuxtLink to='/team' class="nav-link unavaible">Team</NuxtLink>
