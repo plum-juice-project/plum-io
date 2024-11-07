@@ -6,6 +6,8 @@ export default defineNuxtConfig({
   ssr: true,
   components: true,
 
+
+
   // I  think this is not used, since we don't use github actions
   nitro: {
     preset: 'github-pages', // Preset for GitHub Pages deployment
@@ -67,6 +69,15 @@ export default defineNuxtConfig({
         dir: 'public/icons',
       },
     ],
+
+    clientBundle: {
+      scan: {
+        // note that when you specify those values, the default behavior will be overridden
+        globInclude: ['**icons/*.svg'],
+      },
+      includeCustomCollections: true,
+
+    },
   },
 
   css: [
@@ -77,7 +88,7 @@ export default defineNuxtConfig({
     head: {
       title: 'Plum Juice',
       meta: [
-        { name: 'description', content: 'Plum Juice - a static website' }
+        { name: 'PlumJuice', content: 'Plum Juice - it\'s not just a Rapsberry Pi cluster' }
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
