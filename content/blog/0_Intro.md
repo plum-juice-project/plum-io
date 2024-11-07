@@ -1,7 +1,7 @@
 ---
 title: Every hero has an origin story
 author: Lorenzo Piarulli, Simone Palmieri
-date: 04 Novembre 2024
+date: 04 November 2024
 ---
 
 # Every hero has an origin story
@@ -16,7 +16,7 @@ Piece by piece, raspberry by raspberry, the cluster began to take shape. The goa
 This same trial and error is what students confronting this field often feel like not being able to ever touch. Having to build one's own mini-cluster can still be daunting, and having a handy remote access to [HP Frontier's 600k CPU cores](https://www.hpe.com/us/en/compute/hpc/cray/oak-ridge-national-laboratory.html) may be an even bigger challenge. That's our mission: giving everyone who wants to experience HPC in first person and experiment a bit with parallel computing a cheap and accessible remote lab.
 
 <div align=center>
-    <img src="./img/0_frontier.jpg" style="width:60%;"></img><br>
+    <img src="https://i.imgur.com/rX4ipCW.jpeg" style="width:60%;"></img><br>
     <em style="font-size:small;">The guy she told you not to worry about</em>
 </div>
 
@@ -24,7 +24,7 @@ This same trial and error is what students confronting this field often feel lik
 Using Linux, [SLURM](https://slurm.schedmd.com/documentation.html) and a lot of Ernesto's sweat, we were able to build and setup a first, minimal instance of the PlumJuice cluster, a collection of Raspberry Pi 5's ready to offer their computing time to curious students that are willing to support this small but ambitious project. It will be thanks to these students and their support that the project may, one day, become even more juicy.
 
 <div align=center>
-    <img src="./img/0_cluster.jpeg" style="width:80%;"></img><br>
+    <img src="https://i.imgur.com/ttIxpCA.jpeg" style="width:80%;"></img><br>
     <em style="font-size:small;">The results of Ernesto's sweat and blood</em>
 </div>
 

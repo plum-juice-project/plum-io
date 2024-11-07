@@ -64,7 +64,7 @@ export default defineNuxtConfig({
     customCollections: [
       {
         prefix: 'icons',
-        dir: './public/icons',
+        dir: process.env.BASE_URL ? '/icons' : '~/public/icons',
       },
     ],
   },
