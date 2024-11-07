@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-  <NuxtLink class="h-auto" :to="'/blog/' + article.title.replace(' ', '_').toLowerCase()">
+  <NuxtLink class="h-auto" :to="'/blog/' + article.title.replaceAll(' ', '_').toLowerCase()">
     <div v-if="!extended" class="home-card13">
       <div class="home-image16">
         <!-- <img v-if="article.image" alt="image" src="/Characters/character-1.svg" class="home-image17" /> -->
@@ -62,8 +62,6 @@ export default {
   background-color: var(--plum-purple-900);
 
   border-radius: var(--radius-oneunit);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-
   color: black;
 }
 
@@ -76,6 +74,8 @@ export default {
   justify-content: center;
   align-items: center;
 
+  box-shadow: 0px 0px 0px 3px var(--plum-purple-700);
+
   width: 100%;
   height: 100%;
 }
@@ -83,13 +83,15 @@ export default {
 .blog-image img {
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
-  object-fit: cover;
+  width: 100%;
+  object-fit: fill;
+  scale: 1.2;
 }
 
 .blog-title {
-  font-size: 24px;
+  margin: 0 0 12px 0;
+  font-size: 2em;
   font-style: normal;
   font-weight: 600;
   line-height: 28px;
@@ -101,6 +103,8 @@ export default {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+
+  padding: var(--space-oneunit);
 }
 
 .blog-caption {
@@ -111,6 +115,9 @@ export default {
   -webkit-line-clamp: 3;
   line-height: 1.5;
   max-height: calc(1.5 * 3em);
+  font-size: 1.2em;
+
+  color: rgba(0, 0, 0, 0.6);
 }
 
 @media (max-width: 767px) {
@@ -122,6 +129,7 @@ export default {
 
 .home-card13 {
   width: 100%;
+  min-height: 11em;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -156,7 +164,7 @@ export default {
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   line-height: 1.5;
-  max-height: calc(1.5 * 2em);
+  max-height: calc(1.5 * 3em);
 }
 
 .home-image16 {

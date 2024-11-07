@@ -7,7 +7,8 @@
       </p>
     </div>
     <div class="home-buttons">
-      <a href="https://github.com/plum-juice-project" class="styled-link">View on Github</a>
+      <a href="https://github.com/plum-juice-project" target="_blank" rel="noopener noreferrer" class="styled-link">View
+        on Github</a>
     </div>
   </section>
   <section class="home-description10">

@@ -14,7 +14,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="blog-body">
         <div class="blog-sort-container">
             <div class="blog-sort-label-container">
                 <span class="blog-sort-label"> sorted by: {{ sorting }}</span>
@@ -221,6 +221,10 @@ export default {
 
 .blog-list-loadmore {
     text-decoration: none;
+}
+
+.blog-body {
+    width: 100%;
 }
 
 @media(max-width: 767px) {

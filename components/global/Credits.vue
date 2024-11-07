@@ -4,8 +4,8 @@
             <NuxtImg class="credits-card-propic" :src="`https://github.com/${author.github_nickname}.png`" />
             <div class="credits-card-content">
                 <span class="credits-card-name">{{ author.name }}</span>
-                <div>
-                    <Icon name="icons:mdi-github" size="16" />
+                <div class="credits-card-content-gh">
+                    <Icon name="icons:mdi-github" size="24" />
                     <a :href="`https://github.com/${author.github_nickname}`" class="credits-card-nickname">
                         {{ author.github_nickname }}
                     </a>
@@ -72,17 +72,21 @@ export default {
 
 .credits-card-name {
     font-size: 1.5rem;
-    font-style: italic;
+    font-style: normal;
     font-weight: 600;
 }
 
-.credits-card-gh-logo {
-    margin-right: 0.5rem;
+.credits-card-content-gh {
+    display: flex;
+    align-items: center;
 }
 
 .credits-card-nickname {
-    font-size: 1rem;
-    font-weight: normal;
+    margin-left: 0.5em;
+    font-size: 1em;
+    font-weight: 500;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .credits-card-propic {
