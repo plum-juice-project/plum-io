@@ -1,5 +1,5 @@
 ---
-title: Every hero has an origin story
+title: every_hero_has_an_origin_story
 author: Lorenzo Piarulli, Simone Palmieri
 date: 04 November 2024
 ---
