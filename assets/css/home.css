@@ -190,7 +190,7 @@ ul.home-bullet-list li:before {
 }
 
 .home-collection {
-    gap: var(--space-fiveunits);
+    gap: var(--space-twounits);
     width: 100%;
     display: flex;
     max-width: 1440px;

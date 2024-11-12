@@ -133,7 +133,7 @@ export default {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: var(--plum-purple-800);
   color: black;
 }
 

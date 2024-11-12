@@ -36,7 +36,8 @@ export default {
 </script>
 
 <template>
-    <NuxtLink :to="`https://github.com/${member.github_nickname}`" target="_blank" rel="noopener noreferrer">
+    <NuxtLink class="flex items-center justify-center" :to="`https://github.com/${member.github_nickname}`"
+        target="_blank" rel="noopener noreferrer">
         <div class="team-card">
             <div class="team-card-header">
                 <NuxtImg class="team-card-propic" :src="`https://github.com/${member.github_nickname}.png`" />
@@ -44,7 +45,7 @@ export default {
             <div class="team-card-content">
                 <span class="team-card-name">{{ member.name }}</span>
                 <div class="team-card-github">
-                    <Icon name="icons:mdi-github" size="18" />
+                    <Icon name="icons:mdi-github" size="21" />
                     <span class="team-card-nickname">{{ member.github_nickname }}</span>
                 </div>
             </div>
@@ -58,56 +59,55 @@ export default {
     flex-direction: column;
     justify-content: space-evenly;
 
-    background-color: var(--plum-purple-400);
-    cursor: pointer;
-
-    border-radius: var(--radius-radius4);
-
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s;
 
-    width: 17em;
-    height: 26em;
-
-    overflow: hidden;
-
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 18em;
+    height: 21em;
 }
 
 .team-card-header {
     width: 100%;
-    height: 60%;
-
+    height: auto;
     display: flex;
     justify-content: center;
+    transform: translateY(50%);
 }
 
 .team-card-propic {
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
+    align-items: start;
+
+    background-color: var(--plum-purple-100);
+
     object-fit: fill;
+    border-radius: 50%;
+    border: 5px solid var(--plum-purple-400);
+
 }
 
 .team-card-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 
-    width: 100%;
-    height: 40%;
+    height: 100%;
 
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #fff;
+    background-color: var(--plum-purple-400);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
 
-    gap: var(--space-oneunit);
+    padding: var(--space-twounits);
 
     overflow: hidden;
     white-space: nowrap;
+
+    color: #fff;
 }
 
 .team-card-name {
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 600;
     text-align: center;
 }
@@ -123,13 +123,12 @@ export default {
 .scroll-text {
     display: inline-block;
     padding-left: 100%;
-    animation: scroll 10s forwards infinite;
+    animation: scroll 5s linear alternate-reverse infinite;
 }
 
 @keyframes scroll {
     0% {
         transform: translateX(10%);
-
     }
 
     100% {

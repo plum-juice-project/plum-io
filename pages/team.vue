@@ -3,9 +3,13 @@
         <div class="title-header-content">
             <div class="title-heading">
                 <h2 class="title-header-title">Team</h2>
-                <p class="title-paragraph">
-                    Few but good! We are a small team of students...
-                </p>
+                <span class="title-paragraph">
+                    Meet the gang!
+                    These are the cooks who made the Plum Juice.
+                </span>
+            </div>
+            <div class="team-header-img">
+                <NuxtImg src="/drinkself-plum.png" />
             </div>
         </div>
     </section>
@@ -30,13 +34,35 @@ export default {
 <style>
 .team-list {
     display: grid;
-    grid-template: repeat(auto-fill, minmax(200px, 1fr)) / repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 9em;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1em 9em;
+
     align-items: start;
     justify-content: center;
 
     width: 100%;
-    height: auto;
-    margin-bottom: 2em;
+
+    margin-bottom: 4em;
+}
+
+.team-header-img {
+    width: 300px;
+    height: 300px;
+
+    display: flex;
+
+    background-color: var(--yellow-card);
+
+    border-radius: 50%;
+
+    justify-content: end;
+    align-items: center;
+}
+
+.team-header-img img {
+    width: 200px;
+    height: 200px;
+    scale: 1.5;
+    object-fit: cover;
 }
 </style>

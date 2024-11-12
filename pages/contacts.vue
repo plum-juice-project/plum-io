@@ -6,7 +6,7 @@
                 If you have any questions, please feel free to contact us.
             </span>
             <div class="contacts-header-img">
-                <NuxtImg src="/drinkself-plum.png" />
+                <NuxtImg src="/computer-logo.png" />
             </div>
         </div>
     </div>
@@ -79,11 +79,15 @@ export default {
     width: 300px;
     height: 300px;
 
-    background-color: var(--pink-card);
+    background-color: var(--yellow-card);
 
     display: flex;
     justify-content: end;
     align-items: center;
+}
+
+.contacts-header-img img {
+    scale: 1.5;
 }
 
 .contacts-content {

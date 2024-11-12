@@ -1,20 +1,44 @@
 [
     {
-        "name": "Prison Mike",
+        "name": "Lorenzo Piarulli",
+        "role": "Salesman",
+        "github_nickname": "lor3ny",
+        "description": "prankster"
+    },
+    {
+        "name": "Saverio Pasqualoni",
+        "role": "Assistant to the Regional Manager",
+        "github_nickname": "DaXor-0",
+        "description": "beet farmer"
+    },
+    {
+        "name": "Francesco Fazzari",
         "role": "Regional Manager",
         "github_nickname": "CiZ01",
         "description": "gang ang"
     },
     {
-        "name": "Dwight Schrute Best Friend Ever Mamma mia",
+        "name": "Ernesto Montada Romero",
         "role": "Assistant to the Regional Manager",
-        "github_nickname": "dwight",
+        "github_nickname": "n4y0n",
         "description": "beet farmer"
     },
     {
-        "name": "Jim Halpert",
+        "name": "Lachitha Perera",
         "role": "Salesman",
-        "github_nickname": "jim",
+        "github_nickname": "ironmask2003",
+        "description": "prankster"
+    },
+    {
+        "name": "Alessio Olivieri",
+        "role": "Salesman",
+        "github_nickname": "Alessio-Olivieri",
+        "description": "prankster"
+    },
+    {
+        "name": "Simone Palmieri",
+        "role": "Salesman",
+        "github_nickname": "sudo-err",
         "description": "prankster"
     }
 ]

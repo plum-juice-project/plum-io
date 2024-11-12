@@ -140,6 +140,16 @@
     margin-bottom: 1.2em;
 }
 
+.doc-content p a {
+    color: var(--plum-purple-800);
+    text-decoration: underline;
+}
+
+.doc-content b {
+    font-weight: bold;
+    color: var(--plum-purple-500);
+}
+
 /* overriding theme-docs .line class */
 .line {
     opacity: 100%;

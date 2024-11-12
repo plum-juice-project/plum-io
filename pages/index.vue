@@ -16,7 +16,7 @@
       <div class="home-card11">
         <span class="home-bubble" />
         <div class="home-content12">
-          <h2 class="home-header13">What we aim?</h2>
+          <h2 class="home-header13">What we are aiming for?</h2>
           <span class="home-description10">The goal of our project is to build a versatile and scalable infrastructure
             that can be used for
             various types of studies and analyses.</span>
@@ -62,8 +62,13 @@
         </span>
       </div>
     </div>
+
+    <div class="home-blog-divider-container">
+
+    </div>
     <div class="home-main4">
       <!-- BLOG PREVIEW -->
+
       <ArticlePreview v-for="article in articles" :key="article.slug" :article="article" />
 
       <!-- PLACEHOLDER -->
@@ -88,11 +93,11 @@
     <div class="home-heading14">
       <h2 class="home-header21">Roadmap</h2>
       <span class="home-header22">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore
+        Our plans for the future... <span class="home-emoji">🚀</span>
       </span>
     </div>
-    <Roadmap />
+    <!-- <Roadmap /> -->
+    <h1 class="roadmap-cs">Coming Soon</h1>
   </section>
 </template>
 
@@ -141,4 +146,13 @@ export default {
 
 </script>
 
-<style></style>
+<style>
+.home-blog-divider-container {
+  margin-top: 1em;
+  padding: 1em;
+  width: 100%;
+  height: auto;
+
+  background-color: var(--yellow-card);
+}
+</style>

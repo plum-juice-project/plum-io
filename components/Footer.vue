@@ -20,7 +20,7 @@
                     <h3 class="footer-heading">Project</h3>
                     <div class="footer-items2">
                         <NuxtLink class="footer-link" to="/team">Team</NuxtLink>
-                        <NuxtLink class="footer-link  unavaible" to="#home">Licenses</NuxtLink>
+                        <!-- <NuxtLink class="footer-link  unavaible" to="#home">Licenses</NuxtLink> -->
                     </div>
                 </div>
             </div>

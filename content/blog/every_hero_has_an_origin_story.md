@@ -33,5 +33,5 @@ Using Linux, [SLURM](https://slurm.schedmd.com/documentation.html) and a lot of 
 ## Epilogue
 Sharing is caring, and we're now ready to share the up-and-running PlumJuice cluster with whoever wants to have a sip of it. Our future goals are to organize events with other students and researchers, and to expand the horizon of HPC to new and accessible territories. Please run your optimized distributed parallel algorithms on the cluster, our raspberries will thank you.
 
-::credits{:authors= '[{"name": "Simone Palmieri", "github_nickname": "sudo-simon"}, {"name": "Lorenzo Piarulli", "github_nickname": "lor3ny"}]'}
+::credits{:authors= '[{"name": "Simone Palmieri", "github_nickname": "sudo-err"}, {"name": "Lorenzo Piarulli", "github_nickname": "lor3ny"}]'}
 ::
