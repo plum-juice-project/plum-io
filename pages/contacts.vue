@@ -10,8 +10,8 @@
             </div>
         </div>
     </div>
-    <div class="contacts-content">
-        <div class="contatcs-content-socials">
+    <div class="content-body contacts-content">
+        <div class=" contatcs-content-socials">
             <h1 class="contacts-content-socials-title">Our socials</h1>
             <div class="contacs-content-socials-list">
                 <a href="https://github.com/plum-juice-project" target="_blank" rel="noopener noreferrer">
@@ -79,25 +79,15 @@ export default {
     width: 300px;
     height: 300px;
 
-    overflow-y: visible;
     background-color: var(--pink-card);
-}
 
-.contacts-header-img img {
-    width: 100%;
-
-    position: relative;
-    bottom: 15em;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 .contacts-content {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     color: #fff;
-
 }
 
 .contatcs-content-socials {

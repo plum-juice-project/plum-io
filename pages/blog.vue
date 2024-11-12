@@ -1,9 +1,9 @@
 <template>
-    <section class="blog-header">
-        <div class="blog-header-content">
-            <div class="blog-heading11">
-                <h2 class="blog-header-title">Blog</h2>
-                <p class="blog-paragraph">
+    <section class="title-header">
+        <div class="title-header-content">
+            <div class="title-heading">
+                <h2 class="title-header-title">Blog</h2>
+                <p class="title-paragraph">
                     Yes, we have a blog. It's a place where we share our thoughts, ideas, and experiences.
                 </p>
             </div>
@@ -14,11 +14,11 @@
             </div>
         </div>
     </section>
-    <section class="blog-body">
+    <section class="content-body">
         <div class="blog-sort-container">
             <div class="blog-sort-label-container">
-                <span class="blog-sort-label"> sorted by: {{ sorting }}</span>
-                <Icon class="blog-sort-icon" name="ep:arrow-down-bold" size="1em" style="color: black" />
+                <!-- <span class="blog-sort-label"> sorted by: {{ sorting }}</span> -->
+                <!-- <Icon class="blog-sort-icon" name="ep:arrow-down-bold" size="1em" style="color: black" /> -->
             </div>
         </div>
         <!-- <div v-if="showMenu" class="blog-sort-menu">
@@ -87,42 +87,6 @@ export default {
 </script>
 
 <style>
-.blog-header {
-    gap: var(--space-fiveunits);
-    width: 100%;
-    display: grid;
-    max-width: 1440px;
-    align-items: flex-start;
-    padding-left: var(--space-fiveunits);
-    padding-right: var(--space-fiveunits);
-    flex-direction: column;
-    padding-bottom: 160px;
-
-    margin-top: 5em;
-}
-
-.blog-header-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    gap: var(--space-sixunits);
-}
-
-.blog-header-title {
-    color: rgb(255, 255, 255);
-    font-size: 4.5em;
-    font-weight: 500;
-    letter-spacing: 2px;
-}
-
-.blog-heading2 {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .blog-content2 {
     height: 8em;
     width: 35em;
@@ -146,7 +110,7 @@ export default {
     justify-content: space-between;
     flex-direction: column;
 
-    padding-bottom: 10em;
+    margin-bottom: 10em;
 }
 
 .blog-list-empty {
@@ -172,11 +136,6 @@ export default {
     font-style: italic;
 }
 
-.blog-paragraph {
-    color: rgb(255, 255, 255);
-    font-size: 2.5em;
-    line-height: 60px;
-}
 
 .blog-sort-container {
     display: flex;
@@ -185,7 +144,7 @@ export default {
     padding: 1em;
 
     margin: auto;
-    width: 60%;
+    width: 100%;
     height: auto;
 
     background-color: var(--yellow-card);
@@ -223,30 +182,16 @@ export default {
     text-decoration: none;
 }
 
-.blog-body {
-    width: 100%;
-}
-
 @media(max-width: 767px) {
     .blog-sort-container {
         width: 100%;
-    }
-
-    .blog-header {
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    .blog-heading11 {
-        text-align: center;
     }
 
     .blog-heading2 {
         display: none;
     }
 
-    .blog-header-content {
+    .title-header-content {
         grid-template-columns: 1fr;
     }
 

@@ -1,21 +1,24 @@
 <template>
     <div class="credits-container">
         <div v-for="(author, i) in authors" :key="i" class="credits-card">
-            <NuxtImg class="credits-card-propic" :src="`https://github.com/${author.github_nickname}.png`" />
-            <div class="credits-card-content">
-                <span class="credits-card-name">{{ author.name }}</span>
-                <div class="credits-card-content-gh">
-                    <Icon name="icons:mdi-github" size="24" />
-                    <a :href="`https://github.com/${author.github_nickname}`" class="credits-card-nickname">
-                        {{ author.github_nickname }}
-                    </a>
+            <NuxtLink :to="`https://github.com/${author.github_nickname}`" target="_blank" rel="noopener noreferrer">
+                <NuxtImg class="credits-card-propic" :src="`https://github.com/${author.github_nickname}.png`" />
+                <div class="credits-card-content">
+                    <span class="credits-card-name">{{ author.name }}</span>
+                    <div class="credits-card-content-gh">
+                        <Icon name="icons:mdi-github" size="24" />
+                        <span class="credits-card-nickname">
+                            {{ author.github_nickname }}
+                        </span>
+                    </div>
                 </div>
-            </div>
+            </NuxtLink>
         </div>
     </div>
 </template>
 
 <script>
+
 export default {
     name: 'Credits',
     props: {
@@ -36,24 +39,32 @@ export default {
 <style>
 .credits-container {
     width: 100%;
+
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    /* Ridotto min-width per gestire più autori */
-    grid-gap: 1rem;
-    /* Aggiunta distanza tra le card */
+    max-width: 800px;
+    grid-gap: 1em;
+
     align-items: start;
-    padding: 1rem;
+    justify-content: space-around;
+
+    padding: 1em;
+
     background-color: var(--yellow-card);
     margin-bottom: 2em;
     color: #000;
 }
 
 .credits-card {
+    width: auto;
+    height: 100%;
+
     display: flex;
     flex-direction: row;
     justify-content: start;
-    align-items: center;
-    padding: 1rem;
+
+    padding: 1em;
+
     background-color: var(--yellow-card);
     cursor: pointer;
 }
@@ -67,11 +78,11 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    padding-left: 1rem;
+    padding-left: 1em;
 }
 
 .credits-card-name {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-style: normal;
     font-weight: 600;
 }
@@ -100,6 +111,7 @@ export default {
 @media (max-width: 768px) {
     .credits-container {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        max-width: none;
     }
 
     .credits-card-propic {
@@ -108,11 +120,11 @@ export default {
     }
 
     .credits-card-name {
-        font-size: 1.2rem;
+        font-size: 1.2em;
     }
 
     .credits-card-nickname {
-        font-size: 0.8rem;
+        font-size: 0.8em;
     }
 }
 </style>

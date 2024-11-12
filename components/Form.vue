@@ -89,7 +89,7 @@ export default {
 
 <style>
 .form-container {
-    width: 60%;
+    width: 100%;
 
     display: grid;
     grid-template-columns: 1fr;

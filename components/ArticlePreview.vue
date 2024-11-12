@@ -49,7 +49,7 @@ export default {
 .blog-card {
   margin: 1em auto;
 
-  width: 60%;
+  width: 100%;
   min-height: 14em;
   height: auto;
 

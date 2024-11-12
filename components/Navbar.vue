@@ -6,7 +6,7 @@
     </RouterLink>
     <nav data-thq="navbar-nav-links" data-role="Nav" class="home-nav1">
       <NuxtLink to="/" class="nav-link" active-class="nav-link-is-active">Home</NuxtLink>
-      <NuxtLink to='/team' class="nav-link unavaible">Team</NuxtLink>
+      <NuxtLink to='/team' class="nav-link">Team</NuxtLink>
       <NuxtLink to="/blog" class="nav-link" active-class="nav-link-is-active">Blog</NuxtLink>
       <NuxtLink to="/contacts" class="nav-link" active-class="nav-link-is-active">Contacts</NuxtLink>
     </nav>

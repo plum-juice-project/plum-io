@@ -34,9 +34,6 @@
               Analyzing the network performance and hardware resources of the nodes.
             </li>
             <li>
-              Evaluating energy consumption to improve system efficiency.
-            </li>
-            <li>
               Providing a platform for future research and experimentation.
             </li>
           </ul>
