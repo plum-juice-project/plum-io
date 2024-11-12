@@ -6,6 +6,7 @@ description: "The cluster consists of eight Raspberry Pi 5 nodes:
 Each node is a compute node with 4GB of RAM and a quad-core ARM processor.
 Just one special node, with a special role, with a special personality, is a Raspberry Pi 5 with 8GB of RAM and a NVMe SSD mounted. This node is the storage node that provides a shared filesystem for the entire cluster and is used for managing other aspects of the cluster.
 Each node is powered through Power over Ethernet (PoE) to reduce the need for individual power supplies and simplify the cabling structure. All nodes are connected via two PoE"
+image: 'https://res.cloudinary.com/dllutk9zl/image/upload/v1731434779/img2_cfcjno.jpg'
 date: 2024-11-11
 ---
 
@@ -31,16 +32,22 @@ The cluster consists of **eight Raspberry Pi 5 nodes**:
 Each node is a compute node with **4GB of RAM** and a **quad-core ARM processor**.
 Just one special node, with a special role, with a special personality, is a **Raspberry Pi 5** with **8GB of RAM** and a **NVMe SSD** mounted. This node is the storage node that provides a shared filesystem for the entire cluster and is used for managing other aspects of the cluster.
 
-![rasp](https://res.cloudinary.com/dllutk9zl/image/upload/v1731434779/img2_cfcjno.jpg)
+<figure>
+    <img src="https://res.cloudinary.com/dllutk9zl/image/upload/v1731434779/img2_cfcjno.jpg" alt="Raspberry Pi 5">
+    <figcaption>Our Raspberry Pi 5, it is a plum</figcaption>
+</figure>
 
 Each node is powered through **Power over Ethernet (PoE)** this approch allow us to:
 - **Reduce** the need for **individual power supplies** and **simplify the cabling structure**, this is an important aspect since each compute node requires 30W of power and a power supply that can provide enough power for a set of nodes is very expensive.
-- Each node need a network connection, so we can use the same cable for power and network connection, ez 🧎‍♀️.
+- Each node need a network connection, so we can **use the same cable for power and network connection**, ez 🧎‍♀️.
 
 
 However the current topology is a temporary solution, we are working on improve some aspects of the network configuration, but we need money for this 💸.
 
-![switch](https://res.cloudinary.com/dllutk9zl/image/upload/v1731434780/img1_ponf4t.jpg)
+<figure>
+    <img src="https://res.cloudinary.com/dllutk9zl/image/upload/v1731434780/img1_ponf4t.jpg" alt="switch">
+    <figcaption>One of our powerfull switch ⚡</figcaption>
+</figure>
 
 Last but not least, the cluster is managed by a very strong **Raspberry Pi 3B** acting as the master and login node. This node is responsible for coordinating tasks, managing the cluster and interacting with the compute nodes. For this kind of usage we have chosen a **Raspberry Pi 3B** because it should be enough for this kind of tasks.
 
@@ -56,10 +63,8 @@ Our Raspberry Pi cluster is a flexible, powerful solution that shows how versati
 While it’s not a substitute for large-scale server clusters, it’s a valuable platform for learning, prototyping, and testing distributed applications.
 
 ### Future Works
-We’re planning to add new nodes to the cluster (but of course, there are never enough ports on the switches 😭). We’re also considering adding new hardware to boost node computation, like **GPUs**, **TPUs**, and other accelerators. These upgrades would let us take on more complex tasks and experiment with hardware-accelerated processing, pushing our Pi cluster’s capabilities even further! 🚀.
+We’re planning to add new nodes to the cluster (but of course, there are never enough ports on switches 😭). We’re also considering adding new hardware to boost node computation, like **GPUs**, **TPUs**, and other accelerators. These upgrades would let us take on more complex tasks and experiment with hardware-accelerated processing, pushing our Pi cluster’s capabilities even further! 🚀.
 
 
-::credits{:authors= '[{"name":"Francesco Fazzari","gh_nickname":"CiZ01"}]'} ::
-
-
-::credits{:authors= '[{"name":"Francesco Fazzari","gh_nickname":"CiZ01"}]'} ::
+::credits{:authors='[{"name":"Francesco Fazzari","github_nickname":"CiZ01"}]'}
+::
