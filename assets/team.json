@@ -1,44 +1,44 @@
 [
     {
         "name": "Lorenzo Piarulli",
-        "role": "Salesman",
+        "role": "Founder:#bd1308:#fff",
         "github_nickname": "lor3ny",
-        "description": "prankster"
+        "description": ""
     },
     {
         "name": "Saverio Pasqualoni",
-        "role": "Assistant to the Regional Manager",
+        "role": "Co-Founder:#7a0901:#fff",
         "github_nickname": "DaXor-0",
-        "description": "beet farmer"
+        "description": ""
     },
     {
         "name": "Francesco Fazzari",
-        "role": "Regional Manager",
+        "role": "",
         "github_nickname": "CiZ01",
-        "description": "gang ang"
+        "description": ""
     },
     {
         "name": "Ernesto Montada Romero",
-        "role": "Assistant to the Regional Manager",
+        "role": "SysAdmin",
         "github_nickname": "n4y0n",
-        "description": "beet farmer"
+        "description": ""
     },
     {
         "name": "Lachitha Perera",
-        "role": "Salesman",
+        "role": "",
         "github_nickname": "ironmask2003",
-        "description": "prankster"
+        "description": ""
     },
     {
         "name": "Alessio Olivieri",
-        "role": "Salesman",
+        "role": "",
         "github_nickname": "Alessio-Olivieri",
-        "description": "prankster"
+        "description": ""
     },
     {
         "name": "Simone Palmieri",
-        "role": "Salesman",
+        "role": "",
         "github_nickname": "sudo-err",
-        "description": "prankster"
+        "description": ""
     }
 ]

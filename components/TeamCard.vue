@@ -40,6 +40,7 @@ export default {
         target="_blank" rel="noopener noreferrer">
         <div class="team-card">
             <div class="team-card-header">
+                <TeamTag class="team-card-header-tag" v-if="member.role.length > 0" :role="member.role" />
                 <NuxtImg class="team-card-propic" :src="`https://github.com/${member.github_nickname}.png`" />
             </div>
             <div class="team-card-content">
@@ -66,7 +67,6 @@ export default {
 }
 
 .team-card-header {
-    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -140,5 +140,13 @@ export default {
     display: flex;
     align-items: center;
     gap: var(--space-halfunit);
+}
+
+.team-card-header-tag {
+    position: absolute;
+    top: 80px;
+    right: -20px;
+    z-index: 1;
+    rotate: 30deg;
 }
 </style>

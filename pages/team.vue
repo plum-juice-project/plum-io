@@ -49,8 +49,9 @@ export default {
     width: 300px;
     height: 300px;
 
-    display: flex;
+    margin-left: 12em;
 
+    display: flex;
     background-color: var(--yellow-card);
 
     border-radius: 50%;
@@ -64,5 +65,17 @@ export default {
     height: 200px;
     scale: 1.5;
     object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .team-header-img {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-header-img {
+        display: none;
+    }
 }
 </style>

@@ -87,6 +87,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 
+  justify-content: space-beetween;
+  align-items: center;
+
   gap: var(--space-sixunits);
 }
 
