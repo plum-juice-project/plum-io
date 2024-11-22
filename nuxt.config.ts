@@ -7,7 +7,6 @@ export default defineNuxtConfig({
   components: true,
 
 
-
   // I  think this is not used, since we don't use github actions
   nitro: {
     preset: 'github-pages', // Preset for GitHub Pages deployment

@@ -12,7 +12,6 @@
 
 <script>
 export default {
-    name: 'DocNotFound'
 }
 </script>
 
@@ -22,6 +21,7 @@ export default {
     color: #fff;
     font-size: 2em;
     font-weight: 700;
+
 }
 
 .error-header-title {
@@ -36,20 +36,12 @@ export default {
     font-weight: 700;
 }
 
-.error-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .error-content img {
     position: relative;
-    top: 10em;
-    
-    scale: 2.5;
+    bottom: 20em;
 
+    scale: 4;
     float: right;
-    margin:0;
+
 }
 </style>

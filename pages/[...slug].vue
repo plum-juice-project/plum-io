@@ -1,36 +1,37 @@
 <template>
   <main>
-    <ContentDoc v-slot="{ doc }">
-      <template v-if="doc">
-        <div class="doc-container">
-          <!-- Table of Contents -->
-          <div class="doc-toc-container">
-            <ol class="doc-toc">
-              <li v-for="(link, i) in doc.body.toc.links" :key="link.id">
-                <a :href="`#${link.id}`">{{ link.text }}</a>
-                <ol v-for="(sublink, j) in link.children" :key="sublink.id">
-                  <a :href="`#${sublink.id}`">{{ sublink.text }}</a>
-                </ol>
-              </li>
-            </ol>
-          </div>
-
-          <!-- Article Content -->
-          <div class="doc-content">
-            <div class="doc-content-date">
-              <Icon name="icons:mdi-receipt-text-edit" style="opacity: 0.7; margin-right: 0.6em;" />
-              <span>{{ doc.date.split("T")[0] }}</span>
-            </div>
-            <Divider color="white" width="100%" vspace="40" />
-            <ContentRenderer :value="doc" />
-          </div>
+    <ContentDoc>
+    <template v-slot="{ doc }">
+      <div class="doc-container">
+        <!-- Table of Contents -->
+        <div class="doc-toc-container">
+          <ol class="doc-toc">
+            <li v-for="(link, i) in doc.body.toc.links" :key="link.id">
+              <a :href="`#${link.id}`">{{ link.text }}</a>
+              <ol v-for="(sublink, j) in link.children" :key="sublink.id">
+                <a :href="`#${sublink.id}`">{{ sublink.text }}</a>
+              </ol>
+            </li>
+          </ol>
         </div>
-      </template>
 
-      <!-- Fallback if document is not found -->
-      <template v-else>
-        <DocNotFound />
-      </template>
+        <!-- Article Content -->
+        <div class="doc-content">
+          <div class="doc-content-date">
+            <Icon name="icons:mdi-receipt-text-edit" style="opacity: 0.7; margin-right: 0.6em;" />
+            <span>{{ dateParser(doc.date) }}</span>
+          </div>
+          <Divider color="white" width="100%" vspace="40" />
+          <ContentRenderer :value="doc" />
+        </div>
+      </div>
+
+    </template>
+    <!-- Not Found -->
+    <template #not-found>
+      <DocNotFound />
+    </template>
+
     </ContentDoc>
   </main>
 </template>
@@ -38,12 +39,10 @@
 
 <script>
 import('assets/css/article.css')
-import DocNotFound from '~/components/DocNotFound.vue';
 export default {
-  components: {
-    DocNotFound,
-  },
+
   afterMount() {
+    if (!doc){return;}
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -73,5 +72,25 @@ export default {
         observer.observe(heading);
       });
   },
+  methods: {
+    dateParser(date) {
+      const [year, month, day] = date.split("T")[0].split('-');
+      const months = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+        'July',
+        'August',
+        'September',
+        'October',
+        'November',
+        'December',
+      ];
+      return `${day} ${months[month - 1]} ${year}`;
+    }
+    },
 }
 </script>

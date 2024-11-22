@@ -223,6 +223,21 @@
     color: #fff;
 }
 
+.doc-content blockquote {
+    padding: 1em;
+    margin-bottom: 0.5em;
+    background-color: var(--background-200);
+    border: 1.5px solid var(--plum-purple-400);
+    border-radius: var(--radius-radius2);
+}
+
+.not-centered {
+    text-align: left;
+}
+
+
+
+
 @media (max-width: 768px) {
     .doc-container {
         flex-direction: column;
