@@ -113,6 +113,10 @@ Aula A1, Via del Castro Laurenziano at 13:00.
 </figure>
 
 ## A Plum at the SC24
+This week Lorenzo attended **SC24**, the world's biggest HPC conference! (what a lucky plum he is...)
+It has been a tremendous experience and... **OH WAIT**, cannot disclose it now, he will write about it!
+
+So, if you want to know what SC24 was about, stay tuned guys
 <figure>
     <img src="https://res.cloudinary.com/dllutk9zl/image/upload/v1732270953/Plum_at_SC24_eozc8d.jpg" alt="">
     <figcaption>Lorenzo at the International Conference for High Performance Computing, Networking, Storage, and Analysis</figcaption>
