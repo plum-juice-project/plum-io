@@ -60,7 +60,7 @@ Every plum has their own expectactions from this presentation:
 - **Saverio:** I expect money
 - **Lachi:** ehhh booh... nobody will be interested
 ### Where and when can you find us:
-Aula A1, Via del Castro Laurenziano at 13:00.
+Aula A1, Via del Castro Laurenziano at 14:00.
 
 ## Behind the scenes, when nothing was still working
 > **Ciz**: Ok, now Slurm is starting!  
