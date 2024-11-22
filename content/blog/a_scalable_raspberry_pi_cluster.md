@@ -10,8 +10,6 @@ image: 'https://res.cloudinary.com/dllutk9zl/image/upload/v1731434779/img2_cfcjn
 date: 2024-11-11
 ---
 
-# A scalable Raspberry Pi cluster
-
 ## Introduction
 
 In this article, we present our project: a compact, simple and scalable cluster, composed of a set of Raspberry Pi 5 connected via Power over Ethernet (PoE) switches. The cluster is designed to be affordable and easy to manage, making it an ideal platform for educational purposes and prototyping distributed applications.

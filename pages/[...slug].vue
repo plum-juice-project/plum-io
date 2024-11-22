@@ -22,7 +22,8 @@
             <span>{{ dateParser(doc.date) }}</span>
           </div>
           <Divider color="white" width="100%" vspace="40" />
-          <ContentRenderer :value="doc" />
+          <span class="plum-article-title">{{ doc.title }}</span>
+          <ContentRenderer class="mt-10" :value="doc" />
         </div>
       </div>
 
@@ -38,6 +39,7 @@
 
 
 <script>
+
 import('assets/css/article.css')
 export default {
 

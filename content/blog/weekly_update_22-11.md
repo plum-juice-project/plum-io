@@ -1,15 +1,13 @@
 ---
-title: 'Weekly Update 18-11'
+title: 'Weekly Update 22-11'
 author: 'Alessio Olivieri'
 gh_nickname: 'Alessio-Olivieri'
-description: 'The week began with the cluster seemingly ready, but issues emerged during testing with MPI and SLURM. Specifically'
-date: 2024-11-18
-image: https://res.cloudinary.com/dllutk9zl/image/upload/v1732001407/geppetto_muhtxu.jpg
+description: 'The week began with the cluster almost in a ready state, but issues emerged during testing with MPI and SLURM. Specifically:
+SLURM (srun) Only ran in singleton mode without errors but failed to scale.
+MPI (mpirun) Crashed outright, returning an error: "PSEC: munge failed to create credential: Socket communication error."'
+date: 2024-11-22
+image: 'https://res.cloudinary.com/dllutk9zl/image/upload/v1732270953/Plum_at_SC24_eozc8d.jpg'
 ---
-
-
-# Weekly Update 18-11
-# Cluster Troubleshooting and meetings
 
 ## Cluster Issues with MPI and SLURM
 
@@ -106,12 +104,6 @@ Aula A1, Via del Castro Laurenziano at 14:00.
 >#### Saverio, officially crowned MVP of confusion.  
 ></text>
 
-## Our stickers reach Vienna
-<figure>
-    <img src="https://res.cloudinary.com/dllutk9zl/image/upload/v1731934454/Vienna_bq6vtc.jpg" alt="">
-    <figcaption>our plum juice stickers have officially reached Vienna! 🎉 A huge shoutout to Saverio for making it happen</figcaption>
-</figure>
-
 ## A Plum at the SC24
 This week Lorenzo attended **SC24**, the world's biggest HPC conference! (what a lucky plum he is...)
 It has been a tremendous experience and... **OH WAIT**, cannot disclose it now, he will write about it!
@@ -123,13 +115,5 @@ So, if you want to know what SC24 was about, stay tuned guys
 </figure>
 
 
-
 ::credits{:authors= '[{"name": "Alessio Olivieri", "github_nickname": "Alessio-Olivieri"}]'}
 ::
-
-<style>
-p {
-  text-indent: -1em;
-  padding-left: 1em;
-}
-<\style>

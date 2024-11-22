@@ -1,12 +1,11 @@
 ---
 title: Every hero has an origin story
 author: Lorenzo Piarulli, Simone Palmieri
+gh_nickname: lor3ny, sudo-err
 date: 04 November 2024
 description: "Three computer science students attended a summer school in Trento to explore HPC topics in depth. Throughout the conference week, they shared a house, meals, and experiences, fostering a strong sense of community. Inspired by their passion for collaboration, they decided to form a group to create a small cluster for their experiments. After the conference, these three students began working together to build a team that shared their vision and love for research and social interaction. Others from diverse backgrounds and specialties joined them, united by a single goal: to create an open cluster built and managed by anyone who wants to contribute."
 image: https://i.imgur.com/ttIxpCA.jpeg
 ---
-
-# Every hero has an origin story
 
 ## Once upon a time...
 Three computer science students attended a [summer school in Trento](https://hpc-summer-school-24.disi.unitn.it/) to explore HPC topics in depth. Throughout the conference week, they shared a house, meals, and experiences, fostering a strong sense of community. Inspired by their passion for collaboration, they decided to form a group to create a small cluster for their experiments. After the conference, these three students began working together to build a team that shared their vision and love for research and social interaction. Others from diverse backgrounds and specialties joined them, united by a single goal: to create an open cluster built and managed by anyone who wants to contribute.
