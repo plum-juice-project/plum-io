@@ -1,17 +1,19 @@
 ---
-title: 'Weekly Update 11-11'
+title: 'Weekly Update 18-11'
 author: 'Alessio Olivieri'
 gh_nickname: 'Alessio-Olivieri'
 description: 'The week began with the cluster seemingly ready, but issues emerged during testing with MPI and SLURM. Specifically'
 date: 2024-11-18
+image: https://res.cloudinary.com/dllutk9zl/image/upload/v1732001407/geppetto_muhtxu.jpg
 ---
 
 
-# Weekly Update - Ernesto Juice Cluster Troubleshooting and Progress
+# Weekly Update 18-11
+# Cluster Troubleshooting and meetings
 
 ## Cluster Issues with MPI and SLURM
 
-The week began with the cluster seemingly ready, but issues emerged during testing with MPI and SLURM. Specifically:
+The week began with the cluster almost in a ready state, but issues emerged during testing with MPI and SLURM. Specifically:
 - **SLURM (`srun`)**: Only ran in singleton mode without errors but failed to scale.
 - **MPI (`mpirun`)**: Crashed outright, returning an error: "PSEC: munge failed to create credential: Socket communication error."
 
@@ -45,25 +47,29 @@ The problem will be solved when the filesystem will be handled by the master, wh
 
 Using munge for the authentication will be scheduled for later, as we prioritize cluster stability for the presentation of the 13/11/24 (which has been rescheduled for the 20/11/24)
 
-## Big steps! Plum juice cluster presentation in the multicore class
-We will present the cluster during the multicore course of professor De Sensi, each of the members has different expectations from this presentation:
-- **Saverio:** I expect money
+## Plum juice cluster presentation in the multicore class
+### Make the world know about us.
+Professor De Sensi gave us 15 minutes of it's multicore classto present our cluster to the students. This is a big opportunity to expand the plum juice team and to make the world know about us!
+### What's the multicore course about?
+The multicore course has been tought to give a deep understanding and practical experience about parallel programming. This is done by proposing the students homeworks where they have to implement classic parallelizable problems like *matrix multiplication*, *histograms computation* and *integral approximation*. The taught libraries are: *MPI, OpenMP, Pthreads* and *Cuda*. 
+### What do we offer?
+The Plum juice team offers to give students the possibility to easily test their applications on a truly multi node system, effectively simulating more expensive clusters like Leonardo.  
+### Our expectations.
+Every plum has their own expectactions from this presentation:
 - **Ciz:** We're dumb
+- **Saverio:** I expect money
 - **Lachi:** ehhh booh... nobody will be interested
-- **Alessio:** Some people will be interested
+### Where and when can you find us:
+Aula A1, Via del Castro Laurenziano at 14:00.
 
-### Tests for the presentation
-Saverio wrote an n-body simulation that scales almost linearly when the nodes utilized are on the same switch
-
-## Behind the scenes
-### Geppetto
+## Behind the scenes, when nothing was still working
 > **Ciz**: Ok, now Slurm is starting!  
 > 
 > **Ciz**: Oh no, just kidding... it can't find the node name. Perfect, we're off to a great start.  
 > 
 > **Ciz**: Guys, the configuration file is full of errors... honestly, it's embarrassing.
 > 
->  **Saverio**: Umm... maybe because you're running it from the master? Just a thought.  
+> **Saverio**: Umm... maybe because you're running it from the master? Just a thought.  
 > 
 > **Ciz**: Why doesn't poor ciz0 have Slurm installed? This is discrimination!  
 > 
@@ -78,52 +84,48 @@ Saverio wrote an n-body simulation that scales almost linearly when the nodes ut
 > **Ciz**: Then, added the node name, and now Slurmd is running on all nodes! 🎉  
 > 
 > **Ciz**: Oh, but Slurmctld won't start because it can't create /var/spool/slurmctld. Of course, it doesn't have permissions... nothing works, help me.  
-> ##### *...A bunch of technical data even the Wi-Fi can't comprehend... The discussion reached the point where we were considering a full reset * 
+> ##### ... The discussion reached the point where we were considering a full reset ...
+> #### In the meanwhile Saverio had news that nobody asked for
 > **Saverio**: How cool is the rack?
-> <figure class="not-centerd">
-    <img src="https://res.cloudinary.com/dllutk9zl/image/upload/v1731934450/whatsapp1_gthkxh.jpg" alt="">
-</figure>  
-> <figure>
-    <img src="https://res.cloudinary.com/dllutk9zl/image/upload/v1731934451/whatsapp2_dgibey.jpg" alt="">
-    <figcaption>Completely out of context image of the rack</figcaption>
-</figure>
 > 
+> <figure class="not-centerd">
+>   <img src="https://res.cloudinary.com/dllutk9zl/image/upload/v1732001405/whatsapp1_sqoiwe.jpg" alt="">
+></figure>   
+>
+>  #### In the middle of desperation, the only friendly answer to Saverio was Simone's:
 > **Simone**: Current situation: Ciz and Ernesto desperate between Wi-Fi and Slurm.
 > 
 > **Simone**: Meanwhile, Saverio in tech support mode:  
 > 
 > <figure class="not-centerd">
-    <img src="https://res.cloudinary.com/dllutk9zl/image/upload/v1731934453/geppetto_onkzgq.jpg" alt="">
-</figure>  
+>    <img src="https://res.cloudinary.com/dllutk9zl/image/upload/v1732001407/geppetto_muhtxu.jpg" alt="">
+></figure>  
+>
+> <text class="centered">
 > 
-#### Saverio, officially crowned MVP of confusion.  
+>#### Saverio, officially crowned MVP of confusion.  
+></text>
 
-### Our stickers reach Vienna
+## Our stickers reach Vienna
 <figure>
     <img src="https://res.cloudinary.com/dllutk9zl/image/upload/v1731934454/Vienna_bq6vtc.jpg" alt="">
     <figcaption>our plum juice stickers have officially reached Vienna! 🎉 A huge shoutout to Saverio for making it happen</figcaption>
 </figure>
 
-<style>
-p {
-  text-indent: -1em;
-  padding-left: 1em;
-}
-<\style>
+## A Plum at the SC24
+This week Lorenzo attended **SC24**, the world's biggest HPC conference! (what a lucky plum he is...)
+It has been a tremendous experience and... **OH WAIT**, cannot disclose it now, he will write about it!
+
+So, if you want to know what SC24 was about, stay tuned guys
+<figure>
+    <img src="https://res.cloudinary.com/dllutk9zl/image/upload/v1732270953/Plum_at_SC24_eozc8d.jpg" alt="">
+    <figcaption>Lorenzo at the International Conference for High Performance Computing, Networking, Storage, and Analysis</figcaption>
+</figure>
 
 
-::credits{:authors= '[{"name":"Alessio Olivieri","github_nickname":"Alessio-Olivieri"}]'}
+
+::credits{:authors= '[{"name": "Alessio Olivieri", "github_nickname": "Alessio-Olivieri"}]'}
 ::
-dinary.com/dllutk9zl/image/upload/v1731934453/geppetto_onkzgq.jpg" alt="">
-</figure>  
-> 
-#### Saverio, officially crowned MVP of confusion.  
-
-### Our stickers reach Vienna
-<figure>
-    <img src="https://res.cloudinary.com/dllutk9zl/image/upload/v1731934454/Vienna_bq6vtc.jpg" alt="">
-    <figcaption>our plum juice stickers have officially reached Vienna! 🎉 A huge shoutout to Saverio for making it happen</figcaption>
-</figure>
 
 <style>
 p {
