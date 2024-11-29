@@ -1,49 +1,64 @@
+<script setup lang="ts">
+import UsefulLinks from './UsefulLinks.vue';
+</script>
+
 <template>
-    <footer class="home-footer">
-        <div class="home-main6">
-            <div class="home-branding">
-                <div class="home-heading20">
-                    <h2 class="home-logo3">Plum Juice</h2>
+    <footer class="footer-container">
+        <div class="footer-left">
+            <div class="footer-heading20">
+                <h2 class="footer-logo3">Plum Juice</h2>
+                <div class="text-6xl">
+                    <UsefulLinks />
+                </div>
+                <span class="footer-copyright">© 2024 Plum Juice. All Rights Reserved.</span>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="footer-list1">
+                <h3 class="footer-heading">Site</h3>
+                <div class="footer-items1">
+                    <NuxtLink class="footer-link " to="/contacts">Contacts</NuxtLink>
+                    <NuxtLink class="footer-link " to="/blog">Blog</NuxtLink>
+                    <NuxtLink class="footer-link  unavaible" to="#roadmap">Roadmap</NuxtLink>
+                    <NuxtLink class="footer-link " to="/">Home</NuxtLink>
                 </div>
             </div>
-            <div class="footer-links">
-                <div class="footer-list1">
-                    <h3 class="footer-heading">Site</h3>
-                    <div class="footer-items1">
-                        <NuxtLink class="footer-link " to="/contacts">Contacts</NuxtLink>
-                        <NuxtLink class="footer-link " to="/blog">Blog</NuxtLink>
-                        <NuxtLink class="footer-link  unavaible" to="#roadmap">Roadmap</NuxtLink>
-                        <NuxtLink class="footer-link " to="#home">Home</NuxtLink>
-                    </div>
-                </div>
-                <div class="footer-list2">
-                    <h3 class="footer-heading">Project</h3>
-                    <div class="footer-items2">
-                        <NuxtLink class="footer-link" to="/team">Team</NuxtLink>
-                        <!-- <NuxtLink class="footer-link  unavaible" to="#home">Licenses</NuxtLink> -->
-                    </div>
+            <div class="footer-list2">
+                <h3 class="footer-heading">Project</h3>
+                <div class="footer-items2">
+                    <NuxtLink class="footer-link" to="/team">Team</NuxtLink>
+                    <!-- <NuxtLink class="footer-link  unavaible" to="#footer">Licenses</NuxtLink> -->
                 </div>
             </div>
         </div>
-        <span class="home-copyright">© 2024 Plum Juice. All Rights Reserved.</span>
     </footer>
 </template>
 
 <style>
-.home-main6 {
-    width: 100%;
+.footer-container {
+    width: 80%;
     display: flex;
     align-items: flex-start;
     flex-direction: row;
     justify-content: space-between;
+
+    padding: var(--space-sixunits);
 }
 
-.home-branding {
-    gap: var(--space-threeunits);
+.footer-left {
+    width: 50%;
     display: flex;
-    max-width: 600px;
     align-items: flex-start;
     flex-direction: column;
+}
+
+.footer-right {
+    width: auto;
+    gap: var(--space-sixunits);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    color: #fff;
 }
 
 .footer-items1 {
@@ -60,11 +75,14 @@
     flex-direction: column;
 }
 
-.home-heading20 {
+.footer-heading20 {
     gap: var(--space-threeunits);
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+
+    width: 60%;
+    max-width: 600px;
 }
 
 .footer-heading {
@@ -74,34 +92,15 @@
     font-weight: 600;
 }
 
-.home-footer {
-    gap: var(--space-threeunits);
-    width: 100%;
-    display: flex;
-    position: relative;
-    max-width: 1440px;
-    align-items: flex-start;
-    padding-top: 120px;
-    padding-left: var(--space-fiveunits);
-    padding-right: var(--space-fiveunits);
-    flex-direction: column;
-    padding-bottom: var(--space-threeunits);
-}
 
-.home-logo3 {
+.footer-logo3 {
     color: rgb(255, 255, 255);
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
 }
 
-.footer-links {
-    gap: var(--space-sixunits);
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    color: #fff;
-}
+
 
 .footer-list1 {
     gap: var(--space-threeunits);
@@ -131,13 +130,13 @@
     line-height: 27px;
 }
 
-.home-copyright {
+.footer-copyright {
     font-size: 0.8em;
     color: #fff;
 }
 
 @media (max-width: 767px) {
-    .home-footer {
+    .footer-container {
         padding-top: var(--space-fourunits);
         padding-left: var(--space-twounits);
         padding-right: var(--space-twounits);
@@ -145,7 +144,7 @@
         align-items: center;
     }
 
-    .home-main6 {
+    .footer-main6 {
         gap: var(--space-threeunits);
         display: flex;
         flex-direction: column;
@@ -154,19 +153,19 @@
         width: 100%;
     }
 
-    .home-branding {
+    .footer-left {
         max-width: 100%;
         align-items: center;
         text-align: center;
     }
 
-    .home-logo3 {
+    .footer-logo3 {
         font-size: 24px;
         margin: auto;
 
     }
 
-    .home-heading20 {
+    .footer-heading20 {
         gap: var(--space-oneunit);
     }
 
@@ -179,7 +178,7 @@
         font-size: 16px;
     }
 
-    .footer-links {
+    .footer-right {
         width: 100%;
         justify-content: space-around;
     }

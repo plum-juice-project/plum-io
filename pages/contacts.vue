@@ -13,13 +13,8 @@
     <div class="content-body contacts-content">
         <div class=" contatcs-content-socials">
             <h1 class="contacts-content-socials-title">Our socials</h1>
-            <div class="contacs-content-socials-list">
-                <a href="https://github.com/plum-juice-project" target="_blank" rel="noopener noreferrer">
-                    <Icon name="icons:mdi-github" />
-                </a>
-                <a href="https://www.instagram.com/plumjuiceteam/" target="_blank" rel="noopener noreferrer">
-                    <Icon name="icons:mdi-instagram" />
-                </a>
+            <div class="text-8xl">
+                <UsefulLinks />
             </div>
         </div>
         <Divider color="white" vspace="30" />
@@ -109,18 +104,7 @@ export default {
     margin: var(--space-oneandhalfunits);
 }
 
-.contacs-content-socials-list {
-    width: 100%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: var(--space-threeunits);
-
-    font-size: 7em;
-    color: #fff;
-}
 
 .contacts-content-header {
     width: 100%;
