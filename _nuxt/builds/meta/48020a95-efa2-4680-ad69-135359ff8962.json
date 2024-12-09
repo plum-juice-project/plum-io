@@ -1,0 +1,1 @@
+{"id":"48020a95-efa2-4680-ad69-135359ff8962","timestamp":1733743556436,"matcher":{"static":{"/":{"prerender":true},"/team":{"prerender":true},"/contacts":{"prerender":true},"/blog":{"prerender":true}},"wildcard":{},"dynamic":{}},"prerendered":["/blog/weekly_update_29-11","/blog/weekly_update_22-11","/blog/a_scalable_raspberry_pi_cluster","/blog/every_hero_has_an_origin_story"]}
