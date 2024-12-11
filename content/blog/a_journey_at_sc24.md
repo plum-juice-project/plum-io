@@ -7,8 +7,6 @@ image: "https://media.licdn.com/dms/image/v2/D4D22AQG8XthITyx-9A/feedshare-shrin
 date: "2024-12-09"
 ---
 
-# A Journey at SC24
-
 This year, our juice was taken to one of the most important conferences in the world in the remote and exotic Atlanta, in the USA. Despite the temptation to invest all of our limited savings in cutting-edge technologies such as immersion cooling systems, 8-GPU racks, enormous hamburgers, or state-of-the-art accelerators, we resisted. Navigating through numerous temptations, we are truly thrilled to have been part of such a pioneering and outstanding community.
 
 Hi everyone, I'm Lorenzo. This year, I had the privilege of volunteering as a student at the Supercomputing conference '24 (SC24). SC24 is renowned as the largest gathering focused on high-performance computing (HPC), attracting researchers from those working on the cutting edge of supercomputing hardware to scientists utilizing HPC systems for their scientific applications. The conference features a diverse array of events, including technical paper presentations, workshops, panels, tutorials, Birds of a Feather (BoF) sessions, and keynotes. Each type of event has its own unique format, ranging from formal paper presentations to open discussions with recognized experts in the field. The technical events, such as paper presentations, workshops, and Birds of a Feather (BoFs), play a crucial role in showcasing the year's groundbreaking discoveries that are shaping the future of how supercomputers are designed and utilized. They serve as the foundation of the research community and the backbone of the conference, driving innovation and collaboration in the field.
@@ -45,3 +43,6 @@ I've arrive at SC24 as a student with a million unordered thoughts swirling in m
 Looking back, SC24 taught me countless things, but two stand out that I’ll carry with me forever. First, PlumJuice began as a labor of love—a way to share our secret nerdy passions for fast, interconnected, and “tasty” ideas. SC24 showed me just how important it is to build a community that understands and embraces your feelings, passions, and even fears.
 Second, SC24 reminded me of the profound importance of research in our field. It takes people willing to dedicate part of their lives to chasing what often feels like fantasies and magic. But those fantasies can lead to groundbreaking discoveries that change lives and reshape how we relate to the world. HPC can be the bridge between imagination and reality—a tool to turn dreams into revolutions.
 I’m thrilled to join this incredible community and dedicate my efforts to the HPC field. I don’t care about where it takes me or the recognition I might get. All I want is to work on something meaningful and make a difference for others. After all, in the words of a wise wizard, “All we have to decide is what to do with the time that is given us.” And I’ve made my choice.
+
+::credits{:authors= '[{"name":"Lorenzo Piarulli","github_nickname":"lor3ny"}]'}
+::
