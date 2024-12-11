@@ -1,7 +1,7 @@
 <template>
   <section class="home-hero" id="home">
     <div class="home-heading10">
-      <h1 class="home-header11">It's not just a raspberrypi cluster</h1>
+      <h1 class="home-header11">It's not just a raspberry pi cluster</h1>
       <p class="home-caption10">
         It's like a fruit salad.
       </p>
@@ -68,11 +68,10 @@
     </div>
     <div class="home-main4">
       <!-- BLOG PREVIEW -->
-
       <ArticlePreview v-for="article in articles" :key="article.slug" :article="article" />
 
       <!-- PLACEHOLDER -->
-      <div v-for="index in MAX_ARTICLES - articles.length" :key="'placeholder-' + index">
+      <div v-if="articles.length < MAX_ARTICLES" v-for="index in MAX_ARTICLES - articles.length" :key="'placeholder-' + index">
         <div class="home-card13">
           <div class="home-content15">
             <span class="home-title">Coming Soon...</span>
@@ -124,12 +123,11 @@ export default {
     };
   },
 
-
-
   setup() {
     const { data: articles } = useAsyncData('blog', async () => {
       try {
-        const _posts = await queryContent('blog').sort({ date: -1 }).find();
+        // MAX_ARTICLES is not defined yet when setup is called, so I need to use 4 directly
+        const _posts = await queryContent('blog').sort({ date: -1 }).limit(4).find();
         return _posts;
       } catch (error) {
         console.error(error);

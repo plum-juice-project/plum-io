@@ -21,6 +21,7 @@ export default {
 </script>
 
 <template>
+  <!-- preview home page -->
   <NuxtLink class="h-auto" :to="'/blog/' + article.title.replaceAll(' ', '_').toLowerCase()">
     <div v-if="!extended" class="home-card13">
       <div class="home-image16">
@@ -32,6 +33,7 @@ export default {
       </div>
     </div>
 
+    <!-- extended version -->
     <div v-else class="blog-card">
       <div class="blog-image">
         <img v-if="article.image" alt="image" :src=article.image />
