@@ -1,8 +1,8 @@
 ---
-title: "December Update #1"
+title: "December Update 1"
 author: "Simone Palmieri"
 gh_nickname: "sudo-err"
-description: "December Update #1 from the PlumJuice team"
+description: "December Update 1 from the PlumJuice team"
 image: "https://res.cloudinary.com/dllutk9zl/image/upload/v1734615079/Preview_dec01_xq5rvl.jpg"
 date: "2024-12-18"
 ---
