@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <div class="socials-list">
+    <!-- <div class="socials-list">
         <a href="https://github.com/plum-juice-project" target="_blank" rel="noopener noreferrer">
             <Icon name="icons:mdi-github" />
         </a>
@@ -24,21 +24,23 @@ export default {
             rel="noopener noreferrer">
             <Icon name="icons:ph-patreon-logo-fill" />
         </a>
-    </div>
+    </div> -->
 </template>
 
 
 <style>
 .socials-list {
-    width: 100%;
+    width: 50%;
+    position: relative;
+    float: left;
 
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-auto-flow: column;
 
-    gap: var(--space-threeunits);
-    
+    gap: var(--space-twounits);
 
+    margin:auto;
     color: #fff;
 }
 
@@ -49,6 +51,7 @@ export default {
     text-decoration: none;
     color: #fff;
     margin: 0;
+    padding: 0;
 }
 
 

@@ -70,7 +70,7 @@ export default {
     setup() {
         const { data: articles } = useAsyncData('blog', async () => {
             try {
-                const _posts = await queryContent('blog').sort({ date: -1 }).find();
+                const _posts = await queryContent('blog').sort({ date: -1 }).find();    
                 return _posts;
             } catch (error) {
                 console.error(error);

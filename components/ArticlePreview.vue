@@ -67,6 +67,11 @@ export default {
   color: black;
 }
 
+.blog-card:hover {
+  box-shadow: inset 0px 0px 100px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
 .blog-image {
   border-radius: 0.5em;
   overflow: hidden;
