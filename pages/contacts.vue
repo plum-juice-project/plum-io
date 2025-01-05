@@ -13,7 +13,7 @@
     <div class="content-body contacts-content">
         <div class=" contatcs-content-socials">
             <h1 class="contacts-content-socials-title">Our socials</h1>
-            <div class="text-8xl">
+            <div class="mt-6 text-8xl w-full flex justify-center">
                 <UsefulLinks />
             </div>
         </div>

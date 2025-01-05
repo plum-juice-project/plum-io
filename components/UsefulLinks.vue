@@ -30,7 +30,7 @@ export default {
 
 <style>
 .socials-list {
-    width: auto;
+    width: 100%;
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
