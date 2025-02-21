@@ -1,29 +1,48 @@
-name: Plum Juice Website Deployment
+name: Plum Juice Deployment
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - main  
+      - main
 
-permissions:
-  contents: read
-  pages: write         
-  
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+      - run: corepack enable
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      # Install dependencies and build site
+      - run: npm install
+      - run: npm run generate:prod
+      # Upload build artifacts
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages
+          path: ./.output/public
 
-    - name: Install Dependencies
-      run: npm install
+  deploy:
+    needs: build
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the Repository
+        uses: actions/checkout@v4
 
-    - name: Generate Static Files
-      run: npm run generate:prod
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+          path: dist  # Change path to match build output
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist  # Change path to match downloaded artifact
+          publish_branch: gh-pages  # Deploy to the correct branch
