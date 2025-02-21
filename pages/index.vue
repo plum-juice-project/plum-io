@@ -124,7 +124,7 @@ export default {
   },
 
   setup() {
-    const { data: articles } = useAsyncData('blog', async () => {
+    const { data: articles } = useAsyncData('blog-preview', async () => {
       try {
         // MAX_ARTICLES is not defined yet when setup is called, so I need to use 4 directly
         const _posts = await queryContent('blog').sort({ date: -1 }).limit(4).find();
