@@ -90,7 +90,7 @@ export default defineNuxtConfig({
         { name: 'PlumJuice', content: 'Plum Juice - it\'s not just a Rapsberry Pi cluster' }
       ],
       link: [
-        { rel: 'icon', type: 'image/ico', href: '/favicon.ico' }
+        { rel: 'icon', type: 'image/ico', href: './favicon.ico' }
       ],
     },
     baseURL: process.env.BASE_URL || '/',
