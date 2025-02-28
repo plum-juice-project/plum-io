@@ -2,7 +2,7 @@
 title: "We really did it!"
 author: "Simone Palmieri"
 gh_nickname: "sudo-err"
-description: "Our first ever hackathon was a success!"
+description: "Our first ever hackathon was a success! And if you are one of the participants there is something for you at the end of this article, go check it out!"
 image: "https://res.cloudinary.com/dllutk9zl/image/upload/v1740772336/group_pic_crop_nk04qj.jpg"
 date: "2025-02-28"
 ---
@@ -52,7 +52,7 @@ Problems (newer ones, not the leaked ones...) were centered around [parallelizin
 ## What now?
 
 For all the participants __we will publish the problems on our GitHub__, if we ever do understand it, and __the leaderboard will be re-opened on our website__ so that you can still try and get into it. All of you that registered will get an email detailing everything there is to know, stay tuned!
-We will continue to aim higher and higher, with our infrastructure becoming more and more __juicy__. The hackathon was a great opportunity to get to know you and for you to get to know us, in the hope that we did not frighten you, and see what are the capabilities of some resourceful and willing students that want nothing more than building a vibrant community around the topics of HPC and computer science as a whole. This was nothing but our first milestone, with many more to come. We sure hope to have you at our side during this journey, as we can't be juicy alone in this world, and as we all know __plums grow in clusters__ (I'm really bad at biology).
+In the meantime we will continue to aim higher and higher, with our infrastructure becoming more and more __juicy__. The hackathon was a great opportunity to get to know you and for you to get to know us, in the hope that we did not frighten you, and see what are the capabilities of some resourceful and willing students that want nothing more than building a vibrant community around the topics of HPC and computer science as a whole. This was nothing but our first milestone, with many more to come. We sure hope to have you at our side during this journey, as we can't be juicy alone in this world, and as we all know __plums grow in clusters__ (I'm really bad at biology).
 
 <figure>
     <img src="https://res.cloudinary.com/dllutk9zl/image/upload/v1740772336/group_pic_crop_nk04qj.jpg" alt="Beautiful group picture">
