@@ -6,9 +6,14 @@
     </RouterLink>
     <nav data-thq="navbar-nav-links" data-role="Nav" class="home-nav1">
       <NuxtLink to="/" class="nav-link" active-class="nav-link-is-active">Home</NuxtLink>
-      <NuxtLink to='/team' class="nav-link">Team</NuxtLink>
-      <NuxtLink to="/blog" class="nav-link" active-class="nav-link-is-active">Blog</NuxtLink>
-      <NuxtLink to="/contacts" class="nav-link" active-class="nav-link-is-active">Contacts</NuxtLink>
+      <NuxtLink to="/hackathon" class="nav-link hackathon" active-class="nav-link-is-active">Hackathon</NuxtLink>
+      <NuxtLink to="/team" class="nav-link" active-class="nav-link-is-active" >Team</NuxtLink>
+      <NuxtLink to="/blog" class="nav-link" active-class="nav-link-is-active"
+        >Blog</NuxtLink
+      >
+      <NuxtLink to="/contacts" class="nav-link" active-class="nav-link-is-active"
+        >Contacts</NuxtLink
+      >
     </nav>
   </header>
 </template>
@@ -49,10 +54,13 @@ export default {
   color: #ffffff;
   display: grid;
   grid-auto-flow: column;
-
 }
 
-@media(max-width: 479px) {
+.hackathon{
+  border: solid 1px var(--gree);
+}
+
+@media (max-width: 479px) {
   .home-navbar {
     padding: var(--space-oneunit);
     align-items: center;
@@ -67,10 +75,9 @@ export default {
   .home-nav1 {
     scale: 0.7;
   }
-
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .home-navbar {
     padding-left: var(--space-twounits);
     padding-right: var(--space-twounits);
@@ -84,14 +91,12 @@ export default {
   .home-nav1 {
     scale: 0.7;
   }
-
 }
 
-@media(max-width: 991px) {
+@media (max-width: 991px) {
   .home-navbar {
     padding-left: var(--space-threeunits);
     padding-right: var(--space-threeunits);
   }
-
 }
 </style>

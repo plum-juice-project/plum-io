@@ -27,6 +27,7 @@ import UsefulLinks from './UsefulLinks.vue';
                     <h3 class="footer-heading">Project</h3>
                     <div class="footer-items2">
                         <NuxtLink class="footer-link" to="/team">Team</NuxtLink>
+                        <NuxtLink class="footer-link" to="/hackathon">Hackathon</NuxtLink>
                         <!-- <NuxtLink class="footer-link  unavaible" to="#footer">Licenses</NuxtLink> -->
                     </div>
                 </div>
