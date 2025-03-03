@@ -1,0 +1,17 @@
+[_] add 404 and 500 error pages, I think need a component to allow ContentDoc to render the error pages
+
+[_] little improvements on the responsive design
+
+[_] build team section
+
+[x] fix code style
+
+[_] add copy to clipboard button on the code snippets
+
+[_] build custom scrollbar 
+
+[x] build contact section
+
+[x] build footer
+
+[x] improve responsiveness of the website, some resolutions seem to have some issues., I think the problem is in css
