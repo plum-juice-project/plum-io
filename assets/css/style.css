@@ -74,13 +74,13 @@ body {
   padding-left: var(--space-fiveunits);
   padding-right: var(--space-fiveunits);
   flex-direction: column;
-  padding-bottom: 160px;
 
   margin-top: 5em;
 }
 
 .content-body {
   width: 60%;
+  margin-top: var(--space-sixunits);
 }
 
 .title-header-content {
