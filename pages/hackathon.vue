@@ -7,10 +7,18 @@
           First our hackathon is past! We had a great time and we are looking forward to
           the next one.
         </span>
+        <div class="header-content">
+          <span class="paragraph">
+            Hey plummers! In the last couple of months we've been quite busy setting up
+            new nodes on the cluster, arguing over git repositories' names
+            (plumjuice-plumplum-wereallyjuicy-2-bis-new-final-forreal-finalfinal isn't
+            that bad after all...), and most importantly planning and setting up our
+            hackathon that took place on friday, February the 21st.
+            <br />
+            <a href="/blog/we_really_did_it!" class="link-read-more">Read more...</a>
+          </span>
+        </div>
       </div>
-    </div>
-    <div class="header-content">
-      <!-- PUT ARTICLE PREVIEW -->
     </div>
   </section>
   <section class="title-header">
@@ -18,8 +26,7 @@
       <h2 class="title-header-title">The fun is not over!</h2>
       <span class="title-paragraph">
         We’ve heard some of you are eager to keep testing the project! So, guess what?
-        We’re keeping the systems up and running and extending the leaderboard updates for
-        14 more days!
+        We’re keeping the systems up and running and extending the leaderboard updates for a while!
       </span>
     </div>
     <div class="body-content">
@@ -85,10 +92,7 @@ const { data: results, error, refresh } = useAsyncData("leaderboard", async () =
 
     return {
       data: parseTeamResults(_data),
-      titles: _data
-        .split("\n")[0]
-        .split(",")
-        .slice(1),
+      titles: _data.split("\n")[0].split(",").slice(1),
     };
   } catch (error) {
     console.error(error);
@@ -112,7 +116,19 @@ const { data: results, error, refresh } = useAsyncData("leaderboard", async () =
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 5em;
+  margin-bottom: var(--space-fourunits);
+}
+
+.header-content {
+  display: flex;
+  margin-top: 2em;
+}
+
+.paragraph {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 1px;
 }
 
 .body-content-container {
@@ -155,5 +171,11 @@ const { data: results, error, refresh } = useAsyncData("leaderboard", async () =
   color: var(--yellow-card);
   margin-top: 2em;
   text-align: center;
+}
+
+.link-read-more {
+  color: var(--plum-purple-500);
+  font-weight: 600;
+  text-decoration: none;
 }
 </style>
