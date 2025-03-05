@@ -15,7 +15,7 @@
             that bad after all...), and most importantly planning and setting up our
             hackathon that took place on friday, February the 21st.
             <br />
-            <a href="/blog/we_really_did_it!" class="link-read-more">Read more...</a>
+            <a href="/plum-io/blog/we_really_did_it!" class="link-read-more">Read more...</a>
           </span>
         </div>
       </div>
