@@ -97,7 +97,7 @@
       </div> -->
     </div>
   </section>
-  <Divider color="white" vspace="50" />
+  <!-- Divider color="white" vspace="50" />
   <section id="roadmap" class="home-roadmap">
     <div class="home-heading14">
       <h2 class="home-header21">Roadmap</h2>
@@ -105,9 +105,10 @@
         Our plans for the future... <span class="home-emoji">🚀</span>
       </span>
     </div>
-    <!-- <Roadmap /> -->
+    <Roadmap /> 
     <h1 class="roadmap-cs">Coming Soon</h1>
-  </section>
+  </section> 
+  -->
 </template>
 
 <script setup>
