@@ -6,7 +6,7 @@
         <tr class="lb-row">
           <th>Rank</th>
           <th>Team</th>
-          <th>Score</th>
+          <th>Time (ms)</th>
         </tr>
       </thead>
       <tbody class="lb-body">

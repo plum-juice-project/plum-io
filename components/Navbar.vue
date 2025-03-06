@@ -38,7 +38,7 @@ export default {
   display: flex;
   max-width: 1440px;
   /* align-items: center;  */
-  margin: var(--space-threeunits) auto;
+  margin: var(--space-threeunits) 0 0 0;
   justify-content: space-between;
 }
 
@@ -59,7 +59,6 @@ export default {
 @media (max-width: 479px) {
   .home-navbar {
     justify-content: center;
-    
   }
 
   .text-logo1 {
