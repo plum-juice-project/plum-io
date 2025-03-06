@@ -5,23 +5,31 @@
       <NuxtImg src="/text-plum-light.png" alt="logo" class="text-logo1" />
     </RouterLink>
     <nav data-thq="navbar-nav-links" data-role="Nav" class="home-nav1">
-      <NuxtLink to="/" class="nav-link" active-class="nav-link-is-active">Home</NuxtLink>
-      <NuxtLink to="/hackathon" class="nav-link hackathon" active-class="nav-link-is-active">Hackathon</NuxtLink>
-      <NuxtLink to="/team" class="nav-link" active-class="nav-link-is-active" >Team</NuxtLink>
-      <NuxtLink to="/blog" class="nav-link" active-class="nav-link-is-active"
-        >Blog</NuxtLink
-      >
-      <NuxtLink to="/contacts" class="nav-link" active-class="nav-link-is-active"
-        >Contacts</NuxtLink
-      >
+      <div class="nav-links-container">
+        <NuxtLink to="/" class="nav-link" active-class="nav-link-is-active"
+          >Home</NuxtLink
+        >
+        <NuxtLink to="/hackathon" class="nav-link" active-class="nav-link-is-active"
+          >Hackathon</NuxtLink
+        >
+        <NuxtLink to="/team" class="nav-link" active-class="nav-link-is-active"
+          >Team</NuxtLink
+        >
+        <NuxtLink to="/blog" class="nav-link" active-class="nav-link-is-active"
+          >Blog</NuxtLink
+        >
+        <NuxtLink to="/contacts" class="nav-link" active-class="nav-link-is-active"
+          >Contacts</NuxtLink
+        >
+      </div>
     </nav>
   </header>
 </template>
 
 <script>
 export default {
-  name: 'NavBar'
-}
+  name: "NavBar",
+};
 </script>
 
 <style>
@@ -29,42 +37,29 @@ export default {
   width: 100%;
   display: flex;
   max-width: 1440px;
-
-  flex-wrap: wrap;
-  position: relative;
-  align-items: center;
-  padding-top: var(--space-threeunits);
-  padding-left: var(--space-fiveunits);
-  padding-right: var(--space-fiveunits);
-  padding-bottom: var(--space-threeunits);
-
+  /* align-items: center;  */
+  margin: var(--space-threeunits) auto;
   justify-content: space-between;
 }
 
-.home-header10 {
-  width: 100%;
+.home-nav1 {
+  color: #ffffff;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
 }
 
-.home-nav1 {
+.nav-links-container {
+  display: flex;
+  flex-wrap: wrap;
   gap: var(--space-twounits);
-  flex: 0 0 auto;
-  color: #ffffff;
-  display: grid;
-  grid-auto-flow: column;
-}
-
-.hackathon{
-  border: solid 1px var(--gree);
+  justify-content: center;
 }
 
 @media (max-width: 479px) {
   .home-navbar {
-    padding: var(--space-oneunit);
-    align-items: center;
     justify-content: center;
+    
   }
 
   .text-logo1 {
@@ -79,6 +74,7 @@ export default {
 
 @media (max-width: 767px) {
   .home-navbar {
+    flex-wrap: wrap;
     padding-left: var(--space-twounits);
     padding-right: var(--space-twounits);
   }
