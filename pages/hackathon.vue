@@ -21,7 +21,7 @@
       </div>
     </div>
   </section>
-  <section class="title-header">
+  <section class="content-body">
     <div class="title-heading">
       <h2 class="title-header-title">The fun is not over!</h2>
       <span class="title-paragraph">
@@ -177,5 +177,30 @@ const { data: results, error, refresh } = useAsyncData("leaderboard", async () =
   color: var(--plum-purple-500);
   font-weight: 600;
   text-decoration: none;
+}
+
+
+@media(max-width: 767px) {
+  .hackathon-title-header {
+    margin-top: 2em;
+  }
+
+  .body-content-title {
+    font-size: 2em;
+  }
+
+  .paragraph {
+    font-size: 1em;
+  }
+
+  .body-content-container {
+    padding: 1em;
+  }
+
+  .body-content-leaderboard {
+    font-size: 0.5em;
+    flex-direction: column;
+    gap: var(--space-fourunits)
+  }
 }
 </style>

@@ -127,8 +127,12 @@ body {
   .content-body {
     width: 90%;
   }
-}
 
+  .title-paragraph {
+    font-size: 1.5em;
+    line-height: 40px;
+  }
+}
 
 
 .title-heading2 {
