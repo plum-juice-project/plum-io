@@ -68,13 +68,7 @@ body {
 .title-header {
   gap: var(--space-fiveunits);
   width: 100%;
-  display: grid;
-  max-width: 1440px;
-  align-items: flex-start;
-  padding-left: var(--space-fiveunits);
-  padding-right: var(--space-fiveunits);
-  flex-direction: column;
-
+  width: 60%;
   margin-top: 5em;
 }
 

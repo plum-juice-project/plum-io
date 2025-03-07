@@ -15,7 +15,9 @@
             that bad after all...), and most importantly planning and setting up our
             hackathon that took place on friday, February the 21st.
             <br />
-            <a href="/plum-io/blog/we_really_did_it!" class="link-read-more">Read more...</a>
+            <a href="/plum-io/blog/we_really_did_it!" class="link-read-more"
+              >Read more...</a
+            >
           </span>
         </div>
       </div>
@@ -26,7 +28,8 @@
       <h2 class="title-header-title">The fun is not over!</h2>
       <span class="title-paragraph">
         We’ve heard some of you are eager to keep testing the project! So, guess what?
-        We’re keeping the systems up and running and extending the leaderboard updates for a while!
+        We’re keeping the systems up and running and extending the leaderboard updates for
+        a while!
       </span>
     </div>
     <div class="body-content">
@@ -181,8 +184,15 @@ const { data: results, error, refresh } = useAsyncData("leaderboard", async () =
   text-decoration: none;
 }
 
+@media (max-width: 1400px) {
+  .body-content-leaderboard {
+    font-size: 0.8em;
+    flex-direction: column;
+    gap: var(--space-fourunits);
+  }
+}
 
-@media(max-width: 767px) {
+@media (max-width: 768px) {
   .hackathon-title-header {
     margin-top: 2em;
   }
@@ -202,7 +212,7 @@ const { data: results, error, refresh } = useAsyncData("leaderboard", async () =
   .body-content-leaderboard {
     font-size: 0.5em;
     flex-direction: column;
-    gap: var(--space-fourunits)
+    gap: var(--space-fourunits);
   }
 }
 </style>
