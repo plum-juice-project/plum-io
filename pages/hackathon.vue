@@ -73,6 +73,8 @@ function parseTeamResults(input) {
       }
     });
   }
+  // sort by lowest time
+  projectResults.forEach((project) => project.sort((a, b) => a[1] - b[1]));
   return projectResults;
 }
 
