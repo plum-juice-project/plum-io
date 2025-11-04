@@ -7,7 +7,7 @@ export default {
     return {
       title: 'Plum Juice',
       meta: [
-        { hid: 'description', name: 'Plum Juice', content: 'My awesome Nuxt.js project' }
+        { hid: 'description', name: 'Plum Juice', content: "It's not just a raspberry pi cluster" }
       ]
     }
   },
