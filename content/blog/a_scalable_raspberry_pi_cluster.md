@@ -1,7 +1,7 @@
 ---
 title: 'A scalable Raspberry Pi cluster'
 author: 'Francesco Fazzari'
-gh_nickname: 'CiZ01'
+gh_nickname: 'cizzoo'
 description: "The cluster consists of eight Raspberry Pi 5 nodes:
 Each node is a compute node with 4GB of RAM and a quad-core ARM processor.
 Just one special node, with a special role, with a special personality, is a Raspberry Pi 5 with 8GB of RAM and a NVMe SSD mounted. This node is the storage node that provides a shared filesystem for the entire cluster and is used for managing other aspects of the cluster.
@@ -64,5 +64,5 @@ While it’s not a substitute for large-scale server clusters, it’s a valuable
 We’re planning to add new nodes to the cluster (but of course, there are never enough ports on switches 😭). We’re also considering adding new hardware to boost node computation, like **GPUs**, **TPUs**, and other accelerators. These upgrades would let us take on more complex tasks and experiment with hardware-accelerated processing, pushing our Pi cluster’s capabilities even further! 🚀.
 
 
-::credits{:authors='[{"name":"Francesco Fazzari","github_nickname":"CiZ01"}]'}
+::credits{:authors='[{"name":"Francesco Fazzari","github_nickname":"cizzoo"}]'}
 ::
