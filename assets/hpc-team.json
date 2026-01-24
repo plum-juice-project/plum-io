@@ -1,0 +1,63 @@
+[
+    {
+        "name": "Leonardo Biason",
+        "gh_handle": "elbi21",
+        "bio": "Enjoys cooking, taking pictures and hiking (and complaining). Loves low-level stuff and tweaking with hardware. Has worked on <mark>Cerebras</mark>",
+        "tags": [
+            "sysadmin",
+            "cuda",
+            "mpi",
+            "slurm"
+        ]
+    },
+    {
+        "name": "Elia Belli",
+        "gh_handle": "Elia-Belli",
+        "bio": "He likes stuff (again)",
+        "tags": [
+            "cuda",
+            "mpi",
+            "cerebras"
+        ]
+    },
+    {
+        "name": "Leila Zanoni",
+        "gh_handle": "LleilaA13",
+        "bio": "Cresi",
+        "tags": [
+            "cuda",
+            "mpi",
+            "cerebras"
+        ]
+    },
+    {
+        "name": "Andrea Venditti",
+        "gh_handle": "Reewd",
+        "bio": "He likes stuff (again)",
+        "tags": [
+            "cuda",
+            "mpi",
+            "cerebras"
+        ]
+    },
+    {
+        "name": "Elia Belli",
+        "gh_handle": "elia_belli02",
+        "bio": "He likes stuff (again)",
+        "tags": [
+            "cuda",
+            "mpi",
+            "cerebras"
+        ]
+    },
+    {
+        "name": "Elia Belli",
+        "gh_handle": "elia_belli02",
+        "bio": "He likes stuff (again)",
+        "tags": [
+            "cuda",
+            "mpi",
+            "cerebras"
+        ]
+    }
+]

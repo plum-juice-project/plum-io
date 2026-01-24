@@ -1,0 +1,22 @@
+{
+    "sysadmin": {
+        "display": "SysAdmin",
+        "color": "#3C86B5"
+    },
+    "mpi": {
+        "display": "MPI",
+        "color": "#B0853A"
+    },
+    "cuda": {
+        "display": "CUDA",
+        "color": "#48A367"
+    },
+    "cerebras": {
+        "display": "Cerebras",
+        "color": "#C9793A"
+    },
+    "slurm": {
+        "display": "SLURM",
+        "color": "#3A7FC9"
+    }
+}

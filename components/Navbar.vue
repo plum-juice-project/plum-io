@@ -15,6 +15,9 @@
         <NuxtLink to="/team" class="nav-link" active-class="nav-link-is-active"
           >Team</NuxtLink
         >
+        <NuxtLink to="/competitive-team" class="nav-link" active-class="nav-link-is-active"
+          >Competitive Team</NuxtLink
+        >
         <NuxtLink to="/blog" class="nav-link" active-class="nav-link-is-active"
           >Blog</NuxtLink
         >

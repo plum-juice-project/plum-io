@@ -28,6 +28,7 @@ export default defineNuxtConfig({
     '/team': { prerender: true },
     '/contacts': { prerender: true },
     '/blog': { prerender: true },
+    '/competitive-team': { prerender: true }
   },
 
   modules: [
@@ -83,6 +84,7 @@ export default defineNuxtConfig({
     "~/assets/css/style.css",
     "~/assets/css/home.css"
   ],
+
   app: {
     head: {
       title: 'Plum Juice',
@@ -94,6 +96,10 @@ export default defineNuxtConfig({
       ],
     },
     baseURL: process.env.BASE_URL || '/',
+  },
+
+  image: {
+    dir: 'assets'
   },
 
   compatibilityDate: '2024-09-19',

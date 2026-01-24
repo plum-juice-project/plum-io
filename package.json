@@ -2,6 +2,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "clean": "rm -rf node_modules/.cache .output .nuxt",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
