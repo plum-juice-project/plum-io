@@ -1,7 +1,7 @@
 [
     {
         "name": "Leonardo Biason",
-        "gh_handle": "elbi21",
+        "gh_handle": "ElBi21",
         "bio": "Enjoys cooking, taking pictures and hiking (and complaining). Loves low-level stuff and tweaking with hardware. Has worked on <mark>Cerebras</mark>",
         "tags": [
             "sysadmin",
@@ -33,7 +33,7 @@
     {
         "name": "Andrea Venditti",
         "gh_handle": "Reewd",
-        "bio": "He likes stuff (again)",
+        "bio": "AAAAAAAAA",
         "tags": [
             "cuda",
             "mpi",
@@ -41,9 +41,9 @@
         ]
     },
     {
-        "name": "Elia Belli",
-        "gh_handle": "elia_belli02",
-        "bio": "He likes stuff (again)",
+        "name": "Maria Campos",
+        "gh_handle": "mariacgs",
+        "bio": "She likes stuff (again)",
         "tags": [
             "cuda",
             "mpi",
@@ -51,7 +51,7 @@
         ]
     },
     {
-        "name": "Elia Belli",
+        "name": "Francesco De Benedittis",
         "gh_handle": "elia_belli02",
         "bio": "He likes stuff (again)",
         "tags": [

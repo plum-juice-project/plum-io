@@ -97,9 +97,9 @@ export default defineNuxtConfig({
     baseURL: process.env.BASE_URL || '/',
   },
 
-  image: {
+  /* image: {
     dir: 'assets'
-  },
+  }, */
 
   compatibilityDate: '2024-09-19',
 })

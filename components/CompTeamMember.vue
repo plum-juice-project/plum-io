@@ -10,7 +10,7 @@ export default {
     },
 
     mounted() {
-        console.log(this.name_bg)
+        console.log(this.memberObj.gh_handle);
     },
 
     props: [ "memberObj", "memberIndex" ]
@@ -21,7 +21,7 @@ export default {
     <div :class="['member-container', `member-${orientation}`]">
         <div class="member-shape">
             <div class="member-name-photo">
-                <NuxtImg class="member-photo" :src="`/comp_team_imgs/${ this.memberObj.gh_handle }.jpg`" />
+                <NuxtImg class="member-photo" :src="`/comp_team_imgs/${ memberObj.gh_handle }.jpg`" />
                 <div class="member-name-bg" :style="{ backgroundImage: this.name_bg }">
                     <p class="member-name">{{ memberObj.name }}</p>
                 </div>
@@ -65,7 +65,7 @@ export default {
 }*/
 
 .member-shape {
-    width: 550px;
+    width: 600px;
     height: 100%;
     background-color: var(--plum-purple-400);
    
@@ -89,19 +89,24 @@ export default {
 }
 
 .member-name-bg {
-    width: fit-content;
-    height: 2.5em;
+    width: 100%;
+    height: 5.5em;
 
     margin: -1em 0 0 0;
-    padding: 0 0.5em 0 0.5em;
+    padding: 0 1.5em 0 1.5em;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    background-size: auto 17em;
+    background-position: 50%;
+    background-repeat: no-repeat;
 }
 
 .member-name {
+    max-width: 100%;
     font-size: 2em;
     font-weight: 700;
     color: white;

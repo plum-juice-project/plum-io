@@ -4,7 +4,7 @@
   "scripts": {
     "clean": "rm -rf node_modules/.cache .output .nuxt",
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev -p 3131",
     "generate": "nuxt generate",
     "generate:prod": "BASE_URL=/plum-io/ nuxt build --preset github_pages",
     "preview": "nuxt preview",

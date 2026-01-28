@@ -69,6 +69,10 @@ mark {
   background-color: var(--plum-purple-600);
   padding: 0 0.10em 0 0.10em;
   margin: 0;
+
+  border-radius: 0.1em;
+  font-weight: 500;
+  color: black;
 }
 
 .title-header {
