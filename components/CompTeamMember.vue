@@ -9,10 +9,6 @@ export default {
         }
     },
 
-    mounted() {
-        console.log(this.memberObj.gh_handle);
-    },
-
     props: [ "memberObj", "memberIndex" ]
 }
 </script>

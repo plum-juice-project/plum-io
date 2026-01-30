@@ -1,16 +1,13 @@
 <script>
 import CompTeamMember from '~/components/CompTeamMember.vue';
-import team_comp_data from '~/assets/hpc-team.json'
+import CompTeamTimeline from '~/components/CompTeamTimeline.vue';
+import team_comp_data from '~/assets/hpc-team.json';
 
 export default {
     data: function() {
         return {
             team_comp_data: team_comp_data
         }
-    },
-
-    mounted() {
-        console.log(this.team_comp_data);
     }
 }
 </script>
@@ -40,6 +37,13 @@ export default {
         :memberObj="member" 
         :memberIndex="index"></CompTeamMember>
     </div>
+    <div class="title-heading">
+      <h2 class="section-title">Our achievements</h2>
+      <span class="title-paragraph-low">
+        Although we haven't participated in many competitions (<i>yet!</i>), we strive to compete in more, to have an <mark>ever-growing team</mark> and spread the marvels of HPC. Are you curious about how far we got? Just have a look below
+      </span>
+    </div>
+	<CompTeamTimeline></CompTeamTimeline>
   </section>
 </template>
 
@@ -49,7 +53,8 @@ export default {
 }
 
 .title-header-title {
-    font-size: 4em !important;
+    font-size: 2.5em !important;
+    font-weight: 600;
     margin: 0 0 0.5em 0;
 }
 
@@ -67,7 +72,7 @@ export default {
 .title-paragraph {
     font-size: 1.75em !important;
     margin: 0;
-    line-height: 2em;
+    line-height: 1.5em;
 }
 
 .title-heading {
@@ -81,12 +86,19 @@ export default {
 .team-members-showcase {
     width: 100%;
     height: fit-content;
-    margin: 5em 0 0 0;
+    margin: 7em 0 8em 0;
 
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
     gap: 6em;
+}
+
+.section-title {
+    font-size: 3em;
+	font-weight: 600;
+	color: white;
+	margin: 0 0 0.5em 0;
 }
 </style>

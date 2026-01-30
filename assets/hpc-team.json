@@ -4,20 +4,21 @@
         "gh_handle": "ElBi21",
         "bio": "Enjoys cooking, taking pictures and hiking (and complaining). Loves low-level stuff and tweaking with hardware. Has worked on <mark>Cerebras</mark>",
         "tags": [
+            "acsai",
+            "cerebras",
             "sysadmin",
-            "cuda",
-            "mpi",
             "slurm"
         ]
     },
     {
         "name": "Elia Belli",
         "gh_handle": "Elia-Belli",
-        "bio": "He likes stuff (again)",
+        "bio": "Hiker in his heart, loves to experiment with novel accelerators for HPC, such as the <mark>Cerebras WSE</mark>",
         "tags": [
-            "cuda",
+            "info",
+            "cerebras",
             "mpi",
-            "cerebras"
+            "cuda"
         ]
     },
     {
@@ -25,9 +26,9 @@
         "gh_handle": "LleilaA13",
         "bio": "Cresi",
         "tags": [
-            "cuda",
+            "acsai",
             "mpi",
-            "cerebras"
+            "cuda"
         ]
     },
     {
@@ -35,9 +36,9 @@
         "gh_handle": "Reewd",
         "bio": "AAAAAAAAA",
         "tags": [
-            "cuda",
+            "acsai",
             "mpi",
-            "cerebras"
+            "flight"
         ]
     },
     {
@@ -45,19 +46,19 @@
         "gh_handle": "mariacgs",
         "bio": "She likes stuff (again)",
         "tags": [
-            "cuda",
-            "mpi",
-            "cerebras"
+            "acsai",
+            "mpi"
         ]
     },
     {
         "name": "Francesco De Benedittis",
-        "gh_handle": "elia_belli02",
-        "bio": "He likes stuff (again)",
+        "gh_handle": "Fra179",
+        "bio": "Passionate IT enjoyer, and planes lover. ",
         "tags": [
+            "acsai",
             "cuda",
             "mpi",
-            "cerebras"
+            "flight"
         ]
     }
 ]

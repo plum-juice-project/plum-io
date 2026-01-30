@@ -18,5 +18,17 @@
     "slurm": {
         "display": "SLURM",
         "color": "#3A7FC9"
+    },
+    "flight": {
+        "display": "Flight Team",
+        "color": "#BD4050"
+    },
+    "info": {
+        "display": "Informatica",
+        "color": "#8F58A3"
+    },
+    "acsai": {
+        "display": "ACSAI",
+        "color": "#7A285E"
     }
 }

@@ -59,6 +59,7 @@
   --space-oneandhalfunits: 24px;
   --space-oneunit: 16px;
   --space-halfunit: 8px;
+  --ach-container-width: 350px;
 }
 
 body {
@@ -71,8 +72,7 @@ mark {
   margin: 0;
 
   border-radius: 0.1em;
-  font-weight: 500;
-  color: black;
+  color: white;
 }
 
 .title-header {
