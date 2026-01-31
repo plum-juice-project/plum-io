@@ -45,6 +45,15 @@ export default {
   justify-content: space-between;
 }
 
+.home-logo1 {
+  width: 6em;
+  height: 6em;
+}
+
+.text-logo1 {
+  height: 100%;
+}
+
 .home-nav1 {
   color: #ffffff;
   display: flex;

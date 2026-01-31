@@ -26,6 +26,9 @@ export default {
     margin: 2em 0 4em 0;
     padding: 1em 0 1em 0;
 
+    border-radius: 1.5em;
+    box-shadow: 2px 0 10px 4px rgba(0, 0, 0, 0.5) inset;
+
     display: flex;
     flex-direction: row;
     justify-content: start;

@@ -19,7 +19,7 @@
       <div class="home-card11">
         <span class="home-bubble" />
         <div class="home-content12">
-          <h2 class="home-header13">What we are aiming for?</h2>
+          <h2 class="home-header13">What are we aiming for?</h2>
           <span class="home-description10"
             >The goal of our project is to build a versatile and scalable infrastructure
             that can be used for various types of studies and analyses</span>
@@ -65,7 +65,7 @@
       <div class="home-heading11">
         <h2 class="home-header15">Blog</h2>
         <span class="home-header16">
-          Discover our work and how we maintain the cluster.
+          Discover our work, how we maintain the cluster and much more
         </span>
       </div>
     </div>

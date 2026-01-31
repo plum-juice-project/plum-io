@@ -115,7 +115,7 @@ export default {
 }
 
 .ach-cup {
-    height: 80%;
+    height: 60%;
 }
 
 .achievement-ranking-text {
