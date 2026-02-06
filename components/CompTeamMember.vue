@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-    <div :class="['member-container', `member-${orientation}`]">
+    <div :class="['member-container']">
         <div class="member-shape">
             <div class="member-name-photo">
                 <NuxtImg class="member-photo" :src="`/comp_team_imgs/${ memberObj.gh_handle }.jpg`" />
@@ -23,7 +23,6 @@ export default {
                 </div>
             </div>
             <div class="member-desc-roles">
-                <p class="member-desc" v-html="memberObj.bio"></p>
                 <div class="member-tags">
                     <SingleTag v-for="tag in memberObj.tags"
                         :tagName="tag"></SingleTag>
@@ -35,8 +34,8 @@ export default {
 
 <style scoped>
 .member-container {
-    width: 100%;
-    height: fit-content;
+    width: 18em;
+    height: 21em;
 
     display: flex;
     flex-direction: row;
@@ -61,8 +60,8 @@ export default {
 }*/
 
 .member-shape {
-    width: 600px;
-    height: 100%;
+    width: 300px;
+    height: fit-content;
     background-color: var(--plum-purple-400);
    
     border-radius: 1.5em;
@@ -71,15 +70,13 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: start;
-
-    padding: 0 0 0 1.75em;
+    align-items: center;
 }
 
 .member-name-photo {
     display: flex;
-    flex-direction: row;
-    justify-content: start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 1em;
 }
@@ -106,6 +103,8 @@ export default {
     font-size: 2em;
     font-weight: 700;
     color: white;
+    line-height: 1em;
+    text-align: center;
 }
 
 .member-photo {
@@ -118,8 +117,8 @@ export default {
 }
 
 .member-desc-roles {
-    width: 100%;
-    height: fit-content;
+    max-width: 100%;
+    height: auto;
 
     padding: 0.5em 0 0 0;
     
@@ -142,7 +141,8 @@ export default {
 
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: 0.25em;
 }

@@ -83,16 +83,28 @@ export default {
     width: 90%;
 }
 
-.team-members-showcase {
+/*.team-members-showcase {
     width: 100%;
     height: fit-content;
     margin: 7em 0 8em 0;
 
     display: flex;
-    flex-direction: column;
-    justify-content: start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 6em;
+}*/
+
+.team-members-showcase {
+  width: 100%;
+  margin: 4em 0 4em 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1em 5em;
+  align-items: start;
+  justify-content: center;
 }
 
 .section-title {

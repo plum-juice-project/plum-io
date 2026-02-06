@@ -21,6 +21,11 @@
     "nuxt": "^3.21.0"
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1",
+    "@types/bun": "latest"
+  },
+  "name": "plumjuice-site",
+  "peerDependencies": {
+    "typescript": "^5"
   }
 }
