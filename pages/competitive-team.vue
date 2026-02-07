@@ -29,7 +29,7 @@ export default {
   <section class="content-body">
     <div class="title-heading">
       <span class="title-paragraph-low">
-        The HPC Competitive Team was born in 2025 when a group of students decided to participate to the <mark>IndySCC25</mark>, an HPC-based competition hosted by SuperComputing. They all come from <mark>different backgrounds</mark>, hence making the team a true <b>fruit salad</b>! Let's find out more about them
+        The HPC Competitive Team was born in 2025 when a group of students decided to participate to the <mark>IndySCC25</mark>, an HPC-based competition hosted by SuperComputing. They all come from <mark>different backgrounds</mark>, hence making the team a true <b>fruit salad</b>! Here's the whole team:
       </span>
     </div>
     <div class="team-members-showcase" v-if="team_comp_data !== null">
@@ -83,26 +83,13 @@ export default {
     width: 90%;
 }
 
-/*.team-members-showcase {
-    width: 100%;
-    height: fit-content;
-    margin: 7em 0 8em 0;
-
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 6em;
-}*/
-
 .team-members-showcase {
   width: 100%;
-  margin: 4em 0 4em 0;
+  margin: 8em 0 8em 0;
 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1em 5em;
+  gap: 6em 7em;
   align-items: start;
   justify-content: center;
 }

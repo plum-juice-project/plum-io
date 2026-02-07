@@ -4,9 +4,28 @@ import SingleTag from './SingleTag.vue';
 export default {
     data: function() {
         return {
-            orientation: this.memberIndex % 2 === 0 ? 'left' : 'right',
+            mem_name: "",
+            mem_gh: "",
+            mem_use_pfp: false,
+            mem_pfp_link: `/comp_team_imgs/${ this.memberObj.gh_handle }.jpg`,
+            mem_link: `https://github.com/${this.memberObj.gh_handle}`,
+            mem_tags: [],
+
             name_bg: `url(/highlights/BG_${this.memberIndex}.svg)`,
         }
+    },
+
+    async beforeMount() {
+        this.mem_name = this.memberObj.name;
+        this.mem_gh = this.memberObj.gh_handle;
+
+        this.mem_use_pfp = this.memberObj.has_pfp;
+        this.mem_pfp_link = this.mem_use_pfp ? `/comp_team_imgs/${ this.memberObj.gh_handle }.jpg` : "";
+
+        this.mem_link = this.memberObj.custom_link ? this.memberObj.custom_link : this.mem_link;
+        this.mem_tags = this.memberObj.tags;
+
+        console.log(this.memberObj.tags);
     },
 
     props: [ "memberObj", "memberIndex" ]
@@ -14,53 +33,32 @@ export default {
 </script>
 
 <template>
-    <div :class="['member-container']">
+    <NuxtLink :to="mem_link" target="_blank" rel="noopener noreferrer">
         <div class="member-shape">
             <div class="member-name-photo">
-                <NuxtImg class="member-photo" :src="`/comp_team_imgs/${ memberObj.gh_handle }.jpg`" />
-                <div class="member-name-bg" :style="{ backgroundImage: this.name_bg }">
-                    <p class="member-name">{{ memberObj.name }}</p>
+                <NuxtImg v-if="memberObj.has_pfp" class="member-photo" :src="mem_pfp_link" />
+                <div v-else class="member-photo member-no-pfp">
+                    <p class="member-no-pfp-letter">{{ mem_name[0] }}</p>
                 </div>
+                <p class="member-name">{{ mem_name }}</p>
+            </div>
+            <div class="member-github">
+                <Icon name="icons:mdi-github" size="21" />
+                <span class="member-gh-nickname">{{ mem_gh }}</span>
             </div>
             <div class="member-desc-roles">
                 <div class="member-tags">
-                    <SingleTag v-for="tag in memberObj.tags"
+                    <SingleTag v-for="tag in mem_tags"
                         :tagName="tag"></SingleTag>
                 </div>
             </div>
         </div>
-    </div>
+    </NuxtLink>
 </template>
 
 <style scoped>
-.member-container {
-    width: 18em;
-    height: 21em;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.member-left {
-    justify-content: start;
-}
-
-.member-right {
-    justify-content: end;
-}
-
-/* Applied to children of respectively .member-left and .member-right */
-/*.member-left .member-shape {
-    
-}
-
-.member-right .member-shape {
-    
-}*/
-
 .member-shape {
-    width: 300px;
+    width: 18em;
     height: fit-content;
     background-color: var(--plum-purple-400);
    
@@ -69,7 +67,7 @@ export default {
 
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -105,6 +103,27 @@ export default {
     color: white;
     line-height: 1em;
     text-align: center;
+}
+
+.member-no-pfp {
+    max-width: 8em;
+    
+    padding: 0;
+    margin: 0;
+
+    background-color: var(--plum-purple-700);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.member-no-pfp-letter {
+    color: white;
+    margin: 0;
+    font-weight: 800;
+    font-size: 4em;
 }
 
 .member-photo {
@@ -145,5 +164,23 @@ export default {
     justify-content: center;
     align-items: center;
     gap: 0.25em;
+}
+
+.member-github {
+    display: flex;
+    align-items: center;
+    gap: var(--space-halfunit);
+
+    color: white;
+}
+
+.member-gh-nickname {
+    font-size: 1.2em;
+    font-weight: 400;
+
+    text-align: center;
+
+    color: white;
+    font-family: "DM Mono";
 }
 </style>

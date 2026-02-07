@@ -2,63 +2,128 @@
     {
         "name": "Leonardo Biason",
         "gh_handle": "ElBi21",
-        "bio": "Enjoys cooking, taking pictures and hiking (and complaining). Loves low-level stuff and tweaking with hardware. Has worked on <mark>Cerebras</mark>",
+        "has_pfp": true,
+        "custom_link": "https://leonardobiason.com",
+        "bio": "N/A",
         "tags": [
             "acsai",
-            "cerebras",
             "sysadmin",
-            "slurm"
+            "indy25",
+            "isc26"
         ]
     },
     {
         "name": "Elia Belli",
         "gh_handle": "Elia-Belli",
-        "bio": "Hiker in his heart, loves to experiment with novel accelerators for HPC, such as the <mark>Cerebras WSE</mark>",
+        "has_pfp": true,
+        "bio": "N/A",
         "tags": [
             "info",
-            "cerebras",
-            "mpi",
-            "cuda"
-        ]
-    },
-    {
-        "name": "Leila Zanoni",
-        "gh_handle": "LleilaA13",
-        "bio": "Cresi",
-        "tags": [
-            "acsai",
-            "mpi",
-            "cuda"
+            "indy25",
+            "isc26"
         ]
     },
     {
         "name": "Andrea Venditti",
         "gh_handle": "Reewd",
-        "bio": "AAAAAAAAA",
+        "has_pfp": true,
+        "bio": "N/A",
         "tags": [
             "acsai",
-            "mpi",
-            "flight"
+            "indy25",
+            "isc26"
+        ]
+    },
+    {
+        "name": "Alessandro Romania",
+        "gh_handle": "r0mania",
+        "has_pfp": true,
+        "bio": "N/A",
+        "tags": [
+            "acsai",
+            "indy25"
         ]
     },
     {
         "name": "Maria Campos",
         "gh_handle": "mariacgs",
+        "has_pfp": true,
         "bio": "She likes stuff (again)",
         "tags": [
             "acsai",
-            "mpi"
+            "indy25",
+            "isc26"
+        ]
+    },
+    {
+        "name": "Luca Micarelli",
+        "gh_handle": "LucaMica02",
+        "has_pfp": true,
+        "bio": "N/A",
+        "tags": [
+            "info",
+            "indy25"
+        ]
+    },
+    {
+        "name": "Leila Zanoni",
+        "gh_handle": "LleilaA13",
+        "has_pfp": true,
+        "bio": "N/A",
+        "tags": [
+            "acsai",
+            "isc26"
         ]
     },
     {
         "name": "Francesco De Benedittis",
         "gh_handle": "Fra179",
-        "bio": "Passionate IT enjoyer, and planes lover. ",
+        "has_pfp": true,
+        "custom_link": "https://francescodb.me",
+        "bio": "N/A",
         "tags": [
             "acsai",
-            "cuda",
-            "mpi",
-            "flight"
+            "isc26"
+        ]
+    },
+    {
+        "name": "Jacopo Mazzatorta",
+        "gh_handle": "jmazzatorta",
+        "has_pfp": false,
+        "bio": "N/A",
+        "tags": [
+            "info",
+            "sbcc26"
+        ]
+    },
+    {
+        "name": "Pietro Piccolo",
+        "gh_handle": "ppietropiccolo",
+        "has_pfp": false,
+        "bio": "N/A",
+        "tags": [
+            "info",
+            "sbcc26"
+        ]
+    },
+    {
+        "name": "Jacopo Rallo",
+        "gh_handle": "jmazzatorta",
+        "has_pfp": false,
+        "bio": "N/A",
+        "tags": [
+            "info",
+            "sbcc26"
+        ]
+    },
+    {
+        "name": "Alessandro Milos",
+        "gh_handle": "alemilos",
+        "has_pfp": false,
+        "bio": "N/A",
+        "tags": [
+            "info",
+            "sbcc26"
         ]
     }
 ]
