@@ -7,9 +7,9 @@
         "bio": "N/A",
         "tags": [
             "acsai",
-            "sysadmin",
             "indy25",
-            "isc26"
+            "isc26",
+            "sysadmin"
         ]
     },
     {
@@ -19,6 +19,7 @@
         "bio": "N/A",
         "tags": [
             "info",
+            "cs",
             "indy25",
             "isc26"
         ]
@@ -30,6 +31,7 @@
         "bio": "N/A",
         "tags": [
             "acsai",
+            "cs",
             "indy25",
             "isc26"
         ]
@@ -51,6 +53,7 @@
         "bio": "She likes stuff (again)",
         "tags": [
             "acsai",
+            "cs",
             "indy25",
             "isc26"
         ]
@@ -62,6 +65,7 @@
         "bio": "N/A",
         "tags": [
             "info",
+            "cs",
             "indy25"
         ]
     },
@@ -72,6 +76,7 @@
         "bio": "N/A",
         "tags": [
             "acsai",
+            "cs",
             "isc26"
         ]
     },
@@ -83,6 +88,7 @@
         "bio": "N/A",
         "tags": [
             "acsai",
+            "cs",
             "isc26"
         ]
     },
@@ -102,7 +108,7 @@
         "has_pfp": false,
         "bio": "N/A",
         "tags": [
-            "info",
+            "acsai",
             "sbcc26"
         ]
     },
@@ -112,7 +118,7 @@
         "has_pfp": false,
         "bio": "N/A",
         "tags": [
-            "info",
+            "acsai",
             "sbcc26"
         ]
     },

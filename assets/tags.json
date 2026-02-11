@@ -31,6 +31,18 @@
         "display": "ACSAI",
         "color": "#B0465E"
     },
+    "cs": {
+        "display": "Computer Science",
+        "color": "#3CA363"
+    },
+    "airo": {
+        "display": "AI & Robotics",
+        "color": "#A68E50"
+    },
+    "poli_hpc": {
+        "display": "HPC Engineering",
+        "color": "#1D2C57"
+    },
     "indy25": {
         "display": "IndySCC 25",
         "color": "#7F96EB"
