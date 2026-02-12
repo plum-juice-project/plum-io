@@ -4,8 +4,8 @@
       <div class="title-heading">
         <h2 class="title-header-title">The hackathon!</h2>
         <span class="title-paragraph">
-          First our hackathon is past! We had a great time and we are looking forward to
-          the next one.
+          Our first hackathon is past! We had a great time and we are looking forward to
+          the next one
         </span>
         <div class="header-content">
           <span class="paragraph">
@@ -27,8 +27,8 @@
     <div class="title-heading">
       <h2 class="title-header-title">The fun is not over!</h2>
       <span class="title-paragraph">
-        We’ve heard some of you are eager to keep testing the project! So, guess what?
-        We’re keeping the systems up and running and extending the leaderboard updates for
+        We've heard some of you are eager to keep testing the project! So, guess what?
+        We're keeping the systems up and running and extending the leaderboard updates for
         a while!
       </span>
     </div>

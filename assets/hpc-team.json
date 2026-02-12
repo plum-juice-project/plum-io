@@ -1,0 +1,136 @@
+[
+    {
+        "name": "Elia Belli",
+        "gh_handle": "Elia-Belli",
+        "has_pfp": true,
+        "bio": "N/A",
+        "tags": [
+            "info",
+            "cs",
+            "indy25",
+            "isc26",
+            "tl"
+        ]
+    },
+    {
+        "name": "Leonardo Biason",
+        "gh_handle": "ElBi21",
+        "has_pfp": true,
+        "custom_link": "https://leonardobiason.com",
+        "bio": "N/A",
+        "tags": [
+            "acsai",
+            "indy25",
+            "isc26",
+            "sysadmin"
+        ]
+    },
+    {
+        "name": "Andrea Venditti",
+        "gh_handle": "Reewd",
+        "has_pfp": true,
+        "bio": "N/A",
+        "tags": [
+            "acsai",
+            "cs",
+            "indy25",
+            "isc26"
+        ]
+    },
+    {
+        "name": "Alessandro Romania",
+        "gh_handle": "r0mania",
+        "has_pfp": true,
+        "bio": "N/A",
+        "tags": [
+            "acsai",
+            "indy25"
+        ]
+    },
+    {
+        "name": "Maria Campos",
+        "gh_handle": "mariacgs",
+        "has_pfp": true,
+        "bio": "She likes stuff (again)",
+        "tags": [
+            "acsai",
+            "cs",
+            "indy25",
+            "isc26"
+        ]
+    },
+    {
+        "name": "Luca Micarelli",
+        "gh_handle": "LucaMica02",
+        "has_pfp": true,
+        "bio": "N/A",
+        "tags": [
+            "info",
+            "cs",
+            "indy25"
+        ]
+    },
+    {
+        "name": "Leila Zanoni",
+        "gh_handle": "LleilaA13",
+        "has_pfp": true,
+        "bio": "N/A",
+        "tags": [
+            "acsai",
+            "cs",
+            "isc26"
+        ]
+    },
+    {
+        "name": "Francesco De Benedittis",
+        "gh_handle": "Fra179",
+        "has_pfp": true,
+        "custom_link": "https://francescodb.me",
+        "bio": "N/A",
+        "tags": [
+            "acsai",
+            "cs",
+            "isc26"
+        ]
+    },
+    {
+        "name": "Jacopo Mazzatorta",
+        "gh_handle": "jmazzatorta",
+        "has_pfp": true,
+        "bio": "N/A",
+        "tags": [
+            "info",
+            "sbcc26"
+        ]
+    },
+    {
+        "name": "Pietro Piccolo",
+        "gh_handle": "ppietropiccolo",
+        "has_pfp": false,
+        "bio": "N/A",
+        "tags": [
+            "acsai",
+            "sbcc26"
+        ]
+    },
+    {
+        "name": "Jacopo Rallo",
+        "gh_handle": "66Jar99",
+        "has_pfp": false,
+        "bio": "N/A",
+        "tags": [
+            "acsai",
+            "sbcc26"
+        ]
+    },
+    {
+        "name": "Alessandro Milos",
+        "gh_handle": "alemilos",
+        "has_pfp": true,
+        "bio": "N/A",
+        "tags": [
+            "info",
+            "sbcc26"
+        ]
+    }
+]

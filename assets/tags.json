@@ -1,0 +1,62 @@
+{
+    "sysadmin": {
+        "display": "SysAdmin",
+        "color": "#3C86B5"
+    },
+    "mpi": {
+        "display": "MPI",
+        "color": "#B0853A"
+    },
+    "cuda": {
+        "display": "CUDA",
+        "color": "#48A367"
+    },
+    "cerebras": {
+        "display": "Cerebras",
+        "color": "#C9793A"
+    },
+    "slurm": {
+        "display": "SLURM",
+        "color": "#3A7FC9"
+    },
+    "flight": {
+        "display": "Flight Team",
+        "color": "#BD4050"
+    },
+    "info": {
+        "display": "Informatica",
+        "color": "#8F58A3"
+    },
+    "acsai": {
+        "display": "ACSAI",
+        "color": "#B0465E"
+    },
+    "cs": {
+        "display": "Computer Science",
+        "color": "#3CA363"
+    },
+    "airo": {
+        "display": "AI & Robotics",
+        "color": "#A68E50"
+    },
+    "poli_hpc": {
+        "display": "HPC Engineering",
+        "color": "#1D2C57"
+    },
+    "indy25": {
+        "display": "IndySCC 25",
+        "color": "#7F96EB"
+    },
+    "isc26": {
+        "display": "ISC 26",
+        "color": "#E35969"
+    },
+    "sbcc26": {
+        "display": "SBCC 26",
+        "color": "#3F8A7E"
+    },
+    "tl": {
+        "display": "Team Leader",
+        "color": "#AB8933"
+    }
+}

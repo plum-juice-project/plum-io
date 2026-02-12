@@ -1,0 +1,26 @@
+[
+    {
+        "title": "IndySCC 25",
+        "type": "competition",
+        "completed": true,
+        "timing": "November 2025",
+        "description": "This was our first competition ever, and the birth of the HPC Competitive Team! Woo-hoo 🎉",
+        "ranking": "Top 9"
+    },
+    {
+        "title": "SBCC 26",
+        "type": "competition",
+        "completed": false,
+        "timing": "April 2026",
+        "description": "After the success of IndySCC, we decided to revamp our Raspberry Pi cluster and participate to the SBCC 26",
+        "ranking": "Top 9"
+    },
+    {
+        "title": "ISC 26",
+        "type": "competition",
+        "completed": false,
+        "timing": "June 2026",
+        "description": "Now we're getting serious; for ISC 26, we are giving it all (and we have our own hardware too)! Thanks CINECA!",
+        "ranking": "Top 9"
+    }
+]

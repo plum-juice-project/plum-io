@@ -7,7 +7,7 @@ import UsefulLinks from './UsefulLinks.vue';
         <div class="flex flex-row items-start justify-between w-full mb-8 small-device">
             <div class="footer-left mr-6">
                 <div class="footer-heading20">
-                    <h2 class="footer-title">Plum Juice</h2>
+                    <h2 class="footer-title">PlumJuice</h2>
                 </div>
                 <div class="w-full m-6 text-3xl md:m-0 md:mt-6 md:text-6xl">
                     <UsefulLinks />
@@ -27,13 +27,14 @@ import UsefulLinks from './UsefulLinks.vue';
                     <h3 class="footer-heading">Project</h3>
                     <div class="footer-items2">
                         <NuxtLink class="footer-link" to="/team">Team</NuxtLink>
+                        <NuxtLink class="footer-link" to="/competitive-team">Competitive Team</NuxtLink>
                         <NuxtLink class="footer-link" to="/hackathon">Hackathon</NuxtLink>
                         <!-- <NuxtLink class="footer-link  unavaible" to="#footer">Licenses</NuxtLink> -->
                     </div>
                 </div>
             </div>
         </div>
-        <span class="footer-copyright">© 2024 Plum Juice. All Rights Reserved.</span>
+        <span class="footer-copyright">© 2024-2026 Plum Juice. All Rights Reserved.</span>
     </footer>
 </template>
 

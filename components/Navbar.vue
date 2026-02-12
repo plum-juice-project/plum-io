@@ -15,6 +15,9 @@
         <NuxtLink to="/team" class="nav-link" active-class="nav-link-is-active"
           >Team</NuxtLink
         >
+        <NuxtLink to="/competitive-team" class="nav-link" active-class="nav-link-is-active"
+          >Competitive Team</NuxtLink
+        >
         <NuxtLink to="/blog" class="nav-link" active-class="nav-link-is-active"
           >Blog</NuxtLink
         >
@@ -40,6 +43,15 @@ export default {
   /* align-items: center;  */
   margin: var(--space-threeunits) 0 0 0;
   justify-content: space-between;
+}
+
+.home-logo1 {
+  width: 6em;
+  height: 6em;
+}
+
+.text-logo1 {
+  height: 100%;
 }
 
 .home-nav1 {

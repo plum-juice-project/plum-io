@@ -6,7 +6,7 @@
         If you have any questions, please feel free to contact us.
       </span>
       <div class="contacts-header-img">
-        <NuxtImg src="/computer-logo.png" />
+        <NuxtImg src="/straw-plum.png" style="height: 60%"/>
       </div>
     </div>
   </div>

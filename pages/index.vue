@@ -1,8 +1,8 @@
 <template>
   <section class="home-hero" id="home">
     <div class="home-heading10">
-      <h1 class="home-header11">It's not just a raspberry pi cluster</h1>
-      <p class="home-caption10">It's like a fruit salad.</p>
+      <h1 class="home-header11">It's not "<i>just</i>" a Raspberry Pi cluster</h1>
+      <p class="home-caption10"><b>It's like a <mark>fruit salad</mark></b></p>
     </div>
     <div class="home-buttons">
       <a
@@ -19,30 +19,33 @@
       <div class="home-card11">
         <span class="home-bubble" />
         <div class="home-content12">
-          <h2 class="home-header13">What we are aiming for?</h2>
+          <h2 class="home-header13">What are we aiming for?</h2>
           <span class="home-description10"
             >The goal of our project is to build a versatile and scalable infrastructure
-            that can be used for various types of studies and analyses.</span
-          >
+            that can be used for various types of studies and analyses</span>
           <ul class="home-bullet-list">
-            <li>Explore the world of High Performance Computing</li>
             <li>
-              Developing a flexible topology, adaptable to different needs and contexts.
+              Explore the world of High Performance Computing
+            </li>
+            <li>
+              Developing a flexible topology, adaptable to different needs and contexts
             </li>
             <li>
               Implementing distributed and parallel algorithms for scientific computing
-              and deep learning.
+              and Deep Learning
             </li>
             <li>
-              Analyzing the network performance and hardware resources of the nodes.
+              Analyzing the network performance and hardware resources of the nodes
             </li>
-            <li>Providing a platform for future research and experimentation.</li>
+            <li>
+              Providing a platform for future research and experimentation
+            </li>
           </ul>
         </div>
       </div>
       <div class="home-description11">
         <span class="home-paragraph1">
-          We are a team of computer science students passionate about building and
+          We are a team of Computer Science students passionate about building and
           optimizing fast, distributed, and juicy architectures.
         </span>
         <span class="home-paragraph2">
@@ -62,7 +65,7 @@
       <div class="home-heading11">
         <h2 class="home-header15">Blog</h2>
         <span class="home-header16">
-          Discover our work and how we maintain the cluster.
+          Discover our work, how we maintain the cluster and much more
         </span>
       </div>
     </div>

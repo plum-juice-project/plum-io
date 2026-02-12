@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
 * {
   margin: 0;
@@ -59,10 +60,20 @@
   --space-oneandhalfunits: 24px;
   --space-oneunit: 16px;
   --space-halfunit: 8px;
+  --ach-container-width: 350px;
 }
 
 body {
   background-color: var(--background-100);
+}
+
+mark {
+  background-color: var(--plum-purple-600);
+  padding: 0 0.10em 0 0.10em;
+  margin: 0;
+
+  border-radius: 0.1em;
+  color: white;
 }
 
 .title-header {

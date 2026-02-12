@@ -2,8 +2,9 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "clean": "rm -rf node_modules/.cache .output .nuxt",
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev -p 3131",
     "generate": "nuxt generate",
     "generate:prod": "BASE_URL=/plum-io/ nuxt build --preset github_pages",
     "preview": "nuxt preview",
@@ -20,6 +21,11 @@
     "nuxt": "^3.21.0"
   },
   "devDependencies": {
+    "@types/bun": "latest",
     "gh-pages": "^6.1.1"
+  },
+  "name": "plumjuice-site",
+  "peerDependencies": {
+    "typescript": "^5"
   }
 }
