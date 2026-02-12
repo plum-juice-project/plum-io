@@ -43,7 +43,7 @@ export default {
         Although we haven't participated in many competitions (<i>yet!</i>), we strive to compete in more, to have an <mark>ever-growing team</mark> and spread the marvels of HPC. Are you curious about how far we got? Just have a look below
       </span>
     </div>
-	<CompTeamTimeline></CompTeamTimeline>
+  	<CompTeamTimeline></CompTeamTimeline>
   </section>
 </template>
 

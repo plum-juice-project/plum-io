@@ -1,5 +1,18 @@
 [
     {
+        "name": "Elia Belli",
+        "gh_handle": "Elia-Belli",
+        "has_pfp": true,
+        "bio": "N/A",
+        "tags": [
+            "info",
+            "cs",
+            "indy25",
+            "isc26",
+            "tl"
+        ]
+    },
+    {
         "name": "Leonardo Biason",
         "gh_handle": "ElBi21",
         "has_pfp": true,
@@ -10,18 +23,6 @@
             "indy25",
             "isc26",
             "sysadmin"
-        ]
-    },
-    {
-        "name": "Elia Belli",
-        "gh_handle": "Elia-Belli",
-        "has_pfp": true,
-        "bio": "N/A",
-        "tags": [
-            "info",
-            "cs",
-            "indy25",
-            "isc26"
         ]
     },
     {
@@ -95,7 +96,7 @@
     {
         "name": "Jacopo Mazzatorta",
         "gh_handle": "jmazzatorta",
-        "has_pfp": false,
+        "has_pfp": true,
         "bio": "N/A",
         "tags": [
             "info",
@@ -114,7 +115,7 @@
     },
     {
         "name": "Jacopo Rallo",
-        "gh_handle": "jmazzatorta",
+        "gh_handle": "66Jar99",
         "has_pfp": false,
         "bio": "N/A",
         "tags": [
@@ -125,7 +126,7 @@
     {
         "name": "Alessandro Milos",
         "gh_handle": "alemilos",
-        "has_pfp": false,
+        "has_pfp": true,
         "bio": "N/A",
         "tags": [
             "info",

@@ -54,5 +54,9 @@
     "sbcc26": {
         "display": "SBCC 26",
         "color": "#3F8A7E"
+    },
+    "tl": {
+        "display": "Team Leader",
+        "color": "#AB8933"
     }
 }
