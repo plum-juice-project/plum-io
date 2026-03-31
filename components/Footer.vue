@@ -143,10 +143,9 @@ import UsefulLinks from './UsefulLinks.vue';
 
 @media (max-width: 767px) {
         .footer-container {
-            justify-content: center;
-            padding: var(--space-fourunits) 1em 1em 1em;
-
-            align-items: center;
+            width: 80%;
+            padding: var(--space-oneunit);
+            margin: auto;
         }
 
         .small-device{
@@ -160,7 +159,6 @@ import UsefulLinks from './UsefulLinks.vue';
             width: 100%;
             justify-content: center;
             align-items: center;
-            padding: 0 0 1em 0;
         }
 
         .footer-title {
@@ -183,11 +181,12 @@ import UsefulLinks from './UsefulLinks.vue';
 
         .footer-right {
             width: 100%;
-            justify-content: space-around;
+            margin: auto;
         }
 
         .footer-list1,
         .footer-list2 {
+            margin: auto;
             gap: var(--space-two-units);
             align-items: left;
         }
