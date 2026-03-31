@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <div class="socials-list">
+    <div class="grid grid-cols-5 md:grid-cols-5 sm:grid-cols-2 gap-6 text-white">
         <a href="https://github.com/plum-juice-project" target="_blank" rel="noopener noreferrer">
             <Icon name="icons:mdi-github" />
         </a>

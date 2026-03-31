@@ -112,12 +112,26 @@
     <h1 class="roadmap-cs">Coming Soon</h1>
   </section> 
   -->
+  <Divider color="white" vspace="50" />
+  <section class="home-collection">
+  <div class="home-content14">
+        <div class="home-heading11">
+        <h2 class="home-header15">Sponsors</h2>
+        <span class="home-header16">
+            We are grateful for the support of our sponsors, who help us maintain and grow our cluster. If you want to support us, please consider becoming a sponsor!
+        </span>
+        </div>
+    </div>
+
+   <Sponsors/>
+  </section>
 </template>
 
 <script setup>
 import ArticlePreview from "@/components/ArticlePreview.vue";
 import Roadmap from "@/components/Roadmap.vue";
 import Divider from "~/components/Divider.vue";
+import Sponsors from "~/components/Sponsors.vue";
 
 const MAX_ARTICLES = 4;
 let articles = [];

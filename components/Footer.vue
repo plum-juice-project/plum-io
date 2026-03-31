@@ -1,16 +1,26 @@
 <script setup lang="ts">
 import UsefulLinks from './UsefulLinks.vue';
+import Sponsors from './Sponsors.vue';
 </script>
 
 <template>
     <footer class="footer-container">
         <div class="flex flex-row items-start justify-between w-full mb-8 small-device">
-            <div class="footer-left mr-6">
+            <div class="footer-left gap-10">
+                
                 <div class="footer-heading20">
                     <h2 class="footer-title">PlumJuice</h2>
+                    <div class="w-full text-3xl md:text-6xl">
+                        <UsefulLinks />
+                    </div>
+                    
                 </div>
-                <div class="w-full m-6 text-3xl md:m-0 md:mt-6 md:text-6xl">
-                    <UsefulLinks />
+
+                <div class="footer-heading20 mb-10">
+                    <h2 class="footer-title">Sponsors</h2>
+                    <div class="w-full text-3xl md:text-6xl">
+                        <Sponsors :scale="2" />
+                    </div>
                 </div>
             </div>
             <div class="footer-right ml-6">
