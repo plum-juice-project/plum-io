@@ -3,26 +3,6 @@
         "display": "SysAdmin",
         "color": "#3C86B5"
     },
-    "mpi": {
-        "display": "MPI",
-        "color": "#B0853A"
-    },
-    "cuda": {
-        "display": "CUDA",
-        "color": "#48A367"
-    },
-    "cerebras": {
-        "display": "Cerebras",
-        "color": "#C9793A"
-    },
-    "slurm": {
-        "display": "SLURM",
-        "color": "#3A7FC9"
-    },
-    "flight": {
-        "display": "Flight Team",
-        "color": "#BD4050"
-    },
     "info": {
         "display": "Informatica",
         "color": "#8F58A3"
@@ -55,8 +35,24 @@
         "display": "SBCC 26",
         "color": "#3F8A7E"
     },
-    "tl": {
-        "display": "Team Leader",
+    "tl_isc26": {
+        "display": "Team Leader (ISC26)",
         "color": "#AB8933"
+    },
+    "tl_sbcc26": {
+        "display": "Team Leader (SBCC26)",
+        "color": "#AB8933"
+    },
+    "manager": {
+        "display": "Team Manager",
+        "color": "#AB8933"
+    },
+    "scc26": {
+        "display": "SCC 26",
+        "color": "#D698C4"
+    },
+    "econ": {
+        "display": "Economia",
+        "color": "#758748"
     }
 }

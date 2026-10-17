@@ -8,8 +8,9 @@
             "info",
             "cs",
             "indy25",
-            "isc26",
-            "tl"
+            "scc26",
+            "sysadmin",
+            "manager"
         ]
     },
     {
@@ -22,8 +23,9 @@
             "acsai",
             "poli_hpc",
             "indy25",
-            "isc26",
-            "sysadmin"
+            "scc26",
+            "sysadmin",
+            "manager"
         ]
     },
     {
@@ -34,8 +36,7 @@
         "tags": [
             "acsai",
             "cs",
-            "indy25",
-            "isc26"
+            "indy25"
         ]
     },
     {
@@ -57,8 +58,7 @@
         "tags": [
             "acsai",
             "cs",
-            "indy25",
-            "isc26"
+            "indy25"
         ]
     },
     {
@@ -79,8 +79,7 @@
         "bio": "N/A",
         "tags": [
             "acsai",
-            "cs",
-            "isc26"
+            "cs"
         ]
     },
     {
@@ -91,8 +90,7 @@
         "bio": "N/A",
         "tags": [
             "acsai",
-            "cs",
-            "isc26"
+            "cs"
         ]
     },
     {
@@ -101,8 +99,12 @@
         "has_pfp": true,
         "bio": "N/A",
         "tags": [
+            "econ",
             "info",
-            "sbcc26"
+            "sbcc26",
+            "scc26",
+            "sysadmin",
+            "tl_sbcc26"
         ]
     },
     {
@@ -133,6 +135,56 @@
         "tags": [
             "info",
             "sbcc26"
+        ]
+    },
+    {
+        "name": "Mariam Blagidze",
+        "gh_handle": "t0kelau",
+        "has_pfp": true,
+        "bio": "N/A",
+        "tags": [
+            "acsai",
+            "scc26"
+        ]
+    },
+    {
+        "name": "Iva Jefremova",
+        "gh_handle": "ivajefremova",
+        "has_pfp": true,
+        "bio": "N/A",
+        "tags": [
+            "acsai",
+            "scc26"
+        ]
+    },
+    {
+        "name": "Daniele Savino",
+        "gh_handle": "DanieleSavino",
+        "has_pfp": true,
+        "bio": "N/A",
+        "tags": [
+            "info",
+            "scc26"
+        ]
+    },
+    {
+        "name": "Simra Faisal",
+        "gh_handle": "???",
+        "has_pfp": false,
+        "bio": "N/A",
+        "tags": [
+            "acsai",
+            "scc26"
+        ]
+    },
+    {
+        "name": "Matteo Ricchiuto",
+        "gh_handle": "rimaout",
+        "has_pfp": true,
+        "bio": "N/A",
+        "tags": [
+            "acsai",
+            "scc26"
         ]
     }
 ]

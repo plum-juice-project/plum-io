@@ -4,28 +4,30 @@
   "scripts": {
     "clean": "rm -rf node_modules/.cache .output .nuxt",
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --port 3131",
     "generate": "nuxt generate",
     "generate:prod": "BASE_URL=/plum-io/ nuxt build --preset github_pages",
     "preview": "nuxt preview",
     "deploy": "gh-pages --dotfiles -d .output/public"
   },
   "dependencies": {
-    "@nuxt/content": "^2.13.2",
+    "@nuxt/content": "^2.13.4",
     "@nuxt/content-theme-docs": "^0.11.1",
-    "@nuxt/icon": "^1.5.1",
-    "@nuxt/image": "^1.8.0",
+    "@nuxt/icon": "^1.15.0",
+    "@nuxt/image": "^1.11.0",
     "@nuxtjs/color-mode": "^3.5.2",
-    "@nuxtjs/tailwindcss": "^6.12.1",
-    "@tailwindcss/typography": "^0.5.15",
-    "nuxt": "^3.21.0"
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "@tailwindcss/typography": "^0.5.20",
+    "baseline-browser-mapping": "^2.11.29",
+    "caniuse-lite": "^1.0.30001816",
+    "nuxt": "^3.21.11"
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.3.0"
   },
   "name": "plumjuice-site",
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^5.9.3"
   }
 }

@@ -10,17 +10,16 @@
     {
         "title": "SBCC 26",
         "type": "competition",
-        "completed": false,
+        "completed": true,
         "timing": "April 2026",
         "description": "After the success of IndySCC, we decided to revamp our Raspberry Pi cluster and participate to the SBCC 26",
-        "ranking": "Top 9"
+        "ranking": "8th place (3rd with HPL)"
     },
     {
-        "title": "ISC 26",
+        "title": "SCC Connect 26",
         "type": "competition",
         "completed": false,
-        "timing": "June 2026",
-        "description": "Now we're getting serious; for ISC 26, we are giving it all (and we have our own hardware too)! Thanks CINECA!",
-        "ranking": "Top 9"
+        "timing": "November 2026",
+        "description": "Now we're getting serious; for SCC Connect 26, we are giving it all! Chicago will see what PlumJuice is capable of"
     }
 ]
