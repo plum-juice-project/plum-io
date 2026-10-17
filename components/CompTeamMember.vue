@@ -2,13 +2,19 @@
 import SingleTag from './SingleTag.vue';
 
 export default {
+	computed: {
+		mem_link() {
+			return this.memberObj.custom_link !== undefined ? this.memberObj.custom_link : `https://github.com/${this.memberObj.gh_handle}`;
+		}
+	},
+
     data: function() {
         return {
             mem_name: "",
             mem_gh: "",
             mem_use_pfp: false,
             mem_pfp_link: `/comp_team_imgs/${ this.memberObj.gh_handle }.jpg`,
-            mem_link: `https://github.com/${this.memberObj.gh_handle}`,
+            mem_link: "",
             mem_tags: [],
 
             name_bg: `url(/highlights/BG_${this.memberIndex}.svg)`,
@@ -22,11 +28,8 @@ export default {
         this.mem_use_pfp = this.memberObj.has_pfp;
         this.mem_pfp_link = this.mem_use_pfp ? `/comp_team_imgs/${ this.memberObj.gh_handle }.jpg` : "";
 
-        this.mem_link = this.memberObj.custom_link ? this.memberObj.custom_link : this.mem_link;
-        this.mem_tags = this.memberObj.tags;
-
-        console.log(this.memberObj.tags);
-    },
+		this.mem_tags = this.memberObj.tags;
+	},
 
     props: [ "memberObj", "memberIndex" ]
 }
@@ -61,7 +64,7 @@ export default {
     width: 18em;
     height: fit-content;
     background-color: var(--plum-purple-400);
-   
+
     border-radius: 1.5em;
     padding: 0.5em;
 
@@ -107,12 +110,12 @@ export default {
 
 .member-no-pfp {
     max-width: 8em;
-    
+
     padding: 0;
     margin: 0;
 
     background-color: var(--plum-purple-700);
-    
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -140,7 +143,7 @@ export default {
     height: auto;
 
     padding: 0.5em 0 0 0;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: start;

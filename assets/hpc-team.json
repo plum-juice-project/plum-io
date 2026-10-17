@@ -169,8 +169,9 @@
     },
     {
         "name": "Simra Faisal",
-        "gh_handle": "???",
-        "has_pfp": false,
+        "gh_handle": "SimraFaisal2",
+        "has_pfp": true,
+        "custom_link": "https://simrafaisal.me/",
         "bio": "N/A",
         "tags": [
             "acsai",
